@@ -5,20 +5,20 @@ project:
 metadata:
   title: Verantwoordingsverslag Registratieportaal Projectateliers
   subtitle: Demo-opzet voor Docsmith-validatie binnen een Hanze HBO-ICT-context
-  author: Reijer Demo Student
+  author: R. C. van der Zande
   short_title: Registratieportaal Projectateliers
   date: "2026-03-17"
-  student_number: "6674131"
+  student_number: "167524"
   programme: HBO-ICT
   institution: Hanzehogeschool Groningen
-  document_type: Verantwoordingsverslag
+  document_type: Analyseverslag
   location: Groningen
   supervisor: S. Demo-Begeleider
   second_reviewer: A. Review-Docent
   client: Opleiding HBO-ICT, Hanzehogeschool Groningen
-  project_context: Jaar 4 demo-opzet voor een registratieportaal voor projectateliers en kennissessies
+  project_context: 
   academic_year: "2025-2026"
-  cohort: Voltijd jaar 4
+  cohort: Deeltijd jaar 4
 
 document:
   input_root: sections
@@ -31,12 +31,6 @@ document:
       listed: false
   main_matter:
     - 03_inleiding.md
-    - 04_projectcontext_en_opdracht.md
-    - 05_requirements_en_acceptatiecriteria.md
-    - 06_ontwerp.md
-    - 07_realisatie.md
-    - 08_validatie.md
-    - 09_reflectie.md
     - 10_conclusie_en_aanbevelingen.md
   back_matter: []
   appendices:
@@ -59,7 +53,7 @@ diagrams:
 
 output:
   directory: output
-  basename: verantwoordingsverslag_hbo_ict_demo
+  basename: analyseverslag_167524
   formats:
     - pdf
 
