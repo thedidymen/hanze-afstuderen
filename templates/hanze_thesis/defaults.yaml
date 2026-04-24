@@ -1,0 +1,23 @@
+from: markdown+raw_tex
+pdf-engine: xelatex
+toc: false
+top-level-division: chapter
+number-sections: true
+citeproc: true
+standalone: true
+variables:
+  documentclass: report
+  fontsize: 11pt
+  papersize: a4
+  geometry:
+    - top=2.8cm
+    - bottom=2.8cm
+    - left=3cm
+    - right=2.6cm
+    - headheight=16pt
+    - headsep=18pt
+    - footskip=30pt
+  linestretch: 1.15
+  colorlinks: true
+  linkcolor: black
+  urlcolor: black

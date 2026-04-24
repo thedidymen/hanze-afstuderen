@@ -1,0 +1,69 @@
+project:
+  slug: verantwoordingsverslag-hbo-ict-demo
+  template: ../../templates/hanze_thesis
+
+metadata:
+  title: Verantwoordingsverslag Registratieportaal Projectateliers
+  subtitle: Demo-opzet voor Docsmith-validatie binnen een Hanze HBO-ICT-context
+  author: Reijer Demo Student
+  short_title: Registratieportaal Projectateliers
+  date: "2026-03-17"
+  student_number: "6674131"
+  programme: HBO-ICT
+  institution: Hanzehogeschool Groningen
+  document_type: Verantwoordingsverslag
+  location: Groningen
+  supervisor: S. Demo-Begeleider
+  second_reviewer: A. Review-Docent
+  client: Opleiding HBO-ICT, Hanzehogeschool Groningen
+  project_context: Jaar 4 demo-opzet voor een registratieportaal voor projectateliers en kennissessies
+  academic_year: "2025-2026"
+  cohort: Voltijd jaar 4
+
+document:
+  input_root: sections
+  front_matter:
+    - file: 00_voorwoord.md
+    - file: 01_samenvatting.md
+    - generated: toc
+      title: Inhoudsopgave
+      numbered: false
+      listed: false
+  main_matter:
+    - 03_inleiding.md
+    - 04_projectcontext_en_opdracht.md
+    - 05_requirements_en_acceptatiecriteria.md
+    - 06_ontwerp.md
+    - 07_realisatie.md
+    - 08_validatie.md
+    - 09_reflectie.md
+    - 10_conclusie_en_aanbevelingen.md
+  back_matter: []
+  appendices:
+    - 30_bijlage_a_interviewleidraad.md
+  bibliography:
+    enabled: true
+    title: Literatuurlijst
+    zone: back_matter
+
+citations:
+  bibliography: references.bib
+  csl: csl/apa.csl
+
+diagrams:
+  - id: registratieproces
+    type: mermaid
+    source: assets/diagrams/registratieproces.mmd
+    output: assets/generated/registratieproces.png
+    format: png
+
+output:
+  directory: output
+  basename: verantwoordingsverslag_hbo_ict_demo
+  formats:
+    - pdf
+
+versioning:
+  strategy: semver
+  initial_version: 0.1.0
+  include_git_hash: true

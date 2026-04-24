@@ -1,0 +1,9 @@
+flowchart TD
+    A[Student opent sessieoverzicht] --> B[Student kiest projectatelier]
+    B --> C[Registratieformulier invullen]
+    C --> D{Capaciteit beschikbaar?}
+    D -- Ja --> E[Registratie opslaan]
+    E --> F[Bevestiging tonen]
+    D -- Nee --> G[Wachtlijst of afwijzing tonen]
+    E --> H[Medewerker ziet bijgewerkte deelnemerslijst]
+    H --> I[Export voor opvolging]

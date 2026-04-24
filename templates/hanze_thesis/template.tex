@@ -1,0 +1,325 @@
+\documentclass[
+  $if(fontsize)$$fontsize$,$endif$
+  $if(papersize)$$papersize$paper,$endif$
+  oneside,
+  openany
+]{$if(documentclass)$$documentclass$$else$report$endif$}
+\usepackage{microtype}
+\usepackage[dutch]{babel}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{flafter}
+\usepackage{geometry}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{calc}
+\usepackage{hyperref}
+\usepackage{bookmark}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+\usepackage{xcolor}
+\usepackage{fancyvrb}
+\newcounter{none}
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\providecommand{\pandocbounded}[1]{#1}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+\newenvironment{Shaded}{}{}
+\newcommand{\AlertTok}[1]{#1}
+\newcommand{\AnnotationTok}[1]{#1}
+\newcommand{\AttributeTok}[1]{#1}
+\newcommand{\BaseNTok}[1]{#1}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{#1}
+\newcommand{\CommentTok}[1]{#1}
+\newcommand{\ConstantTok}[1]{#1}
+\newcommand{\ControlFlowTok}[1]{#1}
+\newcommand{\DataTypeTok}[1]{#1}
+\newcommand{\DecValTok}[1]{#1}
+\newcommand{\DocumentationTok}[1]{#1}
+\newcommand{\DoubleTok}[1]{#1}
+\newcommand{\ErrorTok}[1]{#1}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{#1}
+\newcommand{\FunctionTok}[1]{#1}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{#1}
+\newcommand{\KeywordTok}[1]{#1}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{#1}
+\newcommand{\OtherTok}[1]{#1}
+\newcommand{\PreprocessorTok}[1]{#1}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{#1}
+\newcommand{\SpecialStringTok}[1]{#1}
+\newcommand{\StringTok}[1]{#1}
+\newcommand{\VariableTok}[1]{#1}
+\newcommand{\VerbatimStringTok}[1]{#1}
+\newcommand{\WarningTok}[1]{#1}
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newlength{\cslentryspacingunit}
+\setlength{\cslentryspacingunit}{\parskip}
+\newcommand{\citeproctext}{}
+\newenvironment{CSLReferences}[2]
+  {\begin{list}{}{%
+    \setlength{\itemindent}{0pt}
+    \setlength{\leftmargin}{0pt}
+    \setlength{\parsep}{0pt}
+    \ifodd #1
+      \setlength{\leftmargin}{\cslhangindent}
+      \setlength{\itemindent}{-\cslhangindent}
+    \fi
+    \setlength{\itemsep}{#2\baselineskip}}%
+   \renewcommand{\bibitem}[2][]{\item}}
+  {\end{list}}
+\newcommand{\CSLBlock}[1]{\hfill\break\parbox[t]{\linewidth}{\strut\ignorespaces#1\strut}}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth-\csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+\definecolor{DocumentInk}{HTML}{1F2933}
+\definecolor{AccentColor}{HTML}{A51E37}
+\definecolor{CoverTint}{HTML}{F5F1F2}
+
+$if(geometry)$
+\geometry{$for(geometry)$$geometry$$sep$,$endfor$}
+$endif$
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=$if(linkcolor)$$linkcolor$$else$black$endif$,
+  urlcolor=$if(urlcolor)$$urlcolor$$else$black$endif$,
+  citecolor=$if(linkcolor)$$linkcolor$$else$black$endif$,
+  pdftitle={$if(title)$$title$$endif$},
+  pdfauthor={$if(author)$$author$$endif$}
+}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.7em}
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{2}
+\setlength{\headheight}{16pt}
+
+\addto\captionsdutch{%
+  \renewcommand{\contentsname}{Inhoudsopgave}
+  \renewcommand{\chaptername}{Hoofdstuk}
+  \renewcommand{\appendixname}{Bijlage}
+  \renewcommand{\bibname}{Literatuurlijst}
+}
+
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>0.82\textheight0.82\textheight\else\Gin@nat@height\fi}
+\renewcommand{\tableofcontents}{\@starttoc{toc}}
+\newif\ifDocsmithMainMatterStarted
+\DocsmithMainMatterStartedfalse
+\def\@makechapterhead#1{%
+  \ifDocsmithMainMatterStarted\else
+    \pagenumbering{arabic}%
+    \setcounter{page}{1}%
+    \pagestyle{fancy}%
+    \global\DocsmithMainMatterStartedtrue
+  \fi
+  \vspace*{0pt}%
+  {\parindent \z@ \raggedright \normalfont
+    \ifnum \c@secnumdepth >\m@ne
+      {\color{AccentColor}\sffamily\bfseries\Large \@chapapp\space \thechapter\par\nobreak}
+      \vskip 10pt
+    \fi
+    {\color{DocumentInk}\sffamily\bfseries\Huge #1\par\nobreak}
+    \vskip 24pt
+  }%
+  \markboth{#1}{}}
+\def\@makeschapterhead#1{%
+  \vspace*{0pt}%
+  {\parindent \z@ \raggedright \normalfont
+    {\color{DocumentInk}\sffamily\bfseries\Huge #1\par\nobreak}
+    \vskip 24pt
+  }%
+  \markboth{#1}{}}
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand\section{\@startsection{section}{1}{\z@}%
+  {-3.25ex \@plus -1ex \@minus -.2ex}%
+  {1.2ex \@plus .2ex}%
+  {\normalfont\Large\sffamily\bfseries\color{DocumentInk}}}
+\renewcommand\subsection{\@startsection{subsection}{2}{\z@}%
+  {-2.8ex \@plus -1ex \@minus -.2ex}%
+  {0.9ex \@plus .2ex}%
+  {\normalfont\large\sffamily\bfseries\color{DocumentInk}}}
+\def\fps@figure{htbp}
+\def\fps@table{htbp}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\captionsetup[figure]{position=bottom,font=small,labelfont=bf,justification=centering,singlelinecheck=true,skip=6pt}
+\captionsetup[table]{position=top,font=small,labelfont=bf,justification=raggedright,singlelinecheck=false,skip=5pt}
+\setcounter{topnumber}{2}
+\setcounter{bottomnumber}{1}
+\setcounter{totalnumber}{3}
+\renewcommand{\topfraction}{0.9}
+\renewcommand{\bottomfraction}{0.7}
+\renewcommand{\textfraction}{0.08}
+\renewcommand{\floatpagefraction}{0.8}
+\renewcommand{\dbltopfraction}{0.9}
+\setlength{\textfloatsep}{12pt plus 2pt minus 3pt}
+\setlength{\floatsep}{10pt plus 2pt minus 2pt}
+\setlength{\intextsep}{10pt plus 2pt minus 2pt}
+\setlength{\abovecaptionskip}{6pt}
+\setlength{\belowcaptionskip}{2pt}
+
+\pagestyle{plain}
+\fancyhf{}
+\fancyhead[L]{\sffamily\small\color{DocumentInk}\nouppercase{\leftmark}}
+\fancyhead[R]{\sffamily\small\color{DocumentInk}\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{
+  \fancyhf{}
+  \fancyfoot[C]{\thepage}
+  \renewcommand{\headrulewidth}{0pt}
+}
+
+$if(linestretch)$
+\setstretch{$linestretch$}
+$endif$
+
+\newcommand{\MetaRow}[2]{%
+  \textbf{#1} & #2\\[0.55em]
+}
+\newcommand{\InstitutionName}{$if(institution)$$institution$$else$Hanzehogeschool Groningen$endif$}
+\newcommand{\ProgramName}{$if(programme)$$programme$$elseif(program)$$program$$else$HBO-ICT$endif$}
+\newcommand{\DocumentTypeName}{$if(document_type)$$document_type$$else$Verantwoordingsverslag$endif$}
+\newcommand{\RenderCoverLogo}{%
+  $if(cover_logo_path)$
+  \IfFileExists{$cover_logo_path$}{\includegraphics[width=0.24\textwidth]{$cover_logo_path$}\par\vspace{1.4cm}}{}
+  $elseif(logo_path)$
+  \IfFileExists{$logo_path$}{\includegraphics[width=0.24\textwidth]{$logo_path$}\par\vspace{1.4cm}}{}
+  $else$
+  \IfFileExists{assets/logo-hanze.png}{\includegraphics[width=0.24\textwidth]{assets/logo-hanze.png}\par\vspace{1.4cm}}{%
+    \IfFileExists{assets/logo.png}{\includegraphics[width=0.24\textwidth]{assets/logo.png}\par\vspace{1.4cm}}{}}
+  $endif$
+}
+\newcommand{\RenderTitleLogo}{%
+  $if(title_logo_path)$
+  \IfFileExists{$title_logo_path$}{\includegraphics[width=0.2\textwidth]{$title_logo_path$}\par\vspace{1.2cm}}{\vspace*{0.8cm}}
+  $elseif(logo_path)$
+  \IfFileExists{$logo_path$}{\includegraphics[width=0.2\textwidth]{$logo_path$}\par\vspace{1.2cm}}{\vspace*{0.8cm}}
+  $else$
+  \IfFileExists{assets/logo-hanze.png}{\includegraphics[width=0.2\textwidth]{assets/logo-hanze.png}\par\vspace{1.2cm}}{%
+    \IfFileExists{assets/logo.png}{\includegraphics[width=0.2\textwidth]{assets/logo.png}\par\vspace{1.2cm}}{\vspace*{0.8cm}}}
+  $endif$
+}
+
+\begin{document}
+
+$if(title)$
+\begin{titlepage}
+  \thispagestyle{empty}
+  \colorbox{CoverTint}{
+    \parbox{\dimexpr\textwidth-2\fboxsep\relax}{
+      \vspace*{1.2cm}
+      \RenderCoverLogo
+      {\sffamily\Large\color{DocumentInk} \InstitutionName\par}
+      \vspace{0.35cm}
+      {\sffamily\large\color{DocumentInk} \ProgramName\par}
+      $if(academic_year)$
+      \vspace{0.2cm}
+      {\sffamily\normalsize\color{DocumentInk} Studiejaar $academic_year$\par}
+      $endif$
+      \vspace{2.4cm}
+      {\sffamily\bfseries\fontsize{24}{28}\selectfont\color{DocumentInk} $title$\par}
+      $if(subtitle)$
+      \vspace{0.7cm}
+      {\sffamily\Large\color{DocumentInk} $subtitle$\par}
+      $endif$
+      $if(project_context)$
+      \vspace{1.0cm}
+      {\sffamily\normalsize\color{DocumentInk} $project_context$\par}
+      $endif$
+      \vfill
+      {\sffamily\Large\color{AccentColor} \DocumentTypeName\par}
+      \vspace{0.5cm}
+      $if(location)$
+      {\large\color{DocumentInk} $location$$if(date)$, $date$$endif$\par}
+      $else$
+      {\large\color{DocumentInk} $if(date)$$date$$endif$\par}
+      $endif$
+      \vspace*{1.2cm}
+    }
+  }
+\end{titlepage}
+
+\begin{titlepage}
+  \thispagestyle{empty}
+  \RenderTitleLogo
+  {\sffamily\bfseries\Huge\color{DocumentInk} $title$\par}
+  $if(subtitle)$
+  \vspace{0.5cm}
+  {\sffamily\Large\color{DocumentInk} $subtitle$\par}
+  $endif$
+  \vspace{1.4cm}
+  {\sffamily\large\color{AccentColor} \DocumentTypeName\par}
+  $if(project_context)$
+  \vspace{0.8cm}
+  {\color{DocumentInk}\normalsize $project_context$\par}
+  $endif$
+  \vspace{1.4cm}
+  \renewcommand{\arraystretch}{1.05}
+  \begin{tabular}{@{}p{0.32\textwidth}p{0.62\textwidth}@{}}
+    \MetaRow{Student}{$if(author)$$author$$endif$}
+    $if(student_number)$
+    \MetaRow{Studentnummer}{$student_number$}
+    $elseif(student_id)$
+    \MetaRow{Studentnummer}{$student_id$}
+    $endif$
+    \MetaRow{Opleiding}{\ProgramName}
+    \MetaRow{Instelling}{\InstitutionName}
+    \MetaRow{Documenttype}{\DocumentTypeName}
+    $if(supervisor)$
+    \MetaRow{Begeleider}{$supervisor$}
+    $endif$
+    $if(second_reviewer)$
+    \MetaRow{Tweede beoordelaar}{$second_reviewer$}
+    $elseif(second_reader)$
+    \MetaRow{Tweede beoordelaar}{$second_reader$}
+    $endif$
+    $if(client)$
+    \MetaRow{Opdrachtgever}{$client$}
+    $endif$
+    $if(cohort)$
+    \MetaRow{Cohort}{$cohort$}
+    $endif$
+    $if(academic_year)$
+    \MetaRow{Studiejaar}{$academic_year$}
+    $endif$
+    $if(location)$
+    \MetaRow{Locatie}{$location$}
+    $endif$
+    $if(date)$
+    \MetaRow{Datum}{$date$}
+    $endif$
+    $if(short_title)$
+    \MetaRow{Korte titel}{$short_title$}
+    $endif$
+    $if(version)$
+    \MetaRow{Versie}{$version$}
+    $endif$
+    $if(git_hash)$
+    \MetaRow{Build}{$git_hash$}
+    $endif$
+  \end{tabular}
+  \vfill
+  {\small\color{DocumentInk} Deze repository bevat demo- en validatiemateriaal voor Docsmith. De opzet volgt bewust een compacte thesis-achtige onderwijscontext en valideert het engine-template contract met rijkere metadata.\par}
+\end{titlepage}
+$endif$
+
+\pagenumbering{roman}
+\setcounter{page}{1}
+\pagestyle{plain}
+
+$body$
+
+\end{document}
