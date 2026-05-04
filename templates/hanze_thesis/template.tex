@@ -84,6 +84,7 @@
 \definecolor{DocumentInk}{HTML}{1F2933}
 \definecolor{AccentColor}{HTML}{A51E37}
 \definecolor{CoverTint}{HTML}{F5F1F2}
+\definecolor{CoverPanel}{HTML}{F9F7F6}
 
 $if(geometry)$
 \geometry{$for(geometry)$$geometry$$sep$,$endfor$}
@@ -100,6 +101,7 @@ $endif$
 
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0.7em}
+\pagecolor{white}
 \setcounter{secnumdepth}{3}
 \setcounter{tocdepth}{2}
 \setlength{\headheight}{16pt}
@@ -187,29 +189,44 @@ $if(linestretch)$
 $endif$
 
 \newcommand{\MetaRow}[2]{%
-  \textbf{#1} & #2\\[0.55em]
+  \textbf{#1} & #2\\[0.24em]
 }
-\newcommand{\InstitutionName}{$if(institution)$$institution$$else$Hanzehogeschool Groningen$endif$}
-\newcommand{\ProgramName}{$if(programme)$$programme$$elseif(program)$$program$$else$HBO-ICT$endif$}
-\newcommand{\DocumentTypeName}{$if(document_type)$$document_type$$else$Verantwoordingsverslag$endif$}
+\newcommand{\InstitutionName}{$if(title_page.institution)$$title_page.institution$$elseif(institution)$$institution$$else$Hanzehogeschool Groningen$endif$}
+\newcommand{\ProgramName}{$if(title_page.programme)$$title_page.programme$$elseif(programme)$$programme$$elseif(program)$$program$$else$HBO-ICT$endif$}
+\newcommand{\DocumentTypeName}{$if(title_page.document_type)$$title_page.document_type$$elseif(document_type)$$document_type$$else$Verantwoordingsverslag$endif$}
 \newcommand{\RenderCoverLogo}{%
-  $if(cover_logo_path)$
-  \IfFileExists{$cover_logo_path$}{\includegraphics[width=0.24\textwidth]{$cover_logo_path$}\par\vspace{1.4cm}}{}
+  $if(title_page.branding.cover_logo_path)$
+  \IfFileExists{$title_page.branding.cover_logo_path$}{\includegraphics[width=0.8\linewidth]{$title_page.branding.cover_logo_path$}}{}
+  $elseif(cover_logo_path)$
+  \IfFileExists{$cover_logo_path$}{\includegraphics[width=0.8\linewidth]{$cover_logo_path$}}{}
+  $elseif(title_page.branding.logo_path)$
+  \IfFileExists{$title_page.branding.logo_path$}{\includegraphics[width=0.8\linewidth]{$title_page.branding.logo_path$}}{}
   $elseif(logo_path)$
-  \IfFileExists{$logo_path$}{\includegraphics[width=0.24\textwidth]{$logo_path$}\par\vspace{1.4cm}}{}
+  \IfFileExists{$logo_path$}{\includegraphics[width=0.8\linewidth]{$logo_path$}}{}
   $else$
-  \IfFileExists{assets/logo-hanze.png}{\includegraphics[width=0.24\textwidth]{assets/logo-hanze.png}\par\vspace{1.4cm}}{%
-    \IfFileExists{assets/logo.png}{\includegraphics[width=0.24\textwidth]{assets/logo.png}\par\vspace{1.4cm}}{}}
+  \IfFileExists{assets/logo-hanze.png}{\includegraphics[width=0.8\linewidth]{assets/logo-hanze.png}}{%
+    \IfFileExists{assets/logo.png}{\includegraphics[width=0.8\linewidth]{assets/logo.png}}{}}
   $endif$
 }
 \newcommand{\RenderTitleLogo}{%
-  $if(title_logo_path)$
-  \IfFileExists{$title_logo_path$}{\includegraphics[width=0.2\textwidth]{$title_logo_path$}\par\vspace{1.2cm}}{\vspace*{0.8cm}}
+  $if(title_page.branding.title_logo_path)$
+  \IfFileExists{$title_page.branding.title_logo_path$}{\includegraphics[width=0.17\textwidth]{$title_page.branding.title_logo_path$}\par\vspace{0.5cm}}{\vspace*{0.25cm}}
+  $elseif(title_logo_path)$
+  \IfFileExists{$title_logo_path$}{\includegraphics[width=0.17\textwidth]{$title_logo_path$}\par\vspace{0.5cm}}{\vspace*{0.25cm}}
+  $elseif(title_page.branding.logo_path)$
+  \IfFileExists{$title_page.branding.logo_path$}{\includegraphics[width=0.17\textwidth]{$title_page.branding.logo_path$}\par\vspace{0.5cm}}{\vspace*{0.25cm}}
   $elseif(logo_path)$
-  \IfFileExists{$logo_path$}{\includegraphics[width=0.2\textwidth]{$logo_path$}\par\vspace{1.2cm}}{\vspace*{0.8cm}}
+  \IfFileExists{$logo_path$}{\includegraphics[width=0.17\textwidth]{$logo_path$}\par\vspace{0.5cm}}{\vspace*{0.25cm}}
   $else$
-  \IfFileExists{assets/logo-hanze.png}{\includegraphics[width=0.2\textwidth]{assets/logo-hanze.png}\par\vspace{1.2cm}}{%
-    \IfFileExists{assets/logo.png}{\includegraphics[width=0.2\textwidth]{assets/logo.png}\par\vspace{1.2cm}}{\vspace*{0.8cm}}}
+  \IfFileExists{assets/logo-hanze.png}{\includegraphics[width=0.17\textwidth]{assets/logo-hanze.png}\par\vspace{0.5cm}}{%
+    \IfFileExists{assets/logo.png}{\includegraphics[width=0.17\textwidth]{assets/logo.png}\par\vspace{0.5cm}}{\vspace*{0.25cm}}}
+  $endif$
+}
+\newcommand{\RenderCoverImage}{%
+  $if(title_page.branding.cover_background_path)$
+  \IfFileExists{$title_page.branding.cover_background_path$}{%
+    \includegraphics[width=\textwidth,height=0.34\paperheight,keepaspectratio]{$title_page.branding.cover_background_path$}%
+  }{}%
   $endif$
 }
 
@@ -218,85 +235,166 @@ $endif$
 $if(title)$
 \begin{titlepage}
   \thispagestyle{empty}
-  \colorbox{CoverTint}{
+  \begingroup
+  \setlength{\parskip}{0pt}
+  \vspace*{0.45cm}
+  \colorbox{CoverPanel!96}{
     \parbox{\dimexpr\textwidth-2\fboxsep\relax}{
-      \vspace*{1.2cm}
-      \RenderCoverLogo
-      {\sffamily\Large\color{DocumentInk} \InstitutionName\par}
-      \vspace{0.35cm}
-      {\sffamily\large\color{DocumentInk} \ProgramName\par}
-      $if(academic_year)$
-      \vspace{0.2cm}
-      {\sffamily\normalsize\color{DocumentInk} Studiejaar $academic_year$\par}
-      $endif$
-      \vspace{2.4cm}
-      {\sffamily\bfseries\fontsize{24}{28}\selectfont\color{DocumentInk} $title$\par}
+      \vspace*{0.3cm}
+      {\sffamily\bfseries\fontsize{25}{30}\selectfont\color{DocumentInk} $title$\par}
       $if(subtitle)$
-      \vspace{0.7cm}
+      \vspace{0.22cm}
       {\sffamily\Large\color{DocumentInk} $subtitle$\par}
       $endif$
-      $if(project_context)$
-      \vspace{1.0cm}
-      {\sffamily\normalsize\color{DocumentInk} $project_context$\par}
-      $endif$
-      \vfill
+      \vspace{0.34cm}
       {\sffamily\Large\color{AccentColor} \DocumentTypeName\par}
-      \vspace{0.5cm}
-      $if(location)$
-      {\large\color{DocumentInk} $location$$if(date)$, $date$$endif$\par}
-      $else$
-      {\large\color{DocumentInk} $if(date)$$date$$endif$\par}
+      \vspace{0.16cm}
+      $if(title_page.confidentiality.label)$
+      {\normalsize\color{AccentColor} $title_page.confidentiality.label$\par}
+      \vspace{0.14cm}
       $endif$
-      \vspace*{1.2cm}
+      $if(title_page.location)$
+      {\normalsize\color{DocumentInk} $title_page.location$$if(date)$, $date$$endif$\par}
+      $elseif(location)$
+      {\normalsize\color{DocumentInk} $location$$if(date)$, $date$$endif$\par}
+      $else$
+      {\normalsize\color{DocumentInk} $if(date)$$date$$endif$\par}
+      $endif$
+      \vspace*{0.3cm}
     }
   }
+
+  \vspace{0.45cm}
+  \begin{minipage}[c][0.34\paperheight][c]{\textwidth}
+    \centering
+    \RenderCoverImage
+  \end{minipage}
+  \vfill
+  \colorbox{white}{
+    \parbox{\dimexpr\textwidth-2\fboxsep\relax}{
+      \vspace*{0.42cm}
+      \begin{minipage}[t]{0.62\linewidth}
+        {\sffamily\Large\color{DocumentInk} \InstitutionName\par}
+        $if(title_page.institute)$
+        \vspace{0.12cm}
+        {\sffamily\normalsize\color{DocumentInk} $title_page.institute$\par}
+        $elseif(institute)$
+        \vspace{0.12cm}
+        {\sffamily\normalsize\color{DocumentInk} $institute$\par}
+        $endif$
+        \vspace{0.18cm}
+        {\sffamily\large\color{DocumentInk} \ProgramName\par}
+        $if(title_page.major)$
+        \vspace{0.1cm}
+        {\sffamily\normalsize\color{DocumentInk} Major: $title_page.major$\par}
+        $elseif(major)$
+        \vspace{0.1cm}
+        {\sffamily\normalsize\color{DocumentInk} Major: $major$\par}
+        $endif$
+        $if(title_page.study_year)$
+        \vspace{0.1cm}
+        {\sffamily\normalsize\color{DocumentInk} Studiejaar $title_page.study_year$\par}
+        $elseif(academic_year)$
+        \vspace{0.1cm}
+        {\sffamily\normalsize\color{DocumentInk} Studiejaar $academic_year$\par}
+        $endif$
+      \end{minipage}\hfill
+      \begin{minipage}[c]{0.3\linewidth}
+        \raggedleft
+        \vspace{3cm}
+        \RenderCoverLogo
+      \end{minipage}
+      \vspace*{0.42cm}
+    }
+  }
+  \endgroup
 \end{titlepage}
 
 \begin{titlepage}
   \thispagestyle{empty}
+  \enlargethispage{2\baselineskip}
   \RenderTitleLogo
-  {\sffamily\bfseries\Huge\color{DocumentInk} $title$\par}
+  {\sffamily\bfseries\LARGE\color{DocumentInk} $title$\par}
   $if(subtitle)$
-  \vspace{0.5cm}
-  {\sffamily\Large\color{DocumentInk} $subtitle$\par}
+  \vspace{0.25cm}
+  {\sffamily\large\color{DocumentInk} $subtitle$\par}
   $endif$
-  \vspace{1.4cm}
-  {\sffamily\large\color{AccentColor} \DocumentTypeName\par}
-  $if(project_context)$
-  \vspace{0.8cm}
-  {\color{DocumentInk}\normalsize $project_context$\par}
+  \vspace{0.55cm}
+  {\sffamily\normalsize\color{AccentColor} \DocumentTypeName\par}
+  $if(title_page.project_context)$
+  \vspace{0.35cm}
+  {\color{DocumentInk}\small $title_page.project_context$\par}
+  $elseif(project_context)$
+  \vspace{0.35cm}
+  {\color{DocumentInk}\small $project_context$\par}
   $endif$
-  \vspace{1.4cm}
-  \renewcommand{\arraystretch}{1.05}
-  \begin{tabular}{@{}p{0.32\textwidth}p{0.62\textwidth}@{}}
-    \MetaRow{Student}{$if(author)$$author$$endif$}
-    $if(student_number)$
+  \vspace{0.65cm}
+  \renewcommand{\arraystretch}{0.94}
+  \small
+  \begin{tabular}{@{}p{0.31\textwidth}p{0.63\textwidth}@{}}
+    $if(title_page.author.name)$
+    \MetaRow{Student}{$title_page.author.name$}
+    $elseif(author)$
+    \MetaRow{Student}{$author$}
+    $endif$
+    $if(title_page.author.student_number)$
+    \MetaRow{Studentnummer}{$title_page.author.student_number$}
+    $elseif(student_number)$
     \MetaRow{Studentnummer}{$student_number$}
     $elseif(student_id)$
     \MetaRow{Studentnummer}{$student_id$}
     $endif$
-    \MetaRow{Opleiding}{\ProgramName}
-    \MetaRow{Instelling}{\InstitutionName}
-    \MetaRow{Documenttype}{\DocumentTypeName}
-    $if(supervisor)$
-    \MetaRow{Begeleider}{$supervisor$}
+    \MetaRow{Onderwijsinstelling}{\InstitutionName}
+    $if(title_page.institute)$
+    \MetaRow{Instituut}{$title_page.institute$}
+    $elseif(institute)$
+    \MetaRow{Instituut}{$institute$}
     $endif$
-    $if(second_reviewer)$
+    \MetaRow{Opleiding}{\ProgramName}
+    $if(title_page.major)$
+    \MetaRow{Major}{$title_page.major$}
+    $elseif(major)$
+    \MetaRow{Major}{$major$}
+    $endif$
+    $if(title_page.supervisors.school.name)$
+    \MetaRow{Schoolbegeleider}{$title_page.supervisors.school.name$}
+    $elseif(supervisor)$
+    \MetaRow{Schoolbegeleider}{$supervisor$}
+    $endif$
+    $if(title_page.assessors.first.name)$
+    \MetaRow{Eerste beoordelaar}{$title_page.assessors.first.name$}
+    $elseif(first_reviewer)$
+    \MetaRow{Eerste beoordelaar}{$first_reviewer$}
+    $endif$
+    $if(title_page.assessors.second.name)$
+    \MetaRow{Tweede beoordelaar}{$title_page.assessors.second.name$}
+    $elseif(second_reviewer)$
     \MetaRow{Tweede beoordelaar}{$second_reviewer$}
     $elseif(second_reader)$
     \MetaRow{Tweede beoordelaar}{$second_reader$}
     $endif$
-    $if(client)$
+      $if(title_page.supervisors.company.organization)$
+    \MetaRow{Opdrachtgever}{$title_page.supervisors.company.organization$}
+    $elseif(client)$
     \MetaRow{Opdrachtgever}{$client$}
     $endif$
-    $if(cohort)$
+    $if(title_page.supervisors.company.name)$
+    \MetaRow{Bedrijfsbegeleider}{$title_page.supervisors.company.name$}
+    $endif$
+    $if(title_page.cohort)$
+    \MetaRow{Cohort}{$title_page.cohort$}
+    $elseif(cohort)$
     \MetaRow{Cohort}{$cohort$}
     $endif$
-    $if(academic_year)$
+    $if(title_page.study_year)$
+    \MetaRow{Studiejaar}{$title_page.study_year$}
+    $elseif(academic_year)$
     \MetaRow{Studiejaar}{$academic_year$}
     $endif$
-    $if(location)$
-    \MetaRow{Locatie}{$location$}
+    $if(title_page.location)$
+    \MetaRow{Plaats}{$title_page.location$}
+    $elseif(location)$
+    \MetaRow{Plaats}{$location$}
     $endif$
     $if(date)$
     \MetaRow{Datum}{$date$}
@@ -311,8 +409,24 @@ $if(title)$
     \MetaRow{Build}{$git_hash$}
     $endif$
   \end{tabular}
+  \normalsize
   \vfill
-  {\small\color{DocumentInk} Deze repository bevat demo- en validatiemateriaal voor Docsmith. De opzet volgt bewust een compacte thesis-achtige onderwijscontext en valideert het engine-template contract met rijkere metadata.\par}
+  $if(title_page.branding.cover_image_source)$
+  {\footnotesize\color{DocumentInk} Bron omslagafbeelding: $title_page.branding.cover_image_source$\par}
+  \vspace{0.2cm}
+  $endif$
+  $if(title_page.confidentiality.label)$
+  {\footnotesize\color{DocumentInk}\textbf{$title_page.confidentiality.label$}$if(title_page.confidentiality.note)$: $title_page.confidentiality.note$$endif$\par}
+  \vspace{0.2cm}
+  $endif$
+  $if(title_page.responsibility_statement)$
+  {\footnotesize\color{DocumentInk} $title_page.responsibility_statement$\par}
+  \vspace{0.2cm}
+  $endif$
+  $if(title_page.copyright.notice)$
+  {\footnotesize\color{DocumentInk} $title_page.copyright.notice$\par}
+  \vspace{0.2cm}
+  $endif$
 \end{titlepage}
 $endif$
 
