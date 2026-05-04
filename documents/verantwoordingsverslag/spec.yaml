@@ -1,5 +1,5 @@
 project:
-  slug: analyseverslag
+  slug: verantwoordingsverslag
   template: ../../templates/hanze_thesis
 
 metadata:
@@ -8,7 +8,7 @@ metadata:
   author: Reijer van der Zande
   date: "04 mei 2026"
   title_page:
-    document_type: Analyseverslag
+    document_type: Verantwoordingsverslag
     institution: Hanzehogeschool Groningen
     institute: Institute for Communication, Media & IT
     programme: HBO-ICT
@@ -29,10 +29,10 @@ metadata:
       second:
         name: Rick Hogerhuis
     branding:
-      logo_path: documents/analyseverslag/assets/images/logo-hanze.png
-      cover_background_path: documents/analyseverslag/assets/images/tech_2.jpg
+      logo_path: documents/verantwoordingsverslag/assets/images/logo-hanze.png
+      cover_background_path: documents/verantwoordingsverslag/assets/images/tech_2.jpg
       cover_image_source: "Eigen afbeelding / bron invullen"
-    responsibility_statement: Dit analyseverslag is opgesteld door de student. Inhoudelijke verantwoordelijkheid berust bij de auteur.
+    responsibility_statement: Dit verantwoordingsverslag is opgesteld door de student. Inhoudelijke verantwoordelijkheid berust bij de auteur.
     copyright:
       notice: © 2026 Reijer van der Zande
 
@@ -69,7 +69,7 @@ citations:
 
 output:
   directory: output
-  basename: analyseverslag
+  basename: verantwoordingsverslag
   formats:
     - pdf
 
