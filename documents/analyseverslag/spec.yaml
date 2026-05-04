@@ -47,6 +47,11 @@ document:
       listed: false
   main_matter:
     - 03_inleiding.md
+    - 04_huidige_situatie.md
+    - 05_stakeholders.md
+    - 06_requirements.md
+    - 07_oplossingen.md
+    - 08_vergelijken_en_kiezen.md
     - 10_conclusie_en_aanbevelingen.md
   back_matter: []
   appendices:
