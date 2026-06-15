@@ -55,7 +55,12 @@ document:
     - 10_conclusie_en_aanbevelingen.md
   back_matter: []
   appendices:
-    - 30_bijlage_a_interviewleidraad.md
+    - 30_transcriptie_verpleegkunde.md
+    - 31_transcriptie_BSIT.md
+    - 32_transcriptie_overkoepelend.md
+    - 33_transcriptie_security_privacy.md
+    - 34_transcriptie_HIP.md
+    - 35_transcriptie_brightspace.md
   bibliography:
     enabled: true
     title: Literatuurlijst
