@@ -70,12 +70,12 @@ citations:
   bibliography: references.bib
   csl: csl/apa.csl
 
-# diagrams:
-#   - id: registratieproces
-#     type: mermaid
-#     source: assets/diagrams/registratieproces.mmd
-#     output: assets/generated/registratieproces.png
-#     format: png
+diagrams:
+  - id: huidige_situatie
+    type: mermaid
+    source: assets/diagrams/huidige_workflow.mmd
+    output: assets/generated/huidige_workflow.png
+    format: png
 
 output:
   directory: output
