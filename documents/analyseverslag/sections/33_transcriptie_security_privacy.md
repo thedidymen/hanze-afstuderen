@@ -17,8 +17,8 @@ De gegenereerde tekst is daarna opgeslagen in een tekstbestand en handmatig geco
 
 | Aanwezigen | Rol |
 |---|---|
-| Wouter Knevelbaard | Security | 
-| Arjen Sterenborg | Privacy | 
+| Wouter Knevelbaard | Privacy | 
+| Arjen Sterenborg | Security | 
 | Cor Blom | Projectleider Collabspace | 
 | Reijer van der Zande  | Developer |
 
