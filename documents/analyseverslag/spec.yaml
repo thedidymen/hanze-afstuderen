@@ -76,6 +76,11 @@ diagrams:
     source: assets/diagrams/huidige_workflow.mmd
     output: assets/generated/huidige_workflow.png
     format: png
+  - id: mendelow_matrix
+    type: mermaid
+    source: assets/diagrams/mendelow_matrix.mmd
+    output: assets/generated/mendelow_matrix.png
+    format: png
 
 output:
   directory: output
