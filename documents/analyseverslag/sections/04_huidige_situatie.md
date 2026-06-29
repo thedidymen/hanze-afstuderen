@@ -16,9 +16,9 @@ Het process start met het aanvragen van de plannings data bij de planner. De reg
 
 Binnen Brightspace simuleert de groepstool de tijdslot registratie. Een groep vertegenwoordigt een assesment blok. De groepsnaam geeft de informatie normal thuis hoort in een registratie system, zoals datum, tijd en lokaal. 
 
-Registreren gebeurd door een link in de Brightspace course. Studenten kunnen in een beschikbare groep registreren of deregistreren. Docenten moeten alle groepen bekijken om tot een volledig overzicht te komen. In het onderstaande diagram is een schematische weergaven van het proces. 
+Registreren gebeurd door een link in de Brightspace course. Studenten kunnen in een beschikbare groep registreren of deregistreren. Docenten moeten alle groepen bekijken om tot een volledig overzicht te komen. In het onderstaande diagram (@fig:huidige_workflow) is een schematische weergaven van het proces. 
 
-![Procesdiagram van de huidige situatie](assets/generated/huidige_workflow.png){ width=80% }
+![Procesdiagram van de huidige situatie](assets/generated/huidige_workflow.png){#fig:huidige_workflow width=80% }
 
 ## Probleem analyse
 
@@ -26,32 +26,33 @@ Het huidige process werkt, maar is duidelijke een workaround. De Brigthspace gro
 
 De belangrijkste problemen zijn:  
 
-- Handmatige setup  
-- Weinig flexible  
-- Geen duidelijk overzicht  
-- Privacy  
-- Beperkte herbruikbaarheid  
+- Handmatige setup 
+- Weinig flexible 
+- Geen duidelijk overzicht 
+- Privacy 
+- Beperkte herbruikbaarheid 
 
 Deze problemen maken het proces tijdrovend. Het personneel maakt mometeel creatief gebruik van de de beschikbare tools, maar dit kost extra tijd en risico.  
 
 ## Praktische beperkingen
 
 Pracktische beperkingen die vorm geven aan de huidige situtatie:  
-- De tool moet werken binnen het huidige LMS Brightspace.  
-- Het registratie process moet een onderscheid kunnen maken tussen student en personeel. Afhankelijk van de rol is er andere informatie beschikbaar.  
-- Registraties en annulaties zijn tijdsafhankelijk.  
-- Pauzes moeten ook planbaar zijn.  
-- De planning resource is niet geintergeerd in Brightspace.  
+
+- De tool moet werken binnen het huidige LMS Brightspace. 
+- Het registratie process moet een onderscheid kunnen maken tussen student en personeel. Afhankelijk van de rol is er andere informatie beschikbaar. 
+- Registraties en annulaties zijn tijdsafhankelijk. 
+- Pauzes moeten ook planbaar zijn. 
+- De planning resource is niet geintergeerd in Brightspace. 
 
 ## Scope
 
 De scope is het huidige registratie proces voor praktische assesments. Het kern proces is:  
 
-- Converteer geplande assesment tijdsloten in registratie momenten voor studenten.  
-- Het beschikbaar maken van deze momenten.  
-- Binnen de regels studenten later registreren of deregistreren.  
-- Overzicht genereren voor docenten.  
-- Het ondersteunen van inplannen van assesments zonder onnodige informatie te delen.  
+- Converteer geplande assesment tijdsloten in registratie momenten voor studenten. 
+- Het beschikbaar maken van deze momenten. 
+- Binnen de regels studenten later registreren of deregistreren. 
+- Overzicht genereren voor docenten. 
+- Het ondersteunen van inplannen van assesments zonder onnodige informatie te delen. 
 
 ## Conclusie
 
