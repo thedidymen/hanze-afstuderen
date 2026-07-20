@@ -10,7 +10,7 @@ De gegenereerde tekst is daarna opgeslagen in een tekstbestand en handmatig geco
 
 | | |
 |---|---|
-| Datum | 11 maart 2026 |
+| Datum | 11 mei 2026 |
 | Tijd | 13.30u - 14.00u |
 | Locatie | Hanze Hogeschool, Zernikeplein 11 |
 | Doel gesprek | Stakeholdergesprek HIP voor Sign-Up Tool |
