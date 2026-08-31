@@ -13,13 +13,13 @@ De Sign-up tool raakt verschillende organisatorische lagen. Naast de directe ein
 Het doel van deze analyse is drievoudig:  
 - indentificatie van stakeholders  
 - inzichtlijk krijgen van de verschillende interesses en verantwoordelijkheiden van de stakeholders  
-- vaststellen hoe stakeholders betrokken moeten blijven bij de rest van het project.
+- vaststellen hoe stakeholders betrokken moeten blijven bij de rest van het project.  
 
 Het resultaat van deze analyse vormt de basis voor de requirement analyse en voor de latere oplossings richting. 
 
 ## Overzicht Stakeholders 
 
-De stakeholders zijn geindentificeerd op basis van 3 bronnen: de oorspronkelijke opdracht, de huidige situatie en de stakeholder interviews. De directe stakeholders zijn de gebruikers van de sign-up tool. Een tweede groep bestaat uit de organisatorische en technisch stakeholders. De laatste groep bestaat uit betroken/getroffen stakeholders die niet direct geinterviewd zijn. 
+De stakeholders (@tbl:stakeholder-overview) zijn geindentificeerd op basis van 3 bronnen: de oorspronkelijke opdracht, de huidige situatie en de stakeholder interviews. De directe stakeholders zijn de gebruikers van de sign-up tool. Een tweede groep bestaat uit de organisatorische en technisch stakeholders. De laatste groep bestaat uit betroken/getroffen stakeholders die niet direct geinterviewd zijn. 
 
 | Stakeholders | Rol | Geinterviewd | Relevantie |
 |---|---|---|---|
@@ -142,7 +142,7 @@ De Privacy en Security stakeholders bepalen de requirements van de organisatie t
 
 ## Stakeholderanalyse
 
-De Mendelow matrix in @fig:mendelow_matrix groepeerd stakeholder naar hun invloed en interesse in het project. Deze classificatie is gebaseerd op de stakeholders interviews. In de onderstaande tabel (#tbl:mendelow-explanation) wordt een rationale en een communicatie strategy gegeven. 
+De Mendelow matrix in @fig:mendelow_matrix groepeerd stakeholder naar hun invloed en interesse in het project. Deze classificatie is gebaseerd op de stakeholders interviews. In de onderstaande tabel @tbl:mendelow-explanation wordt een rationale en een communicatie strategy gegeven. 
 
 ![Mendelow matrix voor de  Sign-up Tool stakeholder](assets/generated/mendelow_matrix.png){#fig:mendelow_matrix width=90%}
 

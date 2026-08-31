@@ -11,19 +11,19 @@ De requirements zijn gebaseerd op de analyse van de huidige situatie, de stakeho
 De requirements zijn verkregen uit de stakeholder interviews en de project docuementen. De interview zijn gebruikt om de huidige problemen, gebruikers behoeften, organisatorische beperkingen en risico's. Deze bevindingen vertalen zich in deze requirements. 
 De requirement zijn geen letterlijke overzetting van de stakeholder gesprekken. Opmerkingen als: "studenten kunnem momenteel zien wie er geregistreed is in een tijdslot" vertaalt zich naar een privacy requirement: dat studenten alleen hun eigen registratie en algemene beschikbaarheid van het tijdslot mogen zien. 
 
-Deze bronnen zijn gebruikt voor de requirement analyse:
-- Vepleegkunde interview (VI), 2 maart 2026, bijlage A.
-- BS&IT interview (BII), 2 maart 2026, bijlage B.
-- Privacy & Security interview (PSI), 13 april 2026, bijlage C.
-- Technische Kaders interview (TKI), 20 april 2026, bijlage D.
-- HIP interview (HI), 11 mei 2026, bijlage E.
+Deze bronnen zijn gebruikt voor de requirement analyse:  
+- Vepleegkunde interview (VI), 2 maart 2026, bijlage A.  
+- BS&IT interview (BII), 2 maart 2026, bijlage B.  
+- Privacy & Security interview (PSI), 13 april 2026, bijlage C.  
+- Technische Kaders interview (TKI), 20 april 2026, bijlage D.  
+- HIP interview (HI), 11 mei 2026, bijlage E.  
 - Brightspace interview (BI), 1 juni 2026, bijlage F.
 
 ## Scope en Aannames
 
 De scope van de requirement is het sign-up proces voor educationele momenten zoals praktische assesments, herexamens (praktisch), workshops of vergelijkbare activiteten waar studenten een specifiek moment moeten reserveren. De oplossing dient het proces van Verpleegkunde te ondersteunen, zonder verpleegkunde specifieke ontwerp keuzes te maken zodat er een hanze brede oplossing onstaat.
 
-Binnen dit hoofdstuk zijn de volgende aanames gemaakt:
+Binnen dit hoofdstuk zijn de volgende aanames gemaakt:  
 - Brighspace blijft de hoofd applicatie waarmee studenten en docenten interacteren met de course. 
 - De sigh-up tool ondersteunt planning en registratie, geen cijfers of resultaten verwerkging. 
 - De MVP richt zich op de sign-up workflow voordat integraties met planning, adminitratie system etc. worden toegevoegd. 
@@ -31,7 +31,7 @@ Binnen dit hoofdstuk zijn de volgende aanames gemaakt:
 
 ## Gebruikersgroepen en Rollen
 
-De volgende gebruikersgroepen en rolen zijn gebruikt in de requirements. Deze rollen zijn niet hetzelfde als de organisatorisch stakeholders. Ze beschrijven hoe gebruikers interacteren met het system, en welke informatie en acties gebruiken (zie {#tbl:roles}). 
+De volgende gebruikersgroepen en rolen zijn gebruikt in de requirements. Deze rollen zijn niet hetzelfde als de organisatorisch stakeholders. Ze beschrijven hoe gebruikers interacteren met het system, en welke informatie en acties gebruiken (zie @tbl:roles). 
 
 | Rol | Beschrijving |
 |---|---|
@@ -542,7 +542,7 @@ De MoSCoW methode is geintroduceerd door Clegg en Barker in CASE Method Fast-Tra
 
 In de Must have catagorie zitten de requirements die essentieel zijn voor het project. Zonder deze requirements kan de applicatie niet aan zijn doel voldoen. De Should have zijn requirements die belangrijk zijn en worden verwacht, maar niet nodig zijn voor een werkbare oplossing. Daarnaast zijn er nog requirements die wenselijk en praktisch zijn voor de applicatie, maar een beperkte impact hebben op de bruikbaarheid van de applicatie. Deze vormen de Could have. Als laatste catagorie zijn er nog de Won't have. Deze requirements worden expliciet niet vervult in deze release en kunnen overwogen worden voor een latere release. 
 
-De MoSCoW methode is handig om een onderscheid te maken tussen de globale catagorien, maar biedt geen houvast voor een verder verdeling. Hiervoor krijgen requirements een score. Deze score is de factor tussen het belang en de noodzaak van een requirement. Het belang en de noodzaak worden zo goed mogelijk geschat in de catagorien op een schaal van 1 tot 5, zie tabel {#tbl:criteria}.
+De MoSCoW methode is handig om een onderscheid te maken tussen de globale catagorien, maar biedt geen houvast voor een verder verdeling. Hiervoor krijgen requirements een score. Deze score is de factor tussen het belang en de noodzaak van een requirement. Het belang en de noodzaak worden zo goed mogelijk geschat in de catagorien op een schaal van 1 tot 5, zie tabel @tbl:criteria.
 
 | Score | Belang | Noodzaak |
 |---|---|---|
@@ -555,9 +555,11 @@ De MoSCoW methode is handig om een onderscheid te maken tussen de globale catago
 : Kriteria-tabel {#tbl:criteria}
 
 De numerieke prioriteit volgt uit de onderstaande functie:
-\[
-Priority(r) = Importance(r) \times Necessity(r)
-\]
+$$
+P(r) = I(r) \times N(r)
+$$
+waarbij \(P\) de prioriteit, \(I\) het belang en \(N\) de noodzaak van requirement \(r\) voorstelt.
+
 
 De prioriteits score wordt berekend over de niet Must catagorien. De Must catagorie moet altijd worden voldaan en hebben dus effectief een prioriteits score van oneindig. 
 
