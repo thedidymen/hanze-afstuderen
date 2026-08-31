@@ -534,7 +534,32 @@ To Do: template weghalen.
 
 ## Priorisatie Requirements
 
+De vast gestelde requirements verschillen in het belang die ze hebben binnen het project. Alle requirement represtenteren een behoefte, beperking of een kwaliteits doel, echter hoeven ze niet allemaal op hetzelfde moment geimplementeerd te worden. Om een onderscheid te maken worden de requirements geprioriseerd, hierin wordt een onderscheid gemaakt tussen requirements die noodzakelijk zijn voor de intiele versie en requirements die uitgesteld kunnen worden zonder dat de oplossing onbruikbaar wordt. 
+
 ### Methode
+
+De MoSCoW methode is geintroduceerd door Clegg en Barker in CASE Method Fast-Track: A RAD Approach [@clegg1994]. Hierin is er onderscheid in 4 catagorien: Must, Should have, Could have, Won't have.   
+
+In de Must have catagorie zitten de requirements die essentieel zijn voor het project. Zonder deze requirements kan de applicatie niet aan zijn doel voldoen. De Should have zijn requirements die belangrijk zijn en worden verwacht, maar niet nodig zijn voor een werkbare oplossing. Daarnaast zijn er nog requirements die wenselijk en praktisch zijn voor de applicatie, maar een beperkte impact hebben op de bruikbaarheid van de applicatie. Deze vormen de Could have. Als laatste catagorie zijn er nog de Won't have. Deze requirements worden expliciet niet vervult in deze release en kunnen overwogen worden voor een latere release. 
+
+De MoSCoW methode is handig om een onderscheid te maken tussen de globale catagorien, maar biedt geen houvast voor een verder verdeling. Hiervoor krijgen requirements een score. Deze score is de factor tussen het belang en de noodzaak van een requirement. Het belang en de noodzaak worden zo goed mogelijk geschat in de catagorien op een schaal van 1 tot 5, zie tabel {#tbl:criteria}.
+
+| Score | Belang | Noodzaak |
+|---|---|---|
+| 1 | Weinig contributie aan het project | Niet vereist voor MVP |
+| 2 | Beperkte of local voordeel | Makkelijk uitstelbaar of simpele workaround |
+| 3 | Nuttige toevoeging aan workflow | Nalating geeft ongemak of extra handmatig werk |
+| 4 | Grote toevoeging aan workflow of stakeholder behoefte | Nalating geeft veel extra werk, workaround nog mogelijk |
+| 5 | Ondersteunt project doel | Bijna onmisbaar |
+
+: Kriteria-tabel {#tbl:criteria}
+
+De numerieke prioriteit volgt uit de onderstaande functie:
+\[
+Priority(r) = Importance(r) \times Necessity(r)
+\]
+
+De prioriteits score wordt berekend over de niet Must catagorien. De Must catagorie moet altijd worden voldaan en hebben dus effectief een prioriteits score van oneindig. 
 
 ### MoSCoW 
 
