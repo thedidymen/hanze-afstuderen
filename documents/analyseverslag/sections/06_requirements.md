@@ -24,10 +24,10 @@ Deze bronnen zijn gebruikt voor de requirement analyse:
 De scope van de requirement is het sign-up proces voor educationele momenten zoals praktische assesments, herexamens (praktisch), workshops of vergelijkbare activiteten waar studenten een specifiek moment moeten reserveren. De oplossing dient het proces van Verpleegkunde te ondersteunen, zonder verpleegkunde specifieke ontwerp keuzes te maken zodat er een hanze brede oplossing onstaat.
 
 Binnen dit hoofdstuk zijn de volgende aanames gemaakt:  
-- Brighspace blijft de hoofd applicatie waarmee studenten en docenten interacteren met de course. 
-- De Sign-Up Tool ondersteunt planning en registratie, geen cijfers of resultaten verwerkging. 
-- De MVP richt zich op de sign-up workflow voordat integraties met planning, adminitratie system etc. worden toegevoegd. 
-- Requirements die gericht zijn op toekomstige koppelingen worden als laag-prio of open requirements toegevoegd en zijn geen onderdeel van de MPV scope
+- Brighspace blijft de hoofd applicatie waarmee studenten en docenten interacteren met de course.  
+- De Sign-Up Tool ondersteunt planning en registratie, geen cijfers of resultaten verwerkging.  
+- De MVP richt zich op de sign-up workflow voordat integraties met planning, adminitratie system etc. worden toegevoegd.  
+- Requirements die gericht zijn op toekomstige koppelingen worden als laag-prio of open requirements toegevoegd en zijn geen onderdeel van de MPV scope.  
 
 ## Gebruikersgroepen en Rollen
 
