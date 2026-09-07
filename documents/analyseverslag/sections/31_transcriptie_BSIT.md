@@ -80,7 +80,7 @@ Ja, met de collabspace.
 
 Reijer van der Zande  
  Ja.
-Arno Ik kan me voorstellen dat jij gaat bezig zijn met het sign-up tool. En dan komen er vragenstukken op af. Oké, ik heb het straks klaar. Wie gaat het nou beheren?
+Arno Ik kan me voorstellen dat jij gaat bezig zijn met het Sign-Up Tool. En dan komen er vragenstukken op af. Oké, ik heb het straks klaar. Wie gaat het nou beheren?
 
 Reijer van der Zande  
  Ja, dat is inderdaad een van de vragen die ik nu ook al heb. Hoe gaan we de overdracht doen? Hoe gaan we zorgen dat dingen geborgd gaan worden?
@@ -120,7 +120,7 @@ Nee precies. Nee, precies. Nee, nee. Nee, inderdaad ja. Ja.
 ### ~ 5 Min
 
 Arno de Boer  
-Dus ik denk dat dat een beetje de kern zal zijn van, hè dus bedenk vooral van wat kan misgaan? En wat betekent dat dan? Wat wij hier intern moeten doen om, en dit sign-up tool is ook, ook meteen een hele mooie omdat het ook best wel redelijk strategisch is. Dat wordt echt in het onderwijs ingezet. Dus als we het straks operationeel hebben...
+Dus ik denk dat dat een beetje de kern zal zijn van, hè dus bedenk vooral van wat kan misgaan? En wat betekent dat dan? Wat wij hier intern moeten doen om, en dit Sign-Up Tool is ook, ook meteen een hele mooie omdat het ook best wel redelijk strategisch is. Dat wordt echt in het onderwijs ingezet. Dus als we het straks operationeel hebben...
 
 Cor Blom  
 Ja, je kan het er niet zomaar weer uittrekken.
@@ -129,7 +129,7 @@ Reijer van der Zande
 Nee, want mensen zijn er afhankelijk van. Er gaat een stukje een behoefte vervullen die niet zomaar weer... Er moet op een of andere manier opgelost worden als dat niet... Ja.
 
 Arno de Boer  
-En daar hebben we bewust van aan. Kijk, wat ik ook meteen zeg is van: Dit stukje, die sign-up tool, daarvan kan ik me ook benenemen van: Ja, is er... En we hebben ook wel gezegd: Is daar niet iets voor in de markt bijvoorbeeld? Dus dat is ook meteen... Nou, dat soort vraagstukken ook. Dat zijn ook een van de architectuurkades. Die laat ik zo even zien. Het zijn er elf. Ik wilde er tien.
+En daar hebben we bewust van aan. Kijk, wat ik ook meteen zeg is van: Dit stukje, die Sign-Up Tool, daarvan kan ik me ook benenemen van: Ja, is er... En we hebben ook wel gezegd: Is daar niet iets voor in de markt bijvoorbeeld? Dus dat is ook meteen... Nou, dat soort vraagstukken ook. Dat zijn ook een van de architectuurkades. Die laat ik zo even zien. Het zijn er elf. Ik wilde er tien.
 
 ### ~ 6 Min
 

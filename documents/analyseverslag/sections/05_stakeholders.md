@@ -2,13 +2,13 @@
 
 ## Inleiding
 
-Dit hoofdstuk indentificeerd de stakeholders binnen het Sign-up Tool project en hun relevantie tot het onderzoek en ontwerp proces. De analyse is gebaseert op de opdracht, de huidige situatie en de stakeholder interviews (zie bijlages). Het doel is om tot een zo compleet mogelijk overzicht te komen van de stakeholders. 
+Dit hoofdstuk indentificeerd de stakeholders binnen het Sign-Up Tool project en hun relevantie tot het onderzoek en ontwerp proces. De analyse is gebaseert op de opdracht, de huidige situatie en de stakeholder interviews (zie bijlages). Het doel is om tot een zo compleet mogelijk overzicht te komen van de stakeholders. 
 
 De stakeholder analyse evalueert de stakeholders op basis van de invloede op het project en de interesse in uitkomst. Het doel is om niet aleen vast te stellen wie er betrokken zijn, maar ook hoe elke stakeholder kan bijdragen aan het succes van het project. 
 
 De analyse is gebaseerd op de Mendelow's stakeholder matrix [@mendelow1981]. In deze analyse wordt gebruik gemaakt van de Invloed-Interesse matrix [@pmi2021]. Stakeholders met een hoge invloed en een hoge interesse worden contenu betrokken bij het proces, terwijl stakeholders met een lage invloed gebruikt worden voor domein kennis. 
 
-De Sign-up tool raakt verschillende organisatorische lagen. Naast de directe eindgebruikes binnen Verpleegkunde, raakt de tool ook business architectuur, platform integratie informatie management, privacy, security, etc. Als gevolg hier van kunnen beslissingen niet alleen gebaseerd zijn op de functionele vereisten van de eindgebruikers. De oplossing zal ook moeten voldoen aan Hanze-brede archtectuur principes, technisch standarden en organisatorische verantwoordelijlheden. 
+De Sign-Up Tool raakt verschillende organisatorische lagen. Naast de directe eindgebruikes binnen Verpleegkunde, raakt de tool ook business architectuur, platform integratie informatie management, privacy, security, etc. Als gevolg hier van kunnen beslissingen niet alleen gebaseerd zijn op de functionele vereisten van de eindgebruikers. De oplossing zal ook moeten voldoen aan Hanze-brede archtectuur principes, technisch standarden en organisatorische verantwoordelijlheden. 
 
 Het doel van deze analyse is drievoudig:  
 - indentificatie van stakeholders  
@@ -19,7 +19,7 @@ Het resultaat van deze analyse vormt de basis voor de requirement analyse en voo
 
 ## Overzicht Stakeholders 
 
-De stakeholders (@tbl:stakeholder-overview) zijn geindentificeerd op basis van 3 bronnen: de oorspronkelijke opdracht, de huidige situatie en de stakeholder interviews. De directe stakeholders zijn de gebruikers van de sign-up tool. Een tweede groep bestaat uit de organisatorische en technisch stakeholders. De laatste groep bestaat uit betroken/getroffen stakeholders die niet direct geinterviewd zijn. 
+De stakeholders (@tbl:stakeholder-overview) zijn geindentificeerd op basis van 3 bronnen: de oorspronkelijke opdracht, de huidige situatie en de stakeholder interviews. De directe stakeholders zijn de gebruikers van de Sign-Up Tool. Een tweede groep bestaat uit de organisatorische en technisch stakeholders. De laatste groep bestaat uit betroken/getroffen stakeholders die niet direct geinterviewd zijn. 
 
 | Stakeholders | Rol | Geinterviewd | Relevantie |
 |---|---|---|---|
@@ -38,7 +38,7 @@ De stakeholders (@tbl:stakeholder-overview) zijn geindentificeerd op basis van 3
 | School Verpleegkunde | Huidig afnemer van de tool | Gedeeltelijk | Overkoeplende organisatie van initele gebruikers |
 | Andere Schools | Toekomstige afnemers van de tool | Nee | Mogelijk toekomstige doelgroep |
 
-: Stakeholder overview for the Sign-up Tool project {#tbl:stakeholder-overview}
+: Stakeholder overview for the Sign-Up Tool project {#tbl:stakeholder-overview}
 
 ## Geinterviewde stakeholders
 
@@ -56,7 +56,7 @@ De docenten zijn niet als seperate groep geinterviewd. Mevr. Veenstra is naast h
 
 ### BS&IT / Arno de Boer
 
-Vanuit de business archtectuur is het maken van de Sign-up tool een praktische usecase om te kijken hoe de Hanze zelf software kan gaan ontwikkelen. Wie is de eigenaar? Wie onderhoudt het? Welke standaarden zijn van toepassing?
+Vanuit de business archtectuur is het maken van de Sign-Up Tool een praktische usecase om te kijken hoe de Hanze zelf software kan gaan ontwikkelen. Wie is de eigenaar? Wie onderhoudt het? Welke standaarden zijn van toepassing?
 
 Deze stakeholder heeft veel invloed op het project omdat architectuur principes, plaatsing binnen de organisatie en technnische standaarden een sterke invloed hebben op de richting van de oplossing. De interresse in het project is ook hoogl, omdat het project de input geeft voor richtlijnen voor bredere software ontwikkeling binnen de Hanze. 
 
@@ -68,7 +68,7 @@ Deze stakeholder benoemt ook de privacy risicos van de huidige werkwijze, studen
 
 ### Brightspace / Maurits Hoogerwerf
 
-De Sign-up tool moet beschikbaar zijn vanuit de LMS-context (Brightspace). Met de functioneel beheerder van Brightspace binnen de Hanze is er gekeken naar in hoeverre de huidige functionaliteit, plugins of integratie technieken de huidige usecase kunnen ondersteunen. 
+De Sign-Up Tool moet beschikbaar zijn vanuit de LMS-context (Brightspace). Met de functioneel beheerder van Brightspace binnen de Hanze is er gekeken naar in hoeverre de huidige functionaliteit, plugins of integratie technieken de huidige usecase kunnen ondersteunen. 
 
 Deze stakeholder heeft een grote invloed op de integratie mogelijkheden. De functioneel beheerders zijn niet de eigenaar van het bedrijfsproces, maar beheren wel de omgeving waar mee docenten en leerlingen toegang krijgen de applicatie. 
 
@@ -80,13 +80,13 @@ Het HIP heeft een grote invloed op de integratie en onderhoudbaarheid van de app
 
 ### Informatie management / Ronald Steenstra
 
-Informatie managemant is relevant voor de Sign-Up tool zodat het niet een oplossing wordt die past binnen Verpleegkunde, maar niet meer toepasbaar is binnen de andere Schools binnen de Hanze. Informatie management bewaakt de grens dat het een generieke tool wordt. 
+Informatie managemant is relevant voor de Sign-Up Tool zodat het niet een oplossing wordt die past binnen Verpleegkunde, maar niet meer toepasbaar is binnen de andere Schools binnen de Hanze. Informatie management bewaakt de grens dat het een generieke tool wordt. 
 
 Deze stakeholder heeft een grote interrese in de scope, herbruikbaarheid, procesuitlijning en implementatie. De invloed is groot, zeker zodra dit een Hanze-brede oplosing wordt ipv van een lokaal prototype. 
 
 ### Privacy / Wouter Knevelbaard
 
-Privacy zijn van groot belang voor de Sign-Up tool, door dat de requirements de scope van oplossingen sterk kunnen beperken. Ook is er een groot belang omdat de huidige werkwijze privacy problemen met zich mee brengt, de nieuwe tool moet deze problemen voorkomen. 
+Privacy zijn van groot belang voor de Sign-Up Tool, door dat de requirements de scope van oplossingen sterk kunnen beperken. Ook is er een groot belang omdat de huidige werkwijze privacy problemen met zich mee brengt, de nieuwe tool moet deze problemen voorkomen. 
 
 ### Security / Arjen Sterenborg
 
@@ -96,7 +96,7 @@ Voor security gelden vergelijkbare belangen, maar dan vooral gericht op de secur
 
 Vanuit CollabSpace is het huidige project ontwikkelt. Het huidige project gelt als pilot project om te kijken hoe studenten aan de Hanze software kunnen ontwikkelen voor de Hanze. CollabSpace heeft hierbij dus een belandt voor haalbaarheid, educative waarde, goede documentatie en overdraagbaarheid. 
 
-CollabSpace is niet een eindgebruiker van de Sign-Up tool, maar heeft een sterke invloed op hoe het project wordt uitgevoerd en gedocumenteerd. 
+CollabSpace is niet een eindgebruiker van de Sign-Up Tool, maar heeft een sterke invloed op hoe het project wordt uitgevoerd en gedocumenteerd. 
 
 ## Niet geinterviewde stakeholders
 
@@ -112,7 +112,7 @@ Er is geen interview gedaan met een bredere groep docenten. Vanuit het verpleegk
 
 ### Andere schools
 
-Momenteel wordt de Sign-up tool toe gespist op het gebruik door Verpleegkunde, waar mogelijk wordenn er gekeken om de requerement zo generiek mogelijk te houden. Hiermee wordt getracht om de wijzigingen die nodig zijn voor een generieke tool zo minimaal mogelijk te maken. Binnen deze opdracht wordt hier niet specifiek onderzoek naar gedaan. 
+Momenteel wordt de Sign-Up Tool toe gespist op het gebruik door Verpleegkunde, waar mogelijk wordenn er gekeken om de requerement zo generiek mogelijk te houden. Hiermee wordt getracht om de wijzigingen die nodig zijn voor een generieke tool zo minimaal mogelijk te maken. Binnen deze opdracht wordt hier niet specifiek onderzoek naar gedaan. 
 
 ### Webroom
 
@@ -144,7 +144,7 @@ De Privacy en Security stakeholders bepalen de requirements van de organisatie t
 
 De Mendelow matrix in @fig:mendelow_matrix groepeerd stakeholder naar hun invloed en interesse in het project. Deze classificatie is gebaseerd op de stakeholders interviews. In de onderstaande tabel @tbl:mendelow-explanation wordt een rationale en een communicatie strategy gegeven. 
 
-![Mendelow matrix voor de  Sign-up Tool stakeholder](assets/generated/mendelow_matrix.png){#fig:mendelow_matrix width=90%}
+![Mendelow matrix voor de  Sign-Up Tool stakeholder](assets/generated/mendelow_matrix.png){#fig:mendelow_matrix width=90%}
 
 | Quadrant | Stakeholders | Rationale | Communicatie |
 |---|---|---|---|
