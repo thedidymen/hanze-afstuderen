@@ -593,110 +593,78 @@ De andere requirements zijn primair ingedeeld op de hoofdcatagorien, met de prio
 
 De classificatie van de requirements focussed eerst op het kern proces: het creeeren van evenementen en het registrereb hiervoor. Daarna waaieren we uit naar de processen voor docenten en we eindigen met requirements die meer in niet functionele aard liggen, zoals security en privacy, onderhoudbaarheid, etc. 
 
-\begingroup
-\small
-\setlength{\tabcolsep}{3pt}
-\renewcommand{\arraystretch}{1.15}
+| ID | Requirement | MoSCoW | Imp. | Nec. | Prio. |
+|---|---|---|---:|---:|---:|
+| FN-ETM-01 | Creer Sign-up events | Must | ∞ | ∞ | ∞ |
+| FN-ETM-02 | Vastlegen meta data | Must | ∞ | ∞ | ∞ |
+| FN-ETM-03 | Gereserveerd tijd opdelen in tijdslots | Must | ∞ | ∞ | ∞ |
+| FN-ETM-04 | Variable capaciteit binnen een tijdslot | Must | ∞ | ∞ | ∞ |
+| FN-ETM-09 | Tijdslot status laten zien | Must | ∞ | ∞ | ∞ |
+| FN-ETM-06 | Markeer pauze als niet registreerbaar | Should | 5 | 4 | 20 |
+| FN-ETM-07 | De registratie moet een open en sluit moment kennen | Should | 5 | 4 | 20 |
+| FN-ETM-08 | De registratie kent een annulerings deadline | Should | 4 | 4 | 16 |
+| FN-ETM-11 | Terugkeerende of herbruikbare events structuren | Could | 4 | 3 | 12 |
+| FN-ETM-12 | Rollende uitgave van tijdslots | Could | 4 | 3 | 12 |
+| FN-ETM-10 | Maak tijdslots van geimporteerde plannings data | Won't | 2 | 2 | 4 |
+|  |  |  |  |  |  |
+| FN-SR-01 | Registreren voor een tijdslot | Must | ∞ | ∞ | ∞ |
+| FN-SR-05 | Eigen registratie bekijken | Must | ∞ | ∞ | ∞ |
+| FN-SR-06 | Beschikbaarheid is zichtbaar | Must | ∞ | ∞ | ∞ |
+| FN-SR-09 | Voorkom duplicate registratie | Must | ∞ | ∞ | ∞ |
+| FN-SR-07 | Sign-up events alleen zichtbaar mits relevant | Should | 5 | 4 | 20 |
+| FN-SR-02 | Deregistratie voor annulerings deadline | Should | 4 | 4 | 16 |
+| FN-SR-04 | Wijzigen van registratie | Should | 4 | 4 | 16 |
+| FN-SR-08 | Note of comment door studenten | Won't | 2 | 1 | 2 |
+|  |  |  |  |  |  |
+| FN-DRO-01 | Samenvatten deelnemers overzicht | Must | ∞ | ∞ | ∞ |
+| FN-DRO-02 | Groepsindeling overzicht op basis van tijdslot | Must | ∞ | ∞ | ∞ |
+| FN-DRO-04 | Setup van een event | Must | ∞ | ∞ | ∞ |
+| FN-DRO-05 | Overview van alle deelnemers van een event | Must | ∞ | ∞ | ∞ |
+| FN-DRO-07 | Handmatige registratie studenten | Should | 4 | 4 | 16 |
+| FN-DRO-09 | Bewerk en verwijder events | Should | 4 | 4 | 16 |
+| FN-DRO-10 | Manage event status | Could | 3 | 3 | 9 |
+| FN-DRO-03 | Event beschrijving | Could | 4 | 2 | 8 |
+| FN-DRO-08 | Bulk registratie studenten | Won't | 3 | 2 | 6 |
+|  |  |  |  |  |  |
+| FN-EXP-01 | Genereer deelnemers lijst | Must | ∞ | ∞ | ∞ |
+| FN-EXP-04 | Beperk data export tot het minimum | Must | ∞ | ∞ | ∞ |
+| FN-EXP-03 | Ondersteun export of printbare versie | Should | 4 | 4 | 16 |
+| FN-EXP-02 | Filter deelnemers list per event, datum of docent | Should | 4 | 3 | 12 |
+|  |  |  |  |  |  |
+| FN-CON-01 | Koppelen aan programma en course context | Must | ∞ | ∞ | ∞ |
+| FN-CON-03 | Role based toegang | Must | ∞ | ∞ | ∞ |
+| FN-CON-02 | Evenementen hebben een default setting | Should | 4 | 3 | 12 |
+| FN-CON-04 | Ondersteun generiek gebruik van de Tool | Won't | 4 | 1 | 4 |
+| FN-CON-05 | Scheiding tussen verschillende schools | Won't | 5 | 1 | 5 |
+|  |  |  |  |  |  |
+| NF-PS-01 | Dataminimalisatie | Must | ∞ | ∞ | ∞ |
+| NF-PS-02 | Alleen eigen registratie zichtbaar | Must | ∞ | ∞ | ∞ |
+| NF-PS-03 | De tool registreert geen beoordelings data | Must | ∞ | ∞ | ∞ |
+| NF-PS-07 | Security-by-design | Must | ∞ | ∞ | ∞ |
+| NF-PS-08 | Least privilege | Must | ∞ | ∞ | ∞ |
+| NF-PS-09 | Data retentie en verwijderings regels | Should | 4 | 4 | 16 |
+| NF-PS-04 | Documenteer data flows | Could | 4 | 3 | 12 |
+| NF-PS-05 | Privacy Quickscan | Could | 4 | 2 | 8 |
+| NF-PS-06 | Verwerkingsovereenkomst bij externe partij | Won't | 5 | 1 | 5 |
+|  |  |  |  |  |  |
+| NF-MA-01 | Onderhoudbaar en breed gedragen technology | Must | ∞ | ∞ | ∞ |
+| NF-MA-04 | Scheiding van presentatie, integratie, data | Must | ∞ | ∞ | ∞ |
+| NF-MA-06 | Documenteer technische keuzes | Should | 4 | 5 | 20 |
+| NF-MA-05 | Code review en QA | Should | 4 | 4 | 16 |
+| NF-MA-02 | Eigenaarschap en onderhoud | Could | 5 | 2 | 10 |
+|  |  |  |  |  |  |
+| NF-INT-01 | Sign-Up Tool toegankelijk vanuit Brightspace | Must | ∞ | ∞ | ∞ |
+| NF-INT-02 | Gebruik het Brightspace intergratie mechansime | Must | ∞ | ∞ | ∞ |
+|  |  |  |  |  |  |
+| NF-AUT-01 | De Sign-Up Tool gebruikt SSO | Must | ∞ | ∞ | ∞ |
+| NF-AUT-02 | Ondersteuning van RBAC | Must | ∞ | ∞ | ∞ |
+| NF-AUT-03 | Multi tenant | Won't | 5 | 1 | 5 |
+|  |  |  |  |  |  |
+| NF-BDI-01 | De tool moet overweg kunnen met simultaan gebruik | Must | ∞ | ∞ | ∞ |
+| NF-BDI-02 | Ondersteunt monitoring en logging | Should | 4 | 5 | 20 |
+| NF-BDI-03 | Audit trail | Should | 4 | 4 | 16 |
 
-\begin{longtable}{@{}
-p{1.9cm}
-p{8.0cm}
-p{1.9cm}
-p{0.9cm}
-p{0.9cm}
-p{1.0cm}
-@{}}
-
-\caption{Prioritering requirements}\label{tbl:requirement-priorities}\\
-\textbf{ID} &
-\textbf{Requirement} &
-\textbf{MoSCoW} &
-\textbf{Imp.} &
-\textbf{Nec.} &
-\textbf{Prio.} \\
-\hline
-\endfirsthead
-
-\textbf{ID} &
-\textbf{Requirement} &
-\textbf{MoSCoW} &
-\textbf{Imp.} &
-\textbf{Nec.} &
-\textbf{Prio.} \\
-\hline
-\endhead
-
-FN-ETM-01 & Creer Sign-up events & Must & ∞ & ∞ & ∞ \\
-FN-ETM-02 & Vastlegen meta data & Must & ∞ & ∞ & ∞ \\
-FN-ETM-03 & Gereserveerd tijd opdelen in tijdslots & Must & ∞ & ∞ & ∞ \\
-FN-ETM-04 & Variable capaciteit binnen een tijdslot & Must & ∞ & ∞ & ∞ \\
-FN-ETM-09 & Tijdslot status laten zien & Must & ∞ & ∞ & ∞ \\
-FN-ETM-06 & Markeer pauze als niet registreerbaar & Should & 5 & 4 & 20 \\
-FN-ETM-07 & De registratie moet een open en sluit moment kennen & Should & 5 & 4 & 20 \\
-FN-ETM-08 & De registratie kent een annulerings deadline & Should & 4 & 4 & 16 \\
-FN-ETM-11 & Terugkeerende of herbruikbare events structuren & Could & 4 & 3 & 12 \\
-FN-ETM-12 & Rollende uitgave van tijdslots & Could & 4 & 3 & 12 \\
-FN-ETM-10 & Maak tijdslots van geimporteerde plannings data & Won't & 2 & 2 & 4 \\
-
-FN-SR-01 & Registreren voor een tijdslot & Must & ∞ & ∞ & ∞ \\
-FN-SR-05 & Eigen registratie bekijken & Must & ∞ & ∞ & ∞ \\
-FN-SR-06 & Beschikbaarheid is zichtbaar & Must & ∞ & ∞ & ∞ \\
-FN-SR-09 & Voorkom duplicate registratie & Must & ∞ & ∞ & ∞ \\
-FN-SR-07 & Sign-up events alleen zichtbaar mits relevant & Should & 5 & 4 & 20 \\
-FN-SR-02 & Deregistratie voor annulerings deadline & Should & 4 & 4 & 16 \\
-FN-SR-04 & Wijzigen van registratie & Should & 4 & 4 & 16 \\
-FN-SR-08 & Note of comment door studenten & Won't & 2 & 1 & 2 \\
-
-FN-DRO-01 & Samenvatten deelnemers overzicht & Must & ∞ & ∞ & ∞ \\
-FN-DRO-02 & Groepsindeling overzicht op basis van tijdslot & Must & ∞ & ∞ & ∞ \\
-FN-DRO-04 & Setup van een event & Must & ∞ & ∞ & ∞ \\
-FN-DRO-05 & Overview van alle deelnemers van een event & Must & ∞ & ∞ & ∞ \\
-FN-DRO-07 & Handmatige registratie studenten & Should & 4 & 4 & 16 \\
-FN-DRO-09 & Bewerk en verwijder events & Should & 4 & 4 & 16 \\
-FN-DRO-10 & Manage event status & Could & 3 & 3 & 9 \\
-FN-DRO-03 & Event beschrijving & Could & 4 & 2 & 8 \\
-FN-DRO-08 & Bulk registratie studenten & Won't & 3 & 2 & 6 \\
-
-FN-EXP-01 & Genereer deelnemers lijst & Must & ∞ & ∞ & ∞ \\
-FN-EXP-04 & Beperk data export tot het minimum & Must & ∞ & ∞ & ∞ \\
-FN-EXP-03 & Ondersteun export of printbare versie & Should & 4 & 4 & 16 \\
-FN-EXP-02 & Filter deelnemers list per event, datum of docent & Should & 4 & 3 & 12 \\
-
-FN-CON-01 & Koppelen aan programma en course context & Must & ∞ & ∞ & ∞ \\
-FN-CON-03 & Role based toegang & Must & ∞ & ∞ & ∞ \\
-FN-CON-02 & Evenementen hebben een default setting & Should & 4 & 3 & 12 \\
-FN-CON-04 & Ondersteun generiek gebruik van de Tool & Won't & 4 & 1 & 4 \\
-FN-CON-05 & Scheiding tussen verschillende schools & Won't & 5 & 1 & 5 \\
-
-NF-PS-01 & Dataminimalisatie & Must & ∞ & ∞ & ∞ \\
-NF-PS-02 & Alleen eigen registratie zichtbaar & Must & ∞ & ∞ & ∞ \\
-NF-PS-03 & De tool registreert geen beoordelings data & Must & ∞ & ∞ & ∞ \\
-NF-PS-07 & Security-by-design & Must & ∞ & ∞ & ∞ \\
-NF-PS-08 & Least privilege & Must & ∞ & ∞ & ∞ \\
-NF-PS-09 & Data retentie en verwijderings regels & Should & 4 & 4 & 16 \\
-NF-PS-04 & Documenteer data flows & Could & 4 & 3 & 12 \\
-NF-PS-05 & Privacy Quickscan & Could & 4 & 2 & 8 \\
-NF-PS-06 & Verwerkingsovereenkomst bij externe partij & Won't & 5 & 1 & 5 \\
-
-NF-MA-01 & Onderhoudbaar en breed gedragen technology & Must & ∞ & ∞ & ∞ \\
-NF-MA-04 & Scheiding van presentatie, integratie, data & Must & ∞ & ∞ & ∞ \\
-NF-MA-06 & Documenteer technische keuzes & Should & 4 & 5 & 20 \\
-NF-MA-05 & Code review en QA & Should & 4 & 4 & 16 \\
-NF-MA-02 & Eigenaarschap en onderhoud & Could & 5 & 2 & 10 \\
-
-NF-INT-01 & Sign-Up Tool toegankelijk vanuit Brightspace & Must & ∞ & ∞ & ∞ \\
-NF-INT-02 & Gebruik het Brightspace intergratie mechansime & Must & ∞ & ∞ & ∞ \\
-
-NF-AUT-01 & De Sign-Up Tool gebruikt SSO & Must & ∞ & ∞ & ∞ \\
-NF-AUT-02 & Ondersteuning van RBAC & Must & ∞ & ∞ & ∞ \\
-NF-AUT-03 & Multi tenant & Won't & 5 & 1 & 5 \\
-
-NF-BDI-01 & De tool moet overweg kunnen met simultaan gebruik & Must & ∞ & ∞ & ∞ \\
-NF-BDI-02 & Ondersteunt monitoring en logging & Should & 4 & 5 & 20 \\
-NF-BDI-03 & Audit trail & Should & 4 & 4 & 16 \\
-
-\end{longtable}
-\endgroup
+: Prioritering requirements {#tbl:requirement-priorities column-widths="19,80,19,9,9,10"}
 
 ## Conclusie
 
