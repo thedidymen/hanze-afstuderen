@@ -664,7 +664,7 @@ De classificatie van de requirements focussed eerst op het kern proces: het cree
 | NF-BDI-02 | Ondersteunt monitoring en logging | Should | 4 | 5 | 20 |
 | NF-BDI-03 | Audit trail | Should | 4 | 4 | 16 |
 
-: Prioritering requirements {#tbl:requirement-priorities column-widths="19,80,19,9,9,10"}
+: Prioritering requirements {#tbl:requirement-priorities column-widths="24,90,14,7,7,7"}
 
 ## Conclusie
 
