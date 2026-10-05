@@ -79,12 +79,12 @@ Bron: VI: ~10 min, BI ~6-8 min.
 Stakeholders: Regisseur, docenten, studenten.  
 Uitleg: De kern van het probleem is niet alleen het toekennen van de totale tijd, maar ook het opdelen in registratie momenten.  
 
-#### FN-ETM-04 - Variable capaciteit binnen een tijdslot
+#### FN-ETM-04 - Capaciteit van tijdslots
 
-Requirements: Binnen een tijdslot is de capaciteit configureerbaar.  
+Requirements: Binnen een event moet het mogelijk zijn om de capaciteit van tijdslots te bepalen. De oplossing moet zowel individuele als groepsregistraties ondersteunen, bijvoorbeeld één of meerdere studenten per tijdslot.  
 Bron: VI: ~0-3 min, BI ~6 min.  
 Stakeholders: Regiseur, docenten, studenten.  
-Uitleg: Binnen het huidige system laat geen makkelijke variatie toe, terwijl 1, meerdere en een range van studenten wenselijk is.  
+Uitleg: Binnen het huidige systeem is de capaciteit van registratiemomenten beperkt flexibel in te richten. Voor verschillende assessments kan een andere groepsgrootte nodig zijn. De oplossing moet daarom verschillende capaciteiten voor events kunnen ondersteunen, zonder dat voor ieder afzonderlijk tijdslot noodzakelijkerwijs een afwijkende capaciteit ingesteld hoeft te worden.  
 
 #### FN-ETM-06 - Markeer pauze als niet registreerbaar
 
@@ -196,7 +196,7 @@ Uitleg: Duplicate registraties ondermijnen de capaciteits management en planning
 
 ### Docent en Regiseur Overzicht
 
-To do: uitzoeken hoe de structuur binnen brightspace werkt. Module => Course => studenten / Module => Course => klas/docent => studenten / of nog iets anders... waar werkt de Sign-Up Tool? course niveau / klas niveau
+TO DO: uitzoeken hoe de structuur binnen brightspace werkt. Module => Course => studenten / Module => Course => klas/docent => studenten / of nog iets anders... waar werkt de Sign-Up Tool? course niveau / klas niveau
 
 #### FN-DRO-01 - Samenvatten deelnemers overzicht
 
@@ -219,7 +219,7 @@ Bron: VI: ~3-4 min.
 Stakeholders: Regisseur, docenten, studenten.  
 Uitleg: Docenten willen weten welk assesment een student doet en of de requirements, zoals een vaardighedenkaart aan zijn voldaan.  
 
-To do: uitzoeken wie hier iets moet doen... eisen van uit de docent of invul oefening vanuit de student?
+TO DO: uitzoeken wie hier iets moet doen... eisen van uit de docent of invul oefening vanuit de student?
 
 #### FN-DRO-04 - Setup van een event
 
@@ -235,7 +235,7 @@ Bron: VI: ~6 min, PSI: ~4 min.
 Stakeholders: Regisseur, docenten, studenten, privacy & security.  
 Uitleg: Docenten kunnen een assesment uitvoeren voor collega's en hebben daarmee een event level overview nodig en niet alleen hun eigen studenten.  
 
-To do: Zie hier boven, uitzoeken wat hier nu echt de functionele eis is. 
+TO DO: Zie hier boven, uitzoeken wat hier nu echt de functionele eis is. 
 
 #### FN-DRO-07 - Handmatige registratie studenten
 
@@ -260,7 +260,7 @@ Bron: ? assignment brief.
 Stakeholders: Regisseur, docenten, studenten.  
 Uitleg: Regisseurs en docenten moeten een event kunnen opzetten, bewereken en verwijderen. De implementatie moet wel safeguards hebben zodra er registraties zijn voor een event.  
 
-To do: bron vaststellen, safeguard uitwerken.
+TO DO: bron vaststellen, safeguard uitwerken.
 
 #### FN-DRO-10 - Manage event status
 
@@ -271,7 +271,7 @@ Uitleg: Explicite statusen maken de levencycle van het event duidelijk en begrij
 
 ### Exports
 
-To Do: Dubbelen met vorig groep?
+TO DO: Dubbelen met vorig groep?
 
 #### FN-EXP-01 - Genereer deelnemers lijst
 
@@ -317,7 +317,7 @@ Bron: VI: ~10-16 min.
 Stakeholders: Regisseur, docenten.  
 Uitleg: Het opzetten van een evenement is repetatief werk. Het instellen van defaults reduceert handmatige setup.  
 
-To Do: is het uitschrijven van instelbare settings niet handiger? Mist dat niet?
+TO DO: is het uitschrijven van instelbare settings niet handiger? Mist dat niet?
 
 #### FN-CON-03 - Role based toegang
 
@@ -326,7 +326,7 @@ Bron: VI: ~4-6 min, PSI: ~4 min.
 Stakeholders: Regisseur, docenten, studenten, beheerder.  
 Uitleg: Verschillende rollen hebben verschillende functionaliteit en zichtbaarheid. Role configuratie is vereist voor de ondersteuning van gebruik en privacy.  
 
-To Do: Deze moet beter worden uitgewerkt. Check de bronnen. 
+TO DO: Deze moet beter worden uitgewerkt. Check de bronnen. 
 
 #### FN-CON-04 - Ondersteun generiek gebruik van de Tool
 
@@ -342,7 +342,7 @@ Bron: VI: ~11 min.
 Stakeholders: Regisseur, docenten, studenten.  
 Uitleg: Er is een duidelijke scheiding tussen schools, courses binnen de tool.  
 
-To do: waarin verschilt deze requirement van FN-CON-01
+TO DO: waarin verschilt deze requirement van FN-CON-01
 
 ## Niet Functionele requirements
 
@@ -355,7 +355,7 @@ Bron: PSI: ~8 min, ~32-33 min.
 Stakeholders: Docenten, studenten, privacy & security, functioneel manager.  
 Uitleg: Door dataminimalisatie neemt het risico op een privacy en security risco's af.  
 
-To do: Verpleegkunde noemt deze requirement ook... waar?
+TO DO: Verpleegkunde noemt deze requirement ook... waar?
 
 #### NF-PS-02 - Alleen eigen registratie zichtbaar
 
@@ -385,7 +385,7 @@ Bron: PSI: ~32-33 min.
 Stakeholders: Privacy & security, BS&IT, Verpleegkunde.  
 Uitleg: Het project dient een privacy quickscan te doen voordat echte personlijke data door de tool word gebruikt.  
 
-To do: Stakeholderlijst checken of we deze zo willen uitbreiden. 
+TO DO: Stakeholderlijst checken of we deze zo willen uitbreiden. 
 
 #### NF-PS-06 - Verwerkingsovereenkomst bij externe partij
 
@@ -424,7 +424,7 @@ Bron: BII: ~6-8 min, TKI: ~7-9 min, HI: ~3-6 min.
 Stakeholders: BS&IT, technisch manager, collabspace.  
 Uitleg: De benodigde kennis en kunde om de applicatie te onderhouden moet op breed gedragen technologien gebaseerd zijn. Hiermee moet de applicatie makkelijk overdraagbaar zijn en het onderhoud geen specialisisch kennnis vereisen.  
 
-To Do: stakeholders?
+TO DO: stakeholders?
 
 #### NF-MA-02 - Eigenaarschap en onderhoud
 
@@ -441,7 +441,7 @@ Bron: BII: ~11 min, architectuurkaders.
 Stakeholders: BS&IT, HIP, technisch manager.  
 Uitleg: De scheiding van lagen maakt de applicatie beter te onderhouden en te beveiligen. Daarnaast dwingt de scheiding tot expliciete keuzes tav verwerking en opslag.  
 
-To Do: architectuurkaders uitzoeken. 
+TO DO: architectuurkaders uitzoeken. 
 
 #### NF-MA-05 - Code review en QA
 
@@ -466,7 +466,7 @@ Bron: VI: ~6-7 min, BI: ~10-14 min.
 Stakeholders: Regisseur, docenten, studenten, Brightspace engineers.  
 Uitleg: Brigthspace is de LMS vanuit de Hanze die studenten en docenten gebruiken om het onderwijs digitaal aan te bieden.  
 
-To Do: Stakeholder: Brightspace engineers. 
+TO DO: Stakeholder: Brightspace engineers. 
 
 #### NF-INT-02 - Gebruik het Brightspace intergratie mechansime
 
@@ -527,7 +527,7 @@ Bron: BII: ~4-5 min, PSI: ~10-11 min.
 Stakeholders: privacy & security, technisch manager.  
 Uitleg: Wijzigingen in registraties en events configuratie kunnen effect hebben op studenten en de planning. Door deze op te slaan is het mogelijk te reconstrueren wat er is gebeurt.  
 
-To do: NF-BDI-02 en NF-BDI-03 fact checken in de interviews en aanscherpen, nuanceren... mogelijk hetzelfde?
+TO DO: NF-BDI-02 en NF-BDI-03 fact checken in de interviews en aanscherpen, nuanceren... mogelijk hetzelfde?
 
 ### Template:
 
@@ -538,7 +538,7 @@ Bron: VI: ~1 min, BII: ~1 min, PSI: ~1 min, TKI: ~1 min, HI: ~1 min, BI: ~1 min.
 Stakeholders: Regisseur, docenten, studenten, privacy & security, functioneel manager.  
 Uitleg:  
 
-To Do: template weghalen. 
+TO DO: template weghalen. 
 
 ## Priorisatie Requirements
 
@@ -598,7 +598,7 @@ De classificatie van de requirements focussed eerst op het kern proces: het cree
 | FN-ETM-01 | Creer Sign-up events | Must | ∞ | ∞ | ∞ |
 | FN-ETM-02 | Vastlegen meta data | Must | ∞ | ∞ | ∞ |
 | FN-ETM-03 | Gereserveerd tijd opdelen in tijdslots | Must | ∞ | ∞ | ∞ |
-| FN-ETM-04 | Variable capaciteit binnen een tijdslot | Must | ∞ | ∞ | ∞ |
+| FN-ETM-04 | Capaciteit van tijdslots | Must | ∞ | ∞ | ∞ |
 | FN-ETM-09 | Tijdslot status laten zien | Must | ∞ | ∞ | ∞ |
 | FN-ETM-06 | Markeer pauze als niet registreerbaar | Should | 5 | 4 | 20 |
 | FN-ETM-07 | De registratie moet een open en sluit moment kennen | Should | 5 | 4 | 20 |
