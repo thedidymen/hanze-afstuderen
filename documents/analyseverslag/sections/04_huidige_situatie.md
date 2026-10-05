@@ -6,7 +6,7 @@ Dit hoofdstuk beschrijft het huidige registratieproces voor praktijk assessments
 
 ## Context
 
-De Hanze gebruikt Brightspace als Learning Management Systeem (LMS). Voor praktische assesments schrijven studenten zich in voor een specifiek moment. Deze momenten zijn gelinkt aan beschikbare lokalen, datum, tijd, vak en docenten.  
+De Hanze gebruikt Brightspace als Learning Management Systeem (LMS). Voor praktische assessments schrijven studenten zich in voor een specifiek moment. Deze momenten zijn gelinkt aan beschikbare lokalen, datum, tijd, vak en docenten.  
 Het huidig proces gebruikt geen specifieke registratie tool. In plaats daarvan wordt de `Group`-tool van Brightspace ingezet als workaround. Mederwerkers gebruiken groepen als specifiek tijdslot en de groepnaam als beschrijving voor datum, tijd en locatie. Studenten kunnen registreren door een van de groepen te joinen. 
 De huidige workaround bestaat omdat Brightspace zelf de vereiste registratie functionaliteit niet ondersteunt. Vergelijkbare behoeftes bestaan Hanze-breed, ook bij andere schools. 
 

@@ -195,7 +195,7 @@ Cor Blom 13:02
 Nee, 
 
 Reijer van der Zande 13:05  
-maar voor mij liggen er inderdaad momenteel nog heel veel oplossingen open. Één van de oplossing is volgens mij een maatwerk oplossing. En volgens mij een deel van dit gesprek is in ieder geval om uit te zoeken wat daar de opties voor zijn binnen HIP. Nou, We zijn inderdaad nog gewoon aan het kijken wat wat alle mogelijke oplossingen zijn.
+maar voor mij liggen er inderdaad momenteel nog heel veel oplossingen open. Één van de oplossing is volgens mij een maatwerkoplossing. En volgens mij een deel van dit gesprek is in ieder geval om uit te zoeken wat daar de opties voor zijn binnen HIP. Nou, We zijn inderdaad nog gewoon aan het kijken wat wat alle mogelijke oplossingen zijn.
 
 Cor Blowm 13:27  
 Ja. Ja stel nou even even voor ons, hè? Het is ook een stageopdracht/afstudeeropdracht en los van de geldigheid van de applicatie zelf nog dat verstandig is of niet één van de opdrachten die we inderdaad erin In de gedefinieerd is. Inderdaad kijken van OK stel, er wordt iets van een applicatie gebouwd of iets van zelfbouw en dan zou je er samenwerken met Henk willen doen. Hoe zou dat zoiets kun?

@@ -548,8 +548,6 @@ De MoSCoW-methode is geïntroduceerd door Clegg en Barker in CASE Method Fast-Tr
 
 De categorie Must bevat de requirements die essentieel zijn voor het project. Zonder deze requirements kan de applicatie haar doel niet bereiken. Should-requirements zijn belangrijk en worden verwacht, maar zijn niet noodzakelijk voor een werkbare oplossing. Daarnaast zijn er requirements die wenselijk en praktisch zijn, maar een beperkte invloed hebben op de bruikbaarheid van de applicatie. Deze vallen in de categorie Could. De laatste categorie is Won't. Deze requirements worden in deze release expliciet niet gerealiseerd en kunnen voor een latere release worden overwogen. 
 
-De MoSCoW-methode is handig om onderscheid te maken tussen de hoofdcategorieën, maar biedt geen houvast voor een verdere verdeling. Daarom krijgen requirements een score. Deze score is het product van het belang en de noodzaak van een requirement. Beide worden zo goed mogelijk ingeschat op een schaal van 1 tot 5, zie tabel @tbl:criteria.
-
 | Score | Belang | Noodzaak |
 |---|---|---|
 | 1 | Weinig bijdrage aan het project | Niet vereist voor de MVP |
@@ -559,6 +557,8 @@ De MoSCoW-methode is handig om onderscheid te maken tussen de hoofdcategorieën,
 | 5 | Ondersteunt het projectdoel | Bijna onmisbaar |
 
 : Criteria-tabel {#tbl:criteria}
+
+De MoSCoW-methode is handig om onderscheid te maken tussen de hoofdcategorieën, maar biedt geen houvast voor een verdere verdeling. Daarom krijgen requirements een score. Deze score is het product van het belang en de noodzaak van een requirement. Beide worden zo goed mogelijk ingeschat op een schaal van 1 tot 5, zie tabel @tbl:criteria.
 
 De numerieke prioriteit volgt uit de onderstaande functie:  
 
