@@ -39,7 +39,7 @@ Arjen Sterenborg 0:23
 Ik zie daar even op aansluiten dan of anders zoon. Je moet dan wel je camera en je microfoon eraan zetten. Wouter, want dat zit er blijkbaar standaard uit Als je gaat opnemen.
 
 Reijer van der Zande  0:46  
-Dat was het kijk, ik zat al te zoeken naar wat daar gebeurde.
+Dat was het kijk, ik zat al te zoeken naar wat daar gebeurte.
 
 Wouter Knevelbaard 0:49  
 Ben ik weer. Dank je.

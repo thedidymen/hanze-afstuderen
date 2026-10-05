@@ -298,7 +298,7 @@ Ik heb hem wel vanochtend tegen verpleegkunde aangekaart. Dat het doel ook is om
 ### ~ 18 min
 
 Arno de Boer  
-Voorzichtig, ja. Voorzichtig zegt mijn ervaring op dit moment bij gebruik het niet in het deden. Maar ik merk wel dat zorg over het algemeen redelijk ook generiek toepasbaar is op veel plekken. Ik merk dat daar gewoon de processen, het is wel volwassener dan...
+Voorzichtig, ja. Voorzichtig zegt mijn ervaring op dit moment bij gebruik het niet in het deden. Maar ik merk wel dat zorg over het algemeen redelijk ook generiek toepasbaar is op veel plekken. Ik merk dat daar gewoon de procesen, het is wel volwassener dan...
 Nou, dat is goed.
 
 Reijer van der Zande  
@@ -494,7 +494,7 @@ hebben is... De Hanse weet welke... informatie ze waarom verwerkt. Alleen die ui
 
 Arno de Boer  
 En als je het niet kan, dan ga je iets verliezen, waar je nooit, never nooit meer... blijven weten wat die code doet, waarom die dat doet, en moet je die code ook kunnen volgen. En als je het niet kan, dan ga je iets verliezen waar je nooit, never, nooit meer recht kan brengen. Dus dat is een hele mooie: weet waar je mee bezig bent.
-En eigenlijk geldt dat voor de Hanze met processen. Wij moeten ook zeggen dat wij onze processen beheersen, net zoals Bol.com haar processen beheerst, moeten wij dat ook. Even strategische inzet van softwareontwikkeling. Ik wilde nog een term toevoegen, of een principe: 'high value, low risk'-principe, wilde ik introduceren. Alleen toen bedacht ik mij: misschien is die net niet helemaal, maar dat is wel een beetje waar ik naartoe wil. Als je kijkt naar een onderwijsportaal, dat is high value. Als je als student hier binnenkomt, moet je nu een studie doen voordat je alle systemen weet te werken, zonder dat je daar een portaal tussen hebt zitten en die brengt alles bij elkaar en die laat jou...
+En eigenlijk geldt dat voor de Hanze met procesen. Wij moeten ook zeggen dat wij onze procesen beheersen, net zoals Bol.com haar procesen beheerst, moeten wij dat ook. Even strategische inzet van softwareontwikkeling. Ik wilde nog een term toevoegen, of een principe: 'high value, low risk'-principe, wilde ik introduceren. Alleen toen bedacht ik mij: misschien is die net niet helemaal, maar dat is wel een beetje waar ik naartoe wil. Als je kijkt naar een onderwijsportaal, dat is high value. Als je als student hier binnenkomt, moet je nu een studie doen voordat je alle systemen weet te werken, zonder dat je daar een portaal tussen hebt zitten en die brengt alles bij elkaar en die laat jou...
 
 ### ~ 29 min
 
@@ -505,7 +505,7 @@ Cor Blom
 Je hebt gewoon nog steeds die Brightspace.
 
 Arno de Boer  
-Je hebt nog steeds die Brightspace, maar dat is een beetje de dingwijze van 'high value, low risk'. Eigenlijk wil je niet die grote bedrijfscritische moeders, die die grote bedrijfscritische Maar dat is een beetje de dingwijze van high value, low risk. Eigenlijk wil je niet die grote bedrijfscritische software... Het moet gewoon doorgaan. Daarom hebben we ontwikkeling van intuïtieve betalen. Overbruggingsfunctioniteit, daar valt bijvoorbeeld deze denk ik ook onder. En dat is eigenlijk iets wat nog niet door de leverancier wordt gedaan, maar we willen het wel gebruiken. Mobiele apps. En wat mij betreft, die tweede kan er niet hard genoeg aan. Dat moet ook gewoon met vergrijzing en zo. We moeten zorgen dat wij onze ondersteunende processen zo veel mogen digitaliseren.
+Je hebt nog steeds die Brightspace, maar dat is een beetje de dingwijze van 'high value, low risk'. Eigenlijk wil je niet die grote bedrijfscritische moeders, die die grote bedrijfscritische Maar dat is een beetje de dingwijze van high value, low risk. Eigenlijk wil je niet die grote bedrijfscritische software... Het moet gewoon doorgaan. Daarom hebben we ontwikkeling van intuïtieve betalen. Overbruggingsfunctioniteit, daar valt bijvoorbeeld deze denk ik ook onder. En dat is eigenlijk iets wat nog niet door de leverancier wordt gedaan, maar we willen het wel gebruiken. Mobiele apps. En wat mij betreft, die tweede kan er niet hard genoeg aan. Dat moet ook gewoon met vergrijzing en zo. We moeten zorgen dat wij onze ondersteunende procesen zo veel mogen digitaliseren.
 
 ### ~ 30 min
 
@@ -622,7 +622,7 @@ Cor Blom
 Dankjewel.
 
 Arno de Boer  
-Ja. En softwareontwikkeling wordt ingebed in ons bedrijf, in IV-processen. Dus wat we doen, als er een verzoek binnenkomt, er komt geen verzoek aan software binnen. Er komt een functionele vraag binnen. En wij zijn informatiemanager om te zeggen van nou, dit lijkt me nou welecht iets...
+Ja. En softwareontwikkeling wordt ingebed in ons bedrijf, in IV-procesen. Dus wat we doen, als er een verzoek binnenkomt, er komt geen verzoek aan software binnen. Er komt een functionele vraag binnen. En wij zijn informatiemanager om te zeggen van nou, dit lijkt me nou welecht iets...
 
 Cor Blom  
 Zelf bouwen.

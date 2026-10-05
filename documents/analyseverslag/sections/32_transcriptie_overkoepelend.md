@@ -234,7 +234,7 @@ Arno de Boer 13:30
 Het antwoord precies en hetantwoord daarop is wel, ja, zeg maar, wij gaan, Het is, Het is een ontwikkeling, Maar we willen wel daar naartoe werken, dus dat we echt even een een soort van, nou ja, altijd een.
 
 Reijer van der Zande 13:37  
-Ja. Maar dan kan ik dat In de primair als als antwoord meenemen, zijn er van nou de de de de optie tot maatwerk bestaat en niet alle kaders zijn daarvan bekend, maar processen lopen om dat verder in kaart te dringen en valt bijna verder buiten scope van deze opdracht. Maar dan moet ik het wel even afkaderen. Dat is wel iets wat ik nou, dat kan ik op deze manier even netjes doen dus.
+Ja. Maar dan kan ik dat In de primair als als antwoord meenemen, zijn er van nou de de de de optie tot maatwerk bestaat en niet alle kaders zijn daarvan bekend, maar procesen lopen om dat verder in kaart te dringen en valt bijna verder buiten scope van deze opdracht. Maar dan moet ik het wel even afkaderen. Dat is wel iets wat ik nou, dat kan ik op deze manier even netjes doen dus.
 
 Arno de Boer 13:42  
 Die. Ja precies ja. Exact. Helemaal. Ja. Helemaal top, ja ja.
@@ -426,7 +426,7 @@ nou, dat weet jij dus nog helemaal. Is dat gewoon voldoet binnen de Kaders af zo
 Arno, heb jij daarna? Zie je het anders of.
 
 Arno de Boer 24:43  
-Ja, Ik heb, Ik vind het wel een goede vraag over überhaupt onderwerp schaalbaarheid. Dat is, denk ik. Dat staat nog niet dat dat zit een beetje op een technische vlak, maar ook wel op. Het idee is wel dat oplossingen die we ontwikkelen. Dat, Dat is zoveel mogelijk Hanze breed ingezet kunnen worden, hè? Dus dat er zal altijd het uitgangspunt. En toen zeiden het echt niet anders kan, maar dus wat Ronald ook zegt van het lijkt mij dat deze functionaliteit ook wel ergens anders In de of in ieder geval die wens ergens anders ook gaat leven. Dus dus qua schaalbaarheid moet in in principe Hanze breed inzetten zijn dat? Dat is eigenlijk wel het uitgangspunt.
+Ja, Ik heb, Ik vind het wel een goede vraag over überhaupt onderwerp schaalbaarheid. Dat is, denk ik. Dat staat nog niet dat dat zit een beetje op een technische vlak, maar ook wel op. Het idee is wel dat oplossingen die we ontwikkelen. Dat, Dat is zoveel mogelijk Hanze-breed ingezet kunnen worden, hè? Dus dat er zal altijd het uitgangspunt. En toen zeiden het echt niet anders kan, maar dus wat Ronald ook zegt van het lijkt mij dat deze functionaliteit ook wel ergens anders In de of in ieder geval die wens ergens anders ook gaat leven. Dus dus qua schaalbaarheid moet in in principe Hanze-breed inzetten zijn dat? Dat is eigenlijk wel het uitgangspunt.
 Ja Dat is.
 
 ### ~ 25 Min

@@ -100,7 +100,7 @@ Richtlijnen:
 
 Beperkingen:
 
-- cropping wordt nog niet ondersteund
+- cropping wordt nog niet ondersteunt
 - er is nog geen geavanceerde beeldlayout voor meerdere afbeeldingen naast elkaar
 - Mermaid-diagrammen worden in deze repo niet template-side verwerkt; ze moeten eerst naar gewone image assets zoals `.png` worden gerenderd
 

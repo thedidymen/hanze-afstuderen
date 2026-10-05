@@ -202,7 +202,7 @@ En als je terug gaat in het verleden in Blackboard, daar had je nog, zeg maar, p
 ### ~ 9 min
 
 Jos Ensing  
-Maar toen is de rug overgegaan op Brightspace, toen is die tool, die ondersteunde ze niet meer, is ook bij ons eruit gegaan. En toen kregen we de platte tool van Blackboard, die al veel simpeler was, waar veel minder mee kon. En ja, dit is nog simpeler, wat nu in Brightspace zit. Dus die functionaliteit, die missen we eigenlijk al veel langer. Ja.
+Maar toen is de rug overgegaan op Brightspace, toen is die tool, die ondersteunte ze niet meer, is ook bij ons eruit gegaan. En toen kregen we de platte tool van Blackboard, die al veel simpeler was, waar veel minder mee kon. En ja, dit is nog simpeler, wat nu in Brightspace zit. Dus die functionaliteit, die missen we eigenlijk al veel langer. Ja.
 
 Cor Blom  
 En heeft de RUG nu inmiddels ook iets anders in Brightspace? 

@@ -68,7 +68,7 @@ De Hanze-template gebruikt nu explicieter het engine-template contract door meer
 Velden die in deze demo worden ingevuld:
 
 - vereist in de praktijk voor een bruikbare titelpagina: `title`, `author`, `date`
-- ondersteund en nu gebruikt in deze demo: `short_title`, `student_number`, `programme`, `institution`, `document_type`, `location`, `supervisor`, `second_reviewer`, `client`, `project_context`, `academic_year`, `cohort`
+- ondersteunt en nu gebruikt in deze demo: `short_title`, `student_number`, `programme`, `institution`, `document_type`, `location`, `supervisor`, `second_reviewer`, `client`, `project_context`, `academic_year`, `cohort`
 - optioneel voor logo’s: `logo_path`, `cover_logo_path`, `title_logo_path`
 
 De template houdt veilige fallbacks:
@@ -117,7 +117,7 @@ Templategedrag:
 
 Huidige beperking:
 
-- cropping of complexe beeldcomposities worden nog niet ondersteund; stuur dat dus niet vanuit Markdown aan
+- cropping of complexe beeldcomposities worden nog niet ondersteunt; stuur dat dus niet vanuit Markdown aan
 
 ## Table Conventions
 
@@ -160,7 +160,7 @@ Afspraak in deze demo:
 
 - Mermaid-bronnen worden als documentbron in de repository bewaard en moeten committed blijven
 - gegenereerde PNG-assets zijn build-managed outputs en niet de source of truth
-- diagrammen blijven gewone image assets in Markdown; er is geen lokale preprocessing of repo-side renderlogica meer nodig
+- diagrammen blijven gewone image assets in Markdown; er is geen lokale preprocesing of repo-side renderlogica meer nodig
 
 Gewenste vervolgrichting:
 
@@ -205,4 +205,4 @@ docsmith validate ../docsmith-demo/documents/verantwoordingsverslag
 - Wel: een consumer-demo voor het minimale document-zone-model van Docsmith, inclusief first-class TOC-, bibliografie- en appendixsupport
 - Niet: de Docsmith-engine zelf
 - Niet: een definitieve afstudeerscriptie
-- Niet: een claim dat DOCX al ondersteund wordt
+- Niet: een claim dat DOCX al ondersteunt wordt

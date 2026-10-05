@@ -2,37 +2,37 @@
 
 ## Inleiding
 
-Dit hoofdstuk indentificeerd de stakeholders binnen het Sign-Up Tool project en hun relevantie tot het onderzoek en ontwerp proces. De analyse is gebaseert op de opdracht, de huidige situatie en de stakeholder interviews (zie bijlages). Het doel is om tot een zo compleet mogelijk overzicht te komen van de stakeholders. 
+Dit hoofdstuk indentificeert de stakeholders binnen het Sign-Up Tool project en hun relevantie tot het onderzoek en ontwerpproces. De analyse is gebaseerd op de opdracht, de huidige situatie en de stakeholder interviews (zie bijlages). Het doel is om tot een zo compleet mogelijk overzicht te komen van de stakeholders. 
 
-De stakeholder analyse evalueert de stakeholders op basis van de invloede op het project en de interesse in uitkomst. Het doel is om niet aleen vast te stellen wie er betrokken zijn, maar ook hoe elke stakeholder kan bijdragen aan het succes van het project. 
+De stakeholder analyse evalueert de stakeholders op basis van de invloed op het project en de interesse in uitkomst. Het doel is om niet alleen vast te stellen wie er betrokken zijn, maar ook hoe elke stakeholder kan bijdragen aan het succes van het project. 
 
-De analyse is gebaseerd op de Mendelow's stakeholder matrix [@mendelow1981]. In deze analyse wordt gebruik gemaakt van de Invloed-Interesse matrix [@pmi2021]. Stakeholders met een hoge invloed en een hoge interesse worden contenu betrokken bij het proces, terwijl stakeholders met een lage invloed gebruikt worden voor domein kennis. 
+De analyse is gebaseerd op de Mendelow's stakeholder matrix [@mendelow1981]. In deze analyse wordt gebruik gemaakt van de Invloed-Interesse matrix [@pmi2021]. Stakeholders met een hoge invloed en een hoge interesse worden continu betrokken bij het proces, terwijl stakeholders met een lage invloed gebruikt worden voor domeinkennis. 
 
-De Sign-Up Tool raakt verschillende organisatorische lagen. Naast de directe eindgebruikes binnen Verpleegkunde, raakt de tool ook business architectuur, platform integratie informatie management, privacy, security, etc. Als gevolg hier van kunnen beslissingen niet alleen gebaseerd zijn op de functionele vereisten van de eindgebruikers. De oplossing zal ook moeten voldoen aan Hanze-brede archtectuur principes, technisch standarden en organisatorische verantwoordelijlheden. 
+De Sign-Up Tool raakt verschillende organisatorische lagen. Naast de directe eindgebruikers binnen Verpleegkunde, raakt de tool ook business architectuur, platform integratie informatie management, privacy, security, etc. Als gevolg hier van kunnen beslissingen niet alleen gebaseerd zijn op de functionele vereisten van de eindgebruikers. De oplossing zal ook moeten voldoen aan Hanze-brede architectuur principes, technisch standarden en organisatorische verantwoordelijkheden. 
 
 Het doel van deze analyse is drievoudig:  
-- indentificatie van stakeholders  
-- inzichtlijk krijgen van de verschillende interesses en verantwoordelijkheiden van de stakeholders  
+- identificatie van stakeholders  
+- inzichtelijk krijgen van de verschillende interesses en verantwoordelijkheiden van de stakeholders  
 - vaststellen hoe stakeholders betrokken moeten blijven bij de rest van het project.  
 
 Het resultaat van deze analyse vormt de basis voor de requirement analyse en voor de latere oplossings richting. 
 
 ## Overzicht Stakeholders 
 
-De stakeholders (@tbl:stakeholder-overview) zijn geindentificeerd op basis van 3 bronnen: de oorspronkelijke opdracht, de huidige situatie en de stakeholder interviews. De directe stakeholders zijn de gebruikers van de Sign-Up Tool. Een tweede groep bestaat uit de organisatorische en technisch stakeholders. De laatste groep bestaat uit betroken/getroffen stakeholders die niet direct geinterviewd zijn. 
+De stakeholders (@tbl:stakeholder-overview) zijn geindentificeert op basis van 3 bronnen: de oorspronkelijke opdracht, de huidige situatie en de stakeholder interviews. De directe stakeholders zijn de gebruikers van de Sign-Up Tool. Een tweede groep bestaat uit de organisatorische en technisch stakeholders. De laatste groep bestaat uit betroken/getroffen stakeholders die niet direct geinterviewd zijn. 
 
 | Stakeholders | Rol | Geinterviewd | Relevantie |
 |---|---|---|---|
-| Regiseur | Bereid voor en coordineerd registratie momenten | Ja | Business stakeholder en proces eigenaar |
-| Docenten | Gebruikers van registratie overzicht ter voorbereiding en uitvoering assesments | Gedeeltelijk | Directe gebruikers van Sign-Up Tool |
+| regisseur | Bereid voor en coordineerd registratiemomenten | Ja | Business stakeholder en proces eigenaar |
+| Docenten | Gebruikers van registratie overzicht ter voorbereiding en uitvoering assessments | Gedeeltelijk | Directe gebruikers van Sign-Up Tool |
 | Studenten | Gebruikers van de tool | Nee | Eindgebruikers van de Sign-Up Tool |
 | IT instructeur | Begrip van huidige workaround | Ja | Kennis van technisch praktise beperkingen |
 | Collabspace | Development | Ja/Nee | Project supervisie |
-| BS&IT Business archtectuur | Stelt achtectuur kaders voor software development vast | Ja | Standaarden, eigenaarschap continuteit |
+| BS&IT Business architectuur | Stelt achtectuur kaders voor software development vast | Ja | Standaarden, eigenaarschap continuteit |
 | Informatie management | Verbindt Verpleegkunde behoefte aan Hanze-breede informatie | Ja |  |
 | Hanze Integratie Platform | integratie kennis, technisch standarden, onderhoud | Ja | Mogelijke landigsplaats applicatie |
 | Privacy | Advies over persoonsdata | Ja | Essentieel omdat de tool persoonsgegeven verwerkt |
-| Security | Advies over security en risk assesments | Ja | Essentieel voor access control, security design en operationele risico |
+| Security | Advies over security en risk assessments | Ja | Essentieel voor access control, security design en operationele risico |
 | Brightspace engineers | Advies over LMS mogelijkheden, beperkingen en mogelijke integratie zoals LTI | Ja | De tool wordt gebruikt vanuit Brightspace |
 | Webroom | Geeft informatie over lokalen, datums, tijden en docenten | Nee | Informatie bron van basis data voor de applicatie |
 | School Verpleegkunde | Huidig afnemer van de tool | Gedeeltelijk | Overkoeplende organisatie van initele gebruikers |
@@ -42,21 +42,21 @@ De stakeholders (@tbl:stakeholder-overview) zijn geindentificeerd op basis van 3
 
 ## Geinterviewde stakeholders
 
-### Regiseur Verpleegkunde / Mirjam Veenstra
+### regisseur Verpleegkunde / Mirjam Veenstra
 
-De regiseur van verpleegkunde is de primare business stakeholder. Binnen het huidige process, vertaald de regiseur de beschikbare planning in registratie momenten en bereid deze voor in Brightspace. Vanuit het interview wordt duidelijk dat deze rol graag een gebruiksvriendelijker en meer herbruikbare proces wil, bijvoorkeur waar de regiseur niet of zo min mogelijk afhankelijke is van externe partijen. 
+De regisseur van verpleegkunde is de primare business stakeholder. Binnen het huidige proces, vertaald de regisseur de beschikbare planning in registratiemomenten en bereid deze voor in Brightspace. Vanuit het interview wordt duidelijk dat deze rol graag een gebruiksvriendelijker en meer herbruikbare proces wil, bijvoorkeur waar de regisseur niet of zo min mogelijk afhankelijke is van externe partijen. 
 
-Deze stakeholder heeft veel praktische invloed op de de requirements, omdat de tool de manier van voorbereiden van de assesments ondersteunt. 
+Deze stakeholder heeft veel praktische invloed op de de requirements, omdat de tool de manier van voorbereiden van de assessments ondersteunt. 
 
 ### Docenten Verpleegkunde / Mirjam Veenstra
 
-De docenten zijn directe gebruikers van de tool. Ze moeten zien welke studenten geregistreerd zijn voor een assesment, ook is er behoefte aan een overview van alle assesments binnen vak/module. Docenten beijken momenteel de afzonderlijke groepen binnen Brightspace om tot een complete lijst te komen van de registreerde studenten. 
+De docenten zijn directe gebruikers van de tool. Ze moeten zien welke studenten geregistreerd zijn voor een assessment, ook is er behoefte aan een overview van alle assessments binnen vak/module. Docenten beijken momenteel de afzonderlijke groepen binnen Brightspace om tot een complete lijst te komen van de registreerde studenten. 
 
-De docenten zijn niet als seperate groep geinterviewd. Mevr. Veenstra is naast haar rol als docent ook regiseur binnen verpleegkunde. 
+De docenten zijn niet als seperate groep geinterviewd. Mevr. Veenstra is naast haar rol als docent ook regisseur binnen verpleegkunde. 
 
 ### BS&IT / Arno de Boer
 
-Vanuit de business archtectuur is het maken van de Sign-Up Tool een praktische usecase om te kijken hoe de Hanze zelf software kan gaan ontwikkelen. Wie is de eigenaar? Wie onderhoudt het? Welke standaarden zijn van toepassing?
+Vanuit de business architectuur is het maken van de Sign-Up Tool een praktische usecase om te kijken hoe de Hanze zelf software kan gaan ontwikkelen. Wie is de eigenaar? Wie onderhoudt het? Welke standaarden zijn van toepassing?
 
 Deze stakeholder heeft veel invloed op het project omdat architectuur principes, plaatsing binnen de organisatie en technnische standaarden een sterke invloed hebben op de richting van de oplossing. De interresse in het project is ook hoogl, omdat het project de input geeft voor richtlijnen voor bredere software ontwikkeling binnen de Hanze. 
 
@@ -108,7 +108,7 @@ Binnen de huidige fase, zijn de behoeften van de studenten vertegenwoordigt als 
 
 ### Bredere groep docenten
 
-Er is geen interview gedaan met een bredere groep docenten. Vanuit het verpleegkunde interview is al een duidelijk persectief van de regiseur en docenten verkregen. Op dit moment wordt er niet veel gewonnen door hier nog veel tijd in te steken. Net als bij de studenten kan het handig zijn deze groep te betreken bij een evaluatie van de user interface. 
+Er is geen interview gedaan met een bredere groep docenten. Vanuit het verpleegkunde interview is al een duidelijk persectief van de regisseur en docenten verkregen. Op dit moment wordt er niet veel gewonnen door hier nog veel tijd in te steken. Net als bij de studenten kan het handig zijn deze groep te betreken bij een evaluatie van de user interface. 
 
 ### Andere schools
 
@@ -116,7 +116,7 @@ Momenteel wordt de Sign-Up Tool toe gespist op het gebruik door Verpleegkunde, w
 
 ### Webroom
 
-Dit is een operationele afhankelijkheid die gebruikt wordt door verpleegkunde. Vanuit webroom ontvangt verpleegkunde informatie zoals datum, tijd, lokaal en docent doormiddel van het bestaand plannings process. Dit onderzoek gebruikt de informatie vanuit het verpleegkunde interview. Mocht er in de toekomst een directe link komen tussen de plannings tool en de Sign-Up Tool kan hier verder naar gekeken worden. 
+Dit is een operationele afhankelijkheid die gebruikt wordt door verpleegkunde. Vanuit webroom ontvangt verpleegkunde informatie zoals datum, tijd, lokaal en docent doormiddel van het bestaand plannings proces. Dit onderzoek gebruikt de informatie vanuit het verpleegkunde interview. Mocht er in de toekomst een directe link komen tussen de plannings tool en de Sign-Up Tool kan hier verder naar gekeken worden. 
 
 ### Toekomstige technische eigenaar
 
@@ -130,9 +130,9 @@ Externe producenten zijn momenteel niet geinterviewd, omdat de huidige stakehold
 
 Hoewel elke stakeholder zijn eigen rol heeft, kan dit project alleen een succes worden door samenwerking tussen edicationele, organisatorisch en technische stakeholders. 
 
-De School van verpleegkunde is verantwoordelijk voor de functionele vereisten. De regiseur, docenten, IT instructeur en studenten direct betroken bij het organiseren van de assesment en bepalen daar mee de functionaliteit van de applicatie. 
+De School van verpleegkunde is verantwoordelijk voor de functionele vereisten. De regisseur, docenten, IT instructeur en studenten direct betroken bij het organiseren van de assessment en bepalen daar mee de functionaliteit van de applicatie. 
 
-BS&IT vertalen deze requirements naar organisatorische en archtectuur vereisten. Ook evalueert of BS&IT of deze development strategy als basis kan dienen voor verdere ontwikkeling binnen de Hanze. 
+BS&IT vertalen deze requirements naar organisatorische en architectuur vereisten. Ook evalueert of BS&IT of deze development strategy als basis kan dienen voor verdere ontwikkeling binnen de Hanze. 
 
 Het HIP geeft de basis voor de technische integratie en koppelingen van systemen binnen de Hanze. 
 
@@ -148,7 +148,7 @@ De Mendelow matrix in @fig:mendelow_matrix groepeerd stakeholder naar hun invloe
 
 | Quadrant | Stakeholders | Rationale | Communicatie |
 |---|---|---|---|
-| Manage | Regiseur, BS&IT Architectuur, Informatie Management, Privacy, Security, Brightspace, IT Instructeur, CollabSpace | Deze stakeholder hebben veel invloed op o.a.: haalbaarheid, privacy, security en integratie. Daarnaast hebben ze veel interesse en belang bij de uitkomst. | Frequente afstemming, toetsing van de requirements en ontwerp review. |
+| Manage | regisseur, BS&IT Architectuur, Informatie Management, Privacy, Security, Brightspace, IT Instructeur, CollabSpace | Deze stakeholder hebben veel invloed op o.a.: haalbaarheid, privacy, security en integratie. Daarnaast hebben ze veel interesse en belang bij de uitkomst. | Frequente afstemming, toetsing van de requirements en ontwerp review. |
 | Tevreden | Technisch Beheerder, HIP | Deze stakeholders hebben veel invloed op onderhoudbaarheid, zelfs zonder dat ze direct betroken zijn bij het dagelijks gebruik. | Betrekken bij overdrachts milestones. Bevestigen van verantwoordelijkheden voor productie besluiten. |
 | Informeren | Docenten, Andere Schools | Dit zijn betrokken stakeholders met interesse in het eindproduct,  | Samenvatting, prototypes en validatie momenten. zonder direct zelf invloed te hebben hierop. |
 | Monitor | Webroom, Studenten | Deze groep heeft een beprekt interesse en invloed op de tool | Volg afhankelijkheden en betrekken bij concrete veranderingen zoals integratie en operationele wijzigingen |
@@ -158,7 +158,7 @@ De Mendelow matrix in @fig:mendelow_matrix groepeerd stakeholder naar hun invloe
 
 ## Governance en eigenaarschap
 
-Een van de nog openstaande vragen na de interviews is waar de applicatie moet landen an voltooing. De School van verpleegkunde is eigenaar van het business proces en stelt daarmee de functionele requirements vast. BS&IT is verantwoordelijk voor de archtectuur standaarden, lifecycle management en de organisatorische continuiteit. Voor de directe technische onderhoud is echter niet meteen een aangewezen partij. Dit zou kunnen landen bij HIP, of mogelijk bij Collabspace. 
+Een van de nog openstaande vragen na de interviews is waar de applicatie moet landen an voltooing. De School van verpleegkunde is eigenaar van het business proces en stelt daarmee de functionele requirements vast. BS&IT is verantwoordelijk voor de architectuur standaarden, lifecycle management en de organisatorische continuiteit. Voor de directe technische onderhoud is echter niet meteen een aangewezen partij. Dit zou kunnen landen bij HIP, of mogelijk bij Collabspace. 
 
 ## Beperkingen van de stakeholder analyse
 

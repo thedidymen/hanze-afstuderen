@@ -2,17 +2,17 @@
 
 ## Inleiding
 
-Dit hoofdstuk stelt de requirement van de Sign-Up Tool vast. Deze requiremente beschrijven wat de toekomstige oplossing moet ondersteunen en aan welke kwaliteitsiesen voldaan moet worden. Binnen dit hoofdstuk wordt nog geen oplossingsrichting gekozen, dit doen we in latere hoofdstukken. 
+Dit hoofdstuk stelt de requirements van de Sign-Up Tool vast. Deze requirements beschrijven wat de toekomstige oplossing moet ondersteunen en aan welke kwaliteitseisen moet worden voldaan. Binnen dit hoofdstuk wordt nog geen oplossingsrichting gekozen, dat gebeurt in latere hoofdstukken. 
 
-De requirements zijn gebaseerd op de analyse van de huidige situatie, de stakeholder analyse en de interview transscripties. De initiele use case is het registreren van events bij Verpleegkunde, echter op langere termijn moet deze tool breed inzetbaar zijn binnen de Hanze. 
+De requirements zijn gebaseerd op de analyse van de huidige situatie, de stakeholderanalyse en de interviewtranscripten. De initiële usecase is het registreren van events bij Verpleegkunde. Op langere termijn moet deze tool echter breed inzetbaar zijn binnen de Hanze. 
 
 ## Verkrijgen van Requirements
 
-De requirements zijn verkregen uit de stakeholder interviews en de project docuementen. De interview zijn gebruikt om de huidige problemen, gebruikers behoeften, organisatorische beperkingen en risico's. Deze bevindingen vertalen zich in deze requirements. 
-De requirement zijn geen letterlijke overzetting van de stakeholder gesprekken. Opmerkingen als: "studenten kunnem momenteel zien wie er geregistreed is in een tijdslot" vertaalt zich naar een privacy requirement: dat studenten alleen hun eigen registratie en algemene beschikbaarheid van het tijdslot mogen zien. 
+De requirements zijn afgeleid uit de stakeholderinterviews en de projectdocumenten. De interviews zijn gebruikt om de huidige problemen, gebruikersbehoeften, organisatorische beperkingen en risico's in kaart te brengen. Deze bevindingen zijn vertaald naar requirements. 
+De requirements zijn geen letterlijke weergave van de stakeholdergesprekken. Een opmerking als: "studenten kunnen momenteel zien wie er geregistreerd is in een tijdslot" vertaalt zich bijvoorbeeld naar een privacyrequirement: studenten mogen alleen hun eigen registratie en de algemene beschikbaarheid van het tijdslot zien. 
 
-Deze bronnen zijn gebruikt voor de requirement analyse:  
-- Vepleegkunde interview (VI), 2 maart 2026, bijlage A.  
+Deze bronnen zijn gebruikt voor de requirementsanalyse:  
+- Verpleegkunde-interview (VI), 2 maart 2026, bijlage A.  
 - BS&IT interview (BII), 2 maart 2026, bijlage B.  
 - Privacy & Security interview (PSI), 13 april 2026, bijlage C.  
 - Technische Kaders interview (TKI), 20 april 2026, bijlage D.  
@@ -21,35 +21,34 @@ Deze bronnen zijn gebruikt voor de requirement analyse:
 
 ## Scope en Aannames
 
-De scope van de requirement is het sign-up proces voor educationele momenten zoals praktische assesments, herexamens (praktisch), workshops of vergelijkbare activiteten waar studenten een specifiek moment moeten reserveren. De oplossing dient het proces van Verpleegkunde te ondersteunen, zonder verpleegkunde specifieke ontwerp keuzes te maken zodat er een hanze brede oplossing onstaat.
-
-Binnen dit hoofdstuk zijn de volgende aanames gemaakt:  
-- Brighspace blijft de hoofd applicatie waarmee studenten en docenten interacteren met de course.  
-- De Sign-Up Tool ondersteunt planning en registratie, geen cijfers of resultaten verwerkging.  
-- De MVP richt zich op de sign-up workflow voordat integraties met planning, adminitratie system etc. worden toegevoegd.  
-- Requirements die gericht zijn op toekomstige koppelingen worden als laag-prio of open requirements toegevoegd en zijn geen onderdeel van de MPV scope.  
+De scope van de requirements is het sign-upproces voor educatieve momenten, zoals praktijkassessments, praktische herexamens, workshops of vergelijkbare activiteiten waarvoor studenten een specifiek moment moeten reserveren. De oplossing moet het proces van Verpleegkunde ondersteunen zonder Verpleegkunde-specifieke ontwerpkeuzes te maken, zodat een Hanzebrede oplossing ontstaat.
+Binnen dit hoofdstuk zijn de volgende aannames gemaakt:  
+- Brightspace blijft de hoofdapplicatie waarmee studenten en docenten werken met de course.  
+- De Sign-Up Tool ondersteunt planning en registratie, maar geen cijfer- of resultaatverwerking.  
+- De MVP richt zich op de sign-upworkflow voordat integraties met plannings- en administratiesystemen worden toegevoegd.  
+- Requirements die gericht zijn op toekomstige koppelingen worden als laag-prioriteit- of open requirements toegevoegd en maken geen deel uit van de MVP-scope.  
 
 ## Gebruikersgroepen en Rollen
 
-De volgende gebruikersgroepen en rolen zijn gebruikt in de requirements. Deze rollen zijn niet hetzelfde als de organisatorisch stakeholders. Ze beschrijven hoe gebruikers interacteren met het system, en welke informatie en acties gebruiken (zie @tbl:roles). 
+De volgende gebruikersgroepen en rollen worden gebruikt in de requirements. Deze rollen zijn niet hetzelfde als de organisatorische stakeholders. Ze beschrijven hoe gebruikers met het systeem werken en welke informatie en acties zij gebruiken (zie @tbl:roles). 
 
 | Rol | Beschrijving |
 |---|---|
-| Student | Registreerd voor event in Sign-Up Tool en kan eigen registratie bekijken |
-| Docent | Gebruikt deelnemers overview ter voorbereiding en afname van assesments |
-| Regiseur | Prepareerd Sign-up events |
-| Functioneel Manager | Ondersteunt de applicatie |
-| Technisch Manager | Onderhoud, en geeft technische ondersteuning |
-| Brightspace Engineer | Ondersteun intergratie Brightspace |
-| Privacy & Security | Reviewed de verwerking van persoonlijke data, toegang en logging |
+| Student | Registreert zich voor een event in de Sign-Up Tool en kan de eigen registratie bekijken |
+| Docent | Gebruikt het deelnemersoverzicht ter voorbereiding op en afname van assessments |
+| Regisseur | Bereidt sign-upevents voor |
+| Functioneel manager | Ondersteunt de applicatie |
+| Technisch manager | Onderhoudt de applicatie en biedt technische ondersteuning |
+| Brightspace-engineer | Ondersteunt de Brightspace-integratie |
+| Privacy & Security | Beoordeelt de verwerking van persoonsgegevens, toegangsrechten en logging |
 
 : Rollentabel {#tbl:roles}
 
-## Requirments
+## Requirements
 
-De requirement zijn op gedeeld in functionele en niet-functionele requirements. De functionele requirements (FN) beschrijven het gedraag en de mogelijkheden van de Sign-Up Tool voor de gebruikers. Denk hierbij aan het creeren van evenementen, registreren van tijdslots en een deelnemer overview creeeren. Ze zijn gegroepeerd op basis van de workflow die ze ondersteunen. 
+De requirements zijn onderverdeeld in functionele en niet-functionele requirements. De functionele requirements (FN) beschrijven het gedrag en de mogelijkheden van de Sign-Up Tool voor gebruikers. Denk hierbij aan het creëren van evenementen, het registreren voor tijdslots en het maken van een deelnemersoverzicht. Ze zijn gegroepeerd op basis van de workflow die ze ondersteunen. 
 
-Niet-functionele requirements (NF) beschrijven de beperkingen en kwaliteits eisen waaronder de functionaliteiten moeten werken. Deze bevaten privacy en security-eisen, onderhoudbaarheid, integratie, authenticatie en authorisatie en data integriteit. Deze requirements zijn niet altijd meteen zichtbaar, maar beperken zeker de mogelijkheiden en of een oplossing geschikt is voor de Hanze omgeving. 
+Niet-functionele requirements (NF) beschrijven de beperkingen en kwaliteitseisen waarbinnen de functionaliteiten moeten werken. Deze bevatten privacy- en security-eisen, onderhoudbaarheid, integratie, authenticatie, autorisatie en data-integriteit. Deze requirements zijn niet altijd direct zichtbaar, maar bepalen mede of een oplossing geschikt is voor de Hanzeomgeving. 
 
 Elke requirement bevat een bron, relevante stakeholders en een uitleg. 
 
@@ -57,405 +56,405 @@ Elke requirement bevat een bron, relevante stakeholders en een uitleg.
 
 ### Event en Tijdslotmanagement (ETM)
 
-#### FN-ETM-01 - Creer Sign-up events
+#### FN-ETM-01 - Creëer sign-upevents
 
-Requirements: Het systeem laat geauthoriseerde werknemers sign-up events creeren.  
+Requirements: Het systeem laat geautoriseerde medewerkers sign-upevents creëren.  
 Bron: VI: ~1-4 min;  
 Stakeholders: regisseur, docenten, functioneel manager, studenten.  
-Uitleg: Het huidige proces laat werknemers handmatig Brightspace groepen aan maken voor elk registratie moment. De vervangingde oplossing dient dit direct te kunnen doen.  
+Uitleg: In het huidige proces maken medewerkers voor elk registratiemoment handmatig Brightspace-groepen aan. De vervangende oplossing moet dit rechtstreeks kunnen ondersteunen.  
 
 
-#### FN-ETM-02 - Vastlegen meta data
+#### FN-ETM-02 - Vastleggen van metadata
 
-Requirements: Het system laat werknemers basis informatie vastleggen: naam, datum, tijd, locatie, docent, course of module.  
+Requirements: Het systeem laat medewerkers basisinformatie vastleggen: naam, datum, tijd, locatie, docent en course of module.  
 Bron: VI: ~2, ~10 min;  
 Stakeholders: Regisseur, docenten, functioneel manager, studenten.  
-Uitleg: In de huidig workflow worden datum, tijd en locatie vastgelegd in de groepnaam. Binnen de oplossing moet deze informatie als gestructureerde data worden vast gelegd.  
+Uitleg: In de huidige workflow worden datum, tijd en locatie vastgelegd in de groepsnaam. Binnen de oplossing moet deze informatie als gestructureerde data worden vastgelegd.  
 
-#### FN-ETM-03 - Gereserveerd tijd opdelen in tijdslots
+#### FN-ETM-03 - Gereserveerde tijd opdelen in tijdslots
 
-Requirements: Het syteem laat medewerkers de gereserveerde tijd opdelen in meerdere registratie momenten.  
+Requirements: Het systeem laat medewerkers de gereserveerde tijd opdelen in meerdere registratiemomenten.  
 Bron: VI: ~10 min, BI ~6-8 min.  
 Stakeholders: Regisseur, docenten, studenten.  
-Uitleg: De kern van het probleem is niet alleen het toekennen van de totale tijd, maar ook het opdelen in registratie momenten.  
+Uitleg: De kern van het probleem is niet alleen het toekennen van de totale tijd, maar ook het opdelen ervan in registratiemomenten.  
 
 #### FN-ETM-04 - Capaciteit van tijdslots
 
 Requirements: Binnen een event moet het mogelijk zijn om de capaciteit van tijdslots te bepalen. De oplossing moet zowel individuele als groepsregistraties ondersteunen, bijvoorbeeld één of meerdere studenten per tijdslot.  
 Bron: VI: ~0-3 min, BI ~6 min.  
-Stakeholders: Regiseur, docenten, studenten.  
-Uitleg: Binnen het huidige systeem is de capaciteit van registratiemomenten beperkt flexibel in te richten. Voor verschillende assessments kan een andere groepsgrootte nodig zijn. De oplossing moet daarom verschillende capaciteiten voor events kunnen ondersteunen, zonder dat voor ieder afzonderlijk tijdslot noodzakelijkerwijs een afwijkende capaciteit ingesteld hoeft te worden.  
+Stakeholders: regisseur, docenten, studenten.  
+Uitleg: Binnen het huidige systeem is de capaciteit van registratiemomenten beperkt flexibel in te richten. Voor verschillende assessments kan een andere groepsgrootte nodig zijn. De oplossing moet daarom verschillende capaciteiten voor events kunnen ondersteunen, zonder dat voor ieder afzonderlijk tijdslot een afwijkende capaciteit hoeft te worden ingesteld.  
 
-#### FN-ETM-06 - Markeer pauze als niet registreerbaar
+#### FN-ETM-06 - Markeer pauzes als niet registreerbaar
 
-Requirements: De Docenten moeten een pauze kunnen nemen, in deze momenten kunnen studenten dus niet registreren.  
+Requirements: Docenten moeten een pauze kunnen nemen. Tijdens deze momenten kunnen studenten zich niet registreren.  
 Bron: VI: ~8 min, BI ~7 min.  
 Stakeholders: Regisseur, docenten, studenten.  
-Uitleg: Assesment block kunnenv meerdere uren duren. Het moet mogelijk zijn voor docenten om een pauze te nemen.  
+Uitleg: Assessmentblokken kunnen meerdere uren duren. Docenten moeten daarom de mogelijkheid hebben om pauzes in te plannen.  
 
-#### FN-ETM-07 - De registratie moet een open en sluit moment kennen
+#### FN-ETM-07 - De registratie heeft een openings- en sluitingstijd
 
-Requirements: De registratie moet op vooraf tijdstip geopend en gesloten kunnen worden.  
+Requirements: De registratie moet op vooraf bepaalde tijdstippen geopend en gesloten kunnen worden.  
 Bron: VI: ~15 min.  
 Stakeholders: Regisseur, docenten, studenten.  
-Uitleg: Er is een explicite vraag om het registreren te stoppen op een vooraf bepaald tijdstip.  
+Uitleg: Er is expliciet gevraagd om de registratie op een vooraf bepaald tijdstip te kunnen sluiten.  
 
-#### FN-ETM-08 - De registratie kent een annulerings deadline
+#### FN-ETM-08 - De registratie heeft een annuleringsdeadline
 
-Requirements: Er moet een annulering deadline, los van de registratie deadline komen (FN-SR-02).  
+Requirements: Er moet een annuleringsdeadline komen die losstaat van de registratiedeadline (FN-SR-02).  
 Bron: VI: ~15 min.  
 Stakeholders: Regisseur, docenten, studenten.  
-Uitleg: Studenten mogen registreren tot de registratie deadline, echter mogen studenten niet meer annuleren na de annulerings deadline.  
+Uitleg: Studenten mogen zich registreren tot de registratiedeadline, maar kunnen niet meer annuleren na de annuleringsdeadline.  
 
-#### FN-ETM-09 - Tijdslot status laten zien
+#### FN-ETM-09 - Tijdslotstatus tonen
 
-Requirements: De status van een tijdslot moet zichtbaar zijn (Beschikbaar, Gedeeltelijk Beschikbaar, Vol, Niet Beschikbaar).  
+Requirements: De status van een tijdslot moet zichtbaar zijn (beschikbaar, gedeeltelijk beschikbaar, vol of niet beschikbaar).  
 Bron: VI: ~0, ~3 min, BI ~10-11 min.  
 Stakeholders: Regisseur, docenten, studenten.  
-Uitleg: Studenten en docenten moeten weten of een slot nog beschikbaar is/het aantal beschikbare plekken kunnen monitoren.  
+Uitleg: Studenten en docenten moeten kunnen zien of een tijdslot nog beschikbaar is en hoeveel plekken beschikbaar zijn.  
 
-#### FN-ETM-10 - Maak tijdslots van geimporteerde plannings data.  
+#### FN-ETM-10 - Genereer tijdslots op basis van geïmporteerde planningsgegevens
 
-Requirements: Het system zou op basis van gestructureerde planning data, bv excel sheet, tijdslots kunnen genereren, wanneer een directe integratie niet mogelijk/beschikbaar is.  
+Requirements: Het systeem kan op basis van gestructureerde planningsgegevens, bijvoorbeeld een Excel-bestand, tijdslots genereren wanneer een directe integratie niet mogelijk of beschikbaar is.  
 Bron: VI ~3 min, ~10 min.  
-Stakeholders: Regisseur, functionel manager, docenten.  
-Uitleg: Het huidige proces begint met planning informatie ontvangen van uit Excel. Importeren van deze structurele data zou een reductie in handmatige stappen betekenen.  
+Stakeholders: Regisseur, functioneel manager, docenten.
+Uitleg: Het huidige proces begint met het ontvangen van planningsinformatie uit Excel. Het importeren van deze gestructureerde gegevens zou het aantal handmatige stappen verminderen.  
 
-#### FN-ETM-11 - Terugkeerende of herbruikbare events structuren
+#### FN-ETM-11 - Terugkerende of herbruikbare eventstructuren
 
-Requirements: Het systeem ondersteunt hergebruik, kopieren of hercreeren van voorgaande events voor nieuwe studiejaren.  
+Requirements: Het systeem ondersteunt het hergebruiken, kopiëren of opnieuw aanmaken van eerdere events voor nieuwe studiejaren.  
 Bron: VI: ~1 min, ~12-14 min.  
 Stakeholders: Regisseur, docenten, functioneel manager.  
-Uitleg: Binnen het huidige proces vinden events elkaar plaats. Hergebruik reduceer het aantal handmatige stappen.  
+Uitleg: Binnen het huidige proces vinden events periodiek plaats. Hergebruik vermindert het aantal handmatige stappen.  
 
-#### FN-ETM-12 - Rollende uitgave van tijdslots
+#### FN-ETM-12 - Rollende vrijgave van tijdslots
 
-Requirements: Het system ondersteun een rollende vrijgave van tijdslots, zodat er geen of weining gaten in het rooster van de docent onstaan.  
+Requirements: Het systeem ondersteunt een rollende vrijgave van tijdslots, zodat er geen of weinig gaten in het rooster van de docent ontstaan.  
 Bron: VI: ~16 min.  
 Stakeholders: Regisseur, docenten, studenten.  
-Uitleg: Een rollende vrijgave van tijdslots voorkomt inefficiente verdeling van tijdslots over de dag. Niet een kern requirement.  
+Uitleg: Een rollende vrijgave van tijdslots voorkomt een inefficiënte verdeling van tijdslots over de dag. Dit is geen kernrequirement.  
 
 
 ### Student Registratie
 
 #### FN-SR-01 - Registreren voor een tijdslot
 
-Requirements: Studenten moet zich kunnen registreren voor een tijdslot.  
+Requirements: Studenten moeten zich kunnen registreren voor een tijdslot.  
 Bron: VI: ~0 min.  
 Stakeholders: Regisseur, docenten, studenten.  
-Uitleg: Het zelf registreren is het centrale doel van de Sign-Up Tool en vervangt de huidige Brightspace groep registratie.  
+Uitleg: Zelfregistratie is het centrale doel van de Sign-Up Tool en vervangt de huidige registratie via Brightspace-groepen.  
 
-#### FN-SR-02 - Deregistratie voor annulerings deadline.
+#### FN-SR-02 - Deregistratie vóór de annuleringsdeadline
 
-Requirements: Student moet zichzelf kunnen deregistreren voor de ingestelde annulerings deadline (FN-ETM-08).  
+Requirements: Studenten moeten zich kunnen deregistreren tot de ingestelde annuleringsdeadline (FN-ETM-08).  
 Bron: VI: ~0 min, ~15 min.  
 Stakeholders: Regisseur, docenten, studenten.  
-Uitleg: Het huidige proces laat studen deregistreren indien foutief ingeschreven. Late annulering moet tellen als een gemiste kans.  
+Uitleg: In het huidige proces kunnen studenten zich deregistreren als ze zich per ongeluk hebben ingeschreven. Een late annulering moet tellen als een gemiste kans.  
 
-#### FN-SR-04 - Wijzigen van registratie
+#### FN-SR-04 - Registratie wijzigen
 
-Requirements: Studenten kunnen hun registratie annuleren en daarmee wijzigen binnen de annulerings regels.  
+Requirements: Studenten kunnen hun registratie annuleren en daarmee wijzigen binnen de annuleringsregels.  
 Bron: VI: ~0 min, ~15 min.  
 Stakeholders: Regisseur, docenten, studenten.  
-Uitleg: Binnen de regels is het wijzigen van een tijdslot toegestaan.  
+Uitleg: Binnen de gestelde regels is het wijzigen van een tijdslot toegestaan.  
 
 #### FN-SR-05 - Eigen registratie bekijken
 
 Requirements: Studenten kunnen de eigen registratie inzien zonder die van andere studenten te zien.  
 Bron: VI: ~3 min, ~6 min, PSI: ~4 min.  
 Stakeholders: Regisseur, docenten, studenten, privacy en security.  
-Uitleg: Er is voor studenten geen reden om gegevens van andere studenten in te kunnen zien.  
+Uitleg: Studenten hoeven geen gegevens van andere studenten te kunnen inzien.  
 
-#### FN-SR-06 - Beschikbaarheid is zichtbaar
+#### FN-SR-06 - Beschikbaarheid tonen
 
 Requirements: Voor studenten moet het zichtbaar zijn hoeveel ruimte er is in een tijdslot, zonder te zien wie er in zitten.  
 Bron: VI: ~2-3 min,  ~6 min, HI: ~21 min, BI: ~10-11 min.  
 Stakeholders: Regisseur, docenten, studenten, privacy en security.  
-Uitleg: Binnen de huidige situatie is zichtbaar wie zich voor welk slot heeft geregistreert. Studenten hoeven deze informatie niet te zien.  
+Uitleg: In de huidige situatie is zichtbaar wie zich voor welk tijdslot heeft geregistreerd. Studenten hoeven deze informatie niet te zien.  
 
-#### FN-SR-07 - Sign-up events alleen zichtbaar mits relevant
+#### FN-SR-07 - Sign-upevents alleen zichtbaar wanneer relevant
 
-Requirements: Het sign-up event moet alleen zichtbaar zijn voor de student mits deze relevant is voor de te volgen courses/modules.  
+Requirements: Een sign-upevent moet alleen zichtbaar zijn voor een student wanneer het relevant is voor de courses of modules die deze student volgt.  
 Bron: VI: ~14 min.  
 Stakeholders: Regisseur, docenten, studenten.  
-Uitleg: Alleen releveante informatie moet zichtbaar zijn. Dit zal ook een requirement zijn voor gebruik door andere schools binnen de Hanze.  
+Uitleg: Alleen relevante informatie moet zichtbaar zijn. Dit is ook een requirement voor gebruik door andere schools binnen de Hanze.  
 
-#### FN-SR-08 - Note of comment door studenten
+#### FN-SR-08 - Notitie of opmerking van studenten
 
-Requirements: Studenten kunnen een comment achterlaten, mits deze functie is aangezet door de docent/regisseur.  
+Requirements: Studenten kunnen een opmerking achterlaten als deze functie is ingeschakeld door de docent of regisseur.  
 Bron: VI: ~4 min.  
 Stakeholders: Regisseur, docenten, studenten.  
-Uitleg: Het huidige systeem staat geen comments toe, dit is als beperkend aangekaart. De behoefte dient gevalideerd te worden voordat dit onderdeel wordt van het MVP.  
+Uitleg: Het huidige systeem staat geen opmerkingen toe; dit is als beperking aangekaart. De behoefte moet worden gevalideerd voordat deze functie onderdeel wordt van de MVP.  
 
-#### FN-SR-09 - Voorkom duplicate registratie
+#### FN-SR-09 - Voorkom dubbele registraties
 
-Requirements: Studenten kunnen zich maar 1 keer registreren, tenzij anders geconfigureerd.  
+Requirements: Studenten kunnen zich maar één keer registreren, tenzij dit anders is geconfigureerd.  
 Bron: VI: ~0-3 min, ~15 min.  
 Stakeholders: Regisseur, docenten, studenten.  
-Uitleg: Duplicate registraties ondermijnen de capaciteits management en planning.  
+Uitleg: Dubbele registraties ondermijnen het capaciteitsmanagement en de planning.  
 
-### Docent en Regiseur Overzicht
+### Docent en regisseur Overzicht
 
-TO DO: uitzoeken hoe de structuur binnen brightspace werkt. Module => Course => studenten / Module => Course => klas/docent => studenten / of nog iets anders... waar werkt de Sign-Up Tool? course niveau / klas niveau
+TODO: Uitzoeken hoe de structuur binnen Brightspace werkt: Module → course → studenten, Module → course → klas/docent → studenten, of een andere structuur. Op welk niveau werkt de Sign-Up Tool: course- of klasniveau?
 
-#### FN-DRO-01 - Samenvatten deelnemers overzicht
+#### FN-DRO-01 - Samenvattend deelnemersoverzicht
 
-Requirements: De tool moet een overzicht geven van de registreerde studenen voor het event.  
+Requirements: De tool moet een overzicht geven van de geregistreerde studenten voor het event.  
 Bron: VI: ~1 min, ~3-4 min, ~6 min.  
 Stakeholders: Regisseur, docenten.  
-Uitleg: Docenten moeten binnen brightspace elke groep openen om te zien wie er geregistreerd hebben. Een samenvatten overzicht helpt met de voorbereiding.  
+Uitleg: Docenten moeten in Brightspace elke groep openen om te zien wie zich heeft geregistreerd. Een samenvattend overzicht helpt bij de voorbereiding.  
 
-#### FN-DRO-02 - Groepsindeling overzicht op basis van tijdslot
+#### FN-DRO-02 - Groepsindelingsoverzicht per tijdslot
 
-Requirements: De tool moet een overzicht geven van alle tijdslots, inclusief geregistrede studenten en resterende capaciteit.   
+Requirements: De tool moet een overzicht geven van alle tijdslots, inclusief geregistreerde studenten en de resterende capaciteit.   
 Bron: VI: ~3-6 min, ~13-14 min.  
 Stakeholders: Regisseur, docenten, studenten.  
-Uitleg: Docenten moeten weten welke studenten wanneer komen, niet alleen de deelnemers lijst.  
+Uitleg: Docenten moeten weten welke studenten wanneer komen, niet alleen beschikken over een deelnemerslijst.  
 
-#### FN-DRO-03 - Event beschrijving
+#### FN-DRO-03 - Eventbeschrijving
 
-Requirements: De tool geeft ruimte voor voorbereidings informatie voor studenten, zoals de activiteit, eisen of andere status informatie die nodig is.  
+Requirements: De tool biedt ruimte voor voorbereidingsinformatie voor studenten, zoals informatie over de activiteit, eisen of andere statusinformatie.  
 Bron: VI: ~3-4 min.  
 Stakeholders: Regisseur, docenten, studenten.  
-Uitleg: Docenten willen weten welk assesment een student doet en of de requirements, zoals een vaardighedenkaart aan zijn voldaan.  
+Uitleg: Docenten willen weten welk assessment een student doet en of aan de requirements is voldaan, bijvoorbeeld of een vaardighedenkaart is afgetekend.  
 
-TO DO: uitzoeken wie hier iets moet doen... eisen van uit de docent of invul oefening vanuit de student?
+TODO: Uitzoeken wie deze informatie aanlevert: gaat het om eisen van de docent of om een invuloefening voor de student?
 
-#### FN-DRO-04 - Setup van een event
+#### FN-DRO-04 - Een event instellen
 
-Requirements: De regisseur/functioneel manager/docent moet event kunnen opzetten zonder technische hulp.  
+Requirements: De regisseur, functioneel manager of docent moet een event zonder technische hulp kunnen opzetten.  
 Bron: VI: ~4-6 min. 
 Stakeholders: Regisseur, docenten.  
-Uitleg: Er moet geen externe afhankelijkheid zijn om events te kunnen opzetten.  
+Uitleg: Er mag geen externe afhankelijkheid zijn voor het opzetten van events.  
 
-#### FN-DRO-05 - Overview van alle deelnemers van een event
+#### FN-DRO-05 - Overzicht van alle deelnemers aan een event
 
-Requirements: Geauthoriseerde docenten moeten alle deelnemers van een event kunnen inzien, als die nodig is voor de uitvoering van het assesment.  
+Requirements: Geautoriseerde docenten moeten alle deelnemers aan een event kunnen inzien als dat nodig is voor de uitvoering van het assessment.  
 Bron: VI: ~6 min, PSI: ~4 min.  
 Stakeholders: Regisseur, docenten, studenten, privacy & security.  
-Uitleg: Docenten kunnen een assesment uitvoeren voor collega's en hebben daarmee een event level overview nodig en niet alleen hun eigen studenten.  
+Uitleg: Docenten kunnen een assessment voor collega's uitvoeren en hebben daarom een evenementoverzicht nodig, niet alleen een overzicht van hun eigen studenten.  
 
-TO DO: Zie hier boven, uitzoeken wat hier nu echt de functionele eis is. 
+TODO: Zie hierboven. Uitzoeken wat de functionele eis precies is. 
 
-#### FN-DRO-07 - Handmatige registratie studenten
+#### FN-DRO-07 - Studenten handmatig registreren
 
-Requirements: Docenten/regisseurs kunnen handmatig een student registreren voor een event of tijdslot.  
+Requirements: Docenten en regisseurs kunnen een student handmatig registreren voor een event of tijdslot.  
 Bron: VI: ~12-14 min.  
 Stakeholders: Regisseur, docenten, studenten, privacy & security.  
-Uitleg: Studenten moeten handmatig kunnen toegevoegd worden. Ter ondersteuning van uitzonderlijke zaken waar zelfregistratie niet toereikend is.  
+Uitleg: Studenten moeten handmatig kunnen worden toegevoegd ter ondersteuning van uitzonderlijke situaties waarin zelfregistratie niet toereikend is.  
 
-#### FN-DRO-08 - Bulk registratie studenten
+#### FN-DRO-08 - Studenten in bulk registreren
 
-Requirements: Studenten moeten in bulk geregistreerd kunnen worden voor operationele efficentie.  
+Requirements: Studenten moeten in bulk geregistreerd kunnen worden voor operationele efficiëntie.  
 Bron: VI: ~3 min, ~10 min.  
 Stakeholders: Regisseur, docenten, studenten.  
-Uitleg: Bulk registratie maakt het process veel sneller.  
+Uitleg: Bulksgewijze registratie maakt het proces veel sneller.  
 
-To do: uitzoeken hoe dit zou moeten werken. Brightspace quicklist, of een excel toevoegen?
+TODO: Uitzoeken hoe dit zou moeten werken: via een Brightspace-quicklist of door een Excel-bestand toe te voegen?
 
-#### FN-DRO-09 - Bewerk en verwijder events
+#### FN-DRO-09 - Events bewerken en verwijderen
 
-Requirements: Event moet bewerken en verwijdert worden, maar met safeguard voor open registraties.  
+Requirements: Events moeten kunnen worden bewerkt en verwijderd, met waarborgen voor open registraties.  
 Bron: ? assignment brief.  
 Stakeholders: Regisseur, docenten, studenten.  
-Uitleg: Regisseurs en docenten moeten een event kunnen opzetten, bewereken en verwijderen. De implementatie moet wel safeguards hebben zodra er registraties zijn voor een event.  
+Uitleg: Regisseurs en docenten moeten een event kunnen opzetten, bewerken en verwijderen. De implementatie moet waarborgen bieden zodra er registraties voor een event zijn.  
 
-TO DO: bron vaststellen, safeguard uitwerken.
+TODO: Bron vaststellen en waarborgen uitwerken.
 
-#### FN-DRO-10 - Manage event status
+#### FN-DRO-10 - Eventstatus beheren
 
-Requirements: Regiseurs en docenten moeten de status van een event kunnen veranderen, zoals: voorlopige versie, open, gesloten, archief.  
+Requirements: Regisseurs en docenten moeten de status van een event kunnen wijzigen, bijvoorbeeld naar concept, open, gesloten of gearchiveerd.  
 Bron: VI: ~15 min.  
 Stakeholders: Regisseur, docenten, studenten.  
-Uitleg: Explicite statusen maken de levencycle van het event duidelijk en begrijpbaar.  
+Uitleg: Expliciete statussen maken de levenscyclus van het event duidelijk en begrijpelijk.  
 
 ### Exports
 
-TO DO: Dubbelen met vorig groep?
+TODO: Nagaan of deze eisen overlappen met de vorige groep.
 
-#### FN-EXP-01 - Genereer deelnemers lijst
+#### FN-EXP-01 - Deelnemerslijst genereren
 
 Requirements: Docenten en regisseurs mogen deelnemerlijsten genereren.  
 Bron: VI: ~1 min, ~3-4 min.  
 Stakeholders: Regisseur, docenten.  
-Uitleg: Voor de voorbereiding en uitvoer van een event mogen docenten deelnemerlijsten maken.  
+Uitleg: Docenten mogen deelnemerslijsten maken ter voorbereiding op en uitvoering van een event.  
 
-#### FN-EXP-02 - Filter deelnemers list per event, datum of docent
+#### FN-EXP-02 - Deelnemerslijst filteren op event, datum of docent
 
 Requirements: Deelnemerlijsten kunnen gefilterd worden op event, datum, docent (tijdslot?).  
 Bron: VI: ~3-4 min, ~13-14 min.  
 Stakeholders: Regisseur, docenten.  
-Uitleg: Docenten moeten weten wie, wanneer, op welke dag (voor welk event) komen, ipv 1 platte lijst.  
+Uitleg: Docenten moeten kunnen zien wie wanneer komt en op welke dag (voor welk event), in plaats van één ongesorteerde lijst.  
 
-#### FN-EXP-03 - Ondersteun export of printbare versie
+#### FN-EXP-03 - Export of afdrukbare versie ondersteunen
 
-Requirements: Er moet een export of printbare versie te maken zijn van de lijst.  
+Requirements: Er moet een export of afdrukbare versie van de lijst gemaakt kunnen worden.  
 Bron: VI: ~1 min, ~3-4 min, ~10 min.  
 Stakeholders: Regisseur, docenten.  
 Uitleg: De huidige workflow maakt gebruik van Excel en handgemaakte lijsten. Een uitdraai helpt de docenten gebruik te maken van het schema buiten de tool.  
 
-#### FN-EXP-04 - Beperk data export tot het minimum 
+#### FN-EXP-04 - Data-export beperken tot het minimum
 
-Requirements: De geexporteerde data moet compleet, functioneel en minimaal zijn voor de doeleinden waarvoor het wordt gebruikt.  
+Requirements: De geëxporteerde data moet volledig en functioneel zijn en beperkt blijven tot wat noodzakelijk is voor het beoogde gebruik.  
 Bron: VI: ~2 min, PSI: ~8 min, ~32-33 min.  
 Stakeholders: Regisseur, docenten, studenten.  
-Uitleg: De deelnamelijst bevat personlijke data van studenten, een export moet de data minimaliseren.  
+Uitleg: De deelnemerslijst bevat persoonsgegevens van studenten. De export moet daarom zo min mogelijk gegevens bevatten.  
 
 ### Configuratie
 
-#### FN-CON-01 - Koppelen aan programma en course context
+#### FN-CON-01 - Koppelen aan programma- en coursecontext
 
-Requirements: Events moeten gekopppeld worden aan een programma, course, klas of andere relevante context.  
+Requirements: Events moeten gekoppeld kunnen worden aan een programma, course, klas of andere relevante context.  
 Bron: VI: ~14 min.  
 Stakeholders: Regisseur, docenten, studenten.  
-Uitleg: Studenten moeten alleen toegang krijgen tot relevante evenementen. Er dient een logische scheiding te zijn tussen programmas.  
+Uitleg: Studenten mogen alleen toegang krijgen tot relevante evenementen. Er moet een logische scheiding zijn tussen programma's.  
 
-#### FN-CON-02 - Evenementen hebben een default setting
+#### FN-CON-02 - Evenementen hebben standaardinstellingen
 
-Requirements: Een evenement heeft defaults settings die configureerbaar zijn, zoals slot lengte, capaciteit, annulerings deadline en zichtbaarheid.  
+Requirements: Een evenement heeft configureerbare standaardinstellingen, zoals slotlengte, capaciteit, annuleringsdeadline en zichtbaarheid.  
 Bron: VI: ~10-16 min.  
 Stakeholders: Regisseur, docenten.  
-Uitleg: Het opzetten van een evenement is repetatief werk. Het instellen van defaults reduceert handmatige setup.  
+Uitleg: Het opzetten van een evenement is repetitief werk. Het instellen van standaardwaarden vermindert handmatige handelingen.  
 
 TO DO: is het uitschrijven van instelbare settings niet handiger? Mist dat niet?
 
-#### FN-CON-03 - Role based toegang
+#### FN-CON-03 - Rolgebaseerde toegang
 
-Requirements: Toegang tot de tool wordt gebaseerd op de gebruikers role, zoals regisseur, docent, student, beheerder.  
+Requirements: Toegang tot de tool is gebaseerd op de gebruikersrol, zoals regisseur, docent, student of beheerder.  
 Bron: VI: ~4-6 min, PSI: ~4 min.  
 Stakeholders: Regisseur, docenten, studenten, beheerder.  
-Uitleg: Verschillende rollen hebben verschillende functionaliteit en zichtbaarheid. Role configuratie is vereist voor de ondersteuning van gebruik en privacy.  
+Uitleg: Verschillende rollen hebben verschillende functionaliteiten en zichtbaarheid. Rolconfiguratie is nodig om gebruik en privacy te ondersteunen.  
 
-TO DO: Deze moet beter worden uitgewerkt. Check de bronnen. 
+TODO: Deze requirement verder uitwerken en de bronnen controleren. 
 
-#### FN-CON-04 - Ondersteun generiek gebruik van de Tool
+#### FN-CON-04 - Generiek gebruik van de tool ondersteunen
 
 Requirements: De tool moet generiek te gebruiken zijn.  
 Bron: VI: ~2 min, PSI: ~8 min, ~32-33 min.  
 Stakeholders: Regisseur, docenten, studenten.  
-Uitleg: De tool moet voorkomen dat het Verpleegkunde specifieke workflow ondersteunt. Het ontwerp voor de tool is generiek en kan Hanze breedt processen ondersteunen.  
+Uitleg: De tool moet niet alleen de Verpleegkunde-specifieke workflow ondersteunen. Het ontwerp is generiek en kan processen binnen de hele Hanze ondersteunen.  
 
-#### FN-CON-05 - Scheiding tussen verschillende schools
+#### FN-CON-05 - Verschillende schools scheiden
 
-Requirements: De tool ondersteunt een logische scheiding tussen schools, courses.  
+Requirements: De tool ondersteunt een logische scheiding tussen schools en courses.  
 Bron: VI: ~11 min.  
 Stakeholders: Regisseur, docenten, studenten.  
-Uitleg: Er is een duidelijke scheiding tussen schools, courses binnen de tool.  
+Uitleg: Binnen de tool is er een duidelijke scheiding tussen schools en courses.  
 
-TO DO: waarin verschilt deze requirement van FN-CON-01
+TODO: Nagaan waarin deze requirement verschilt van FN-CON-01.
 
-## Niet Functionele requirements
+## Niet-functionele requirements
 
 ### Privacy & Security
 
 #### NF-PS-01 - Dataminimalisatie
 
-Requirements: De tool moet alleen data verwerken en opvragen die noodzakelijk is voor het sign-up process.  
+Requirements: De tool moet alleen data verwerken en opvragen die noodzakelijk is voor het sign-up proces.  
 Bron: PSI: ~8 min, ~32-33 min.  
 Stakeholders: Docenten, studenten, privacy & security, functioneel manager.  
-Uitleg: Door dataminimalisatie neemt het risico op een privacy en security risco's af.  
+Uitleg: Dataminimalisatie vermindert privacy- en securityrisico's.  
 
-TO DO: Verpleegkunde noemt deze requirement ook... waar?
+TODO: Nagaan waar Verpleegkunde deze requirement ook noemt.
 
 #### NF-PS-02 - Alleen eigen registratie zichtbaar
 
 Requirements: De tool laat alleen de eigen registratie zien. Studenten krijgen geen inzicht in de registraties van andere studenten.  
 Bron: VI: ~2 min, ~6 min, PSI: ~4-8 min, HI: ~21 min.  
 Stakeholders: Docenten, studenten, privacy & security, functioneel manager.  
-Uitleg: Binnen de huidige tool kunnen studenten de registratie informatie van andere studenten inzien. Dit is een privacy probleem.  
+Uitleg: Binnen de huidige tool kunnen studenten de registratiegegevens van andere studenten inzien. Dit is een privacyprobleem.  
 
-#### NF-PS-03 - De tool registreert geen beoordelings data
+#### NF-PS-03 - De tool registreert geen beoordelingsgegevens
 
-Requirements: De tool registeerd geen geen cijfers of beoordelingen.  
+Requirements: De tool registreert geen cijfers of beoordelingen.  
 Bron: PSI: ~4-8 min, HI: ~19-21 min.  
 Stakeholders: Regisseur, docenten, studenten, privacy & security, functioneel manager.  
-Uitleg: Becijfering gebeurt binnen de bestaande tooling en maakt geen onderdeel uit van deze tool.  
+Uitleg: Beoordeling vindt plaats binnen de bestaande tooling en maakt geen onderdeel uit van deze tool.  
 
-#### NF-PS-04 - Documenteer data flows
+#### NF-PS-04 - Gegevensstromen documenteren
 
-Requirements: Data flows binnen de applicatie moeten worden gedocumenteerd.  
+Requirements: Gegevensstromen binnen de applicatie moeten worden gedocumenteerd.  
 Bron: PSI: ~8 min, ~32-33 min.  
 Stakeholders: Privacy & security, BS&IT, functioneel management, technisch management.  
-Uitleg: Dataflows van persoonsgegeven dient inzichtelijk te zijn.  
+Uitleg: Gegevensstromen van persoonsgegevens moeten inzichtelijk zijn.  
 
-#### NF-PS-05 - Privacy Quickscan
+#### NF-PS-05 - Privacyquickscan
 
-Requirements: Het project dient een privacy quickscan te doen.  
+Requirements: Het project moet een privacyquickscan uitvoeren.
 Bron: PSI: ~32-33 min.  
 Stakeholders: Privacy & security, BS&IT, Verpleegkunde.  
-Uitleg: Het project dient een privacy quickscan te doen voordat echte personlijke data door de tool word gebruikt.  
+Uitleg: Het project moet een privacyquickscan uitvoeren voordat de tool echte persoonsgegevens verwerkt.  
 
-TO DO: Stakeholderlijst checken of we deze zo willen uitbreiden. 
+TODO: Controleren of de stakeholderlijst op deze manier moet worden uitgebreid. 
 
-#### NF-PS-06 - Verwerkingsovereenkomst bij externe partij
+#### NF-PS-06 - Verwerkingsovereenkomst met externe partij
 
-Requirements: Bij verwerking van persoonlijke data door een externe partij dient er een verwerkingsovereenkomst opgesteld te worden.  
+Requirements: Als een externe partij persoonsgegevens verwerkt, moet er een verwerkingsovereenkomst worden opgesteld.  
 Bron: VI: PSI: ~8 min, ~32 min.  
 Stakeholders: Regisseur, docenten, studenten, privacy & security, functioneel manager.  
-Uitleg: Om te voldoen aan de AVG dient er een verwerkingsovereenkomst opgezet te worden voor de verwerking van persoonlijke data.  
+Uitleg: Om te voldoen aan de AVG moet er een verwerkingsovereenkomst worden opgesteld voor de verwerking van persoonsgegevens.  
 
-#### NF-PS-07 - Security-by-design
+#### NF-PS-07 - Security by design
 
-Requirements: De Sign-Up Tool dient ontworpen te worden volgens het Security-by-design principe.  
+Requirements: De Sign-Up Tool moet worden ontworpen volgens het security-by-designprincipe.  
 Bron: PSI: ~10 min.  
 Stakeholders: Privacy & security, functioneel manager, technisch manager.  
-Uitleg: Security (en privacy) dienen door het hele process heen mee genomen te worden. Hierbij moet gekozen worden voor de veiligste praktische default.  
+Uitleg: Security en privacy moeten gedurende het hele proces worden meegenomen. Daarbij moet worden gekozen voor de veiligste praktische standaardinstelling.  
 
 #### NF-PS-08 - Least privilege
 
 Requirements: De tool geeft gebruikers alleen permissies die nodig zijn voor het uitvoeren van hun rol en taak.  
 Bron: VI: ~4-6 min, PSI: ~10 min.  
 Stakeholders: Regisseur, docenten, studenten, privacy & security, functioneel manager.  
-Uitleg: De tool behandels personlijke data en verschillende rollen en taken vereisen een verschillende zichtbaarheid. Least privilege reduceert privacy en security risico.  
+Uitleg: De tool verwerkt persoonsgegevens. Verschillende rollen en taken vereisen verschillende toegangsrechten. Least privilege vermindert privacy- en securityrisico's.  
 
-#### NF-PS-09 - Data retentie en verwijderings regels
+#### NF-PS-09 - Bewaar- en verwijderingsregels voor gegevens
 
-Requirements: De Sign-Up Tool moet vastleggen hoelang registratie data bewaard wordt en wanneer het wordt verwijderd of gearchiveerd.  
+Requirements: De Sign-Up Tool moet vastleggen hoelang registratiegegevens worden bewaard en wanneer ze worden verwijderd of gearchiveerd.  
 Bron: PSI: ~32-33 min.  
 Stakeholders: Regisseur, docenten, studenten, privacy & security, functioneel manager.  
-Uitleg: De tool verwerkt personlijke data. Regels zijn nodig om te zorgen voor doelbinding en ter voorkoming van onnodige opslag.  
+Uitleg: De tool verwerkt persoonsgegevens. Er zijn regels nodig om doelbinding te waarborgen en onnodige opslag te voorkomen.  
 
 ### Onderhoudbaarheid
 
-#### NF-MA-01 - Onderhoudbaar en breed gedragen technology
+#### NF-MA-01 - Onderhoudbare en breed gedragen technologie
 
-Requirements: De technische oplossing moet gebruik maken van breed gedragen technieken.  
+Requirements: De technische oplossing moet gebruikmaken van breed gedragen technologieën.  
 Bron: BII: ~6-8 min, TKI: ~7-9 min, HI: ~3-6 min.  
 Stakeholders: BS&IT, technisch manager, collabspace.  
-Uitleg: De benodigde kennis en kunde om de applicatie te onderhouden moet op breed gedragen technologien gebaseerd zijn. Hiermee moet de applicatie makkelijk overdraagbaar zijn en het onderhoud geen specialisisch kennnis vereisen.  
+Uitleg: De kennis en vaardigheden die nodig zijn om de applicatie te onderhouden, moeten gebaseerd zijn op breed gedragen technologieën. Hierdoor moet de applicatie eenvoudig overdraagbaar zijn en mag het onderhoud geen specialistische kennis vereisen.  
 
-TO DO: stakeholders?
+TODO: Stakeholders controleren.
 
 #### NF-MA-02 - Eigenaarschap en onderhoud
 
 Requirements: Voordat de oplossing operationeel wordt, is duidelijk waar het eigenaarschap en het onderhoud van de applicatie ligt.  
 Bron: BII: ~2-5 min, HI: ~3-6 min.  
 Stakeholders: BS&IT, HIP, technisch manager.  
-Uitleg: BS&IT en HIP benoemen continuiteit, eigenaarschap en onderhoud als een kritisch punt tijdens de transitie van poc naar producttie.  
+Uitleg: BS&IT en HIP benoemen continuïteit, eigenaarschap en onderhoud als kritieke punten tijdens de transitie van PoC naar productie.  
 
 
-#### NF-MA-04 - Scheiding van presentatie, integratie, data
+#### NF-MA-04 - Scheiding van presentatie, integratie en data
 
-Requirements: De architectuur van de Sign-Up Tool maakt een scheiding tussen presentatie-, integratie- en de data-laag.  
+Requirements: De architectuur van de Sign-Up Tool scheidt de presentatie-, integratie- en datalaag.  
 Bron: BII: ~11 min, architectuurkaders.  
 Stakeholders: BS&IT, HIP, technisch manager.  
-Uitleg: De scheiding van lagen maakt de applicatie beter te onderhouden en te beveiligen. Daarnaast dwingt de scheiding tot expliciete keuzes tav verwerking en opslag.  
+Uitleg: De scheiding van lagen maakt de applicatie beter onderhoudbaar en veiliger. Daarnaast dwingt de scheiding tot expliciete keuzes ten aanzien van verwerking en opslag.  
 
-TO DO: architectuurkaders uitzoeken. 
+TODO: Architectuurkaders uitzoeken. 
 
-#### NF-MA-05 - Code review en QA
+#### NF-MA-05 - Codereviews en kwaliteitsborging
 
-Requirements: Het development proces zou code reviews en kwaliteits controlles moeten faciliteren voordat het in productie gaat.  
+Requirements: Het ontwikkelproces moet codereviews en kwaliteitscontroles faciliteren voordat de applicatie in productie gaat.  
 Bron: BII: ~2-6 min, HI: ~3-5 min.  
 Stakeholders: BS&IT, HIP, technisch manager.  
 Uitleg: Code review en kwaliteitscontrole verkleinen de kans op fouten en zorgen voor technisch verantwoorde keuzes. Daarnaast helpt dit met kennisdeling, consistente code en onderhoudbaarheid.  
 
-#### NF-MA-06 - Documenteer technische keuzes
+#### NF-MA-06 - Technische keuzes documenteren
 
-Requirements: Groote technische keuze moeten gedocumenteerd en beargumenteerd worden.  
+Requirements: Grote technische keuzes moeten worden gedocumenteerd en onderbouwd.  
 Bron: BII: ~6-8 min.  
 Stakeholders: BS&IT, HIP, technisch manager.  
-Uitleg: Technische keuze dienen onderbouwt te worden.  
+Uitleg: Technische keuzes moeten worden onderbouwd.  
 
 ### Integratie
 
@@ -464,72 +463,71 @@ Uitleg: Technische keuze dienen onderbouwt te worden.
 Requirements: De Sign-Up Tool moet toegankelijk zijn vanuit de relevante Brightspace content.  
 Bron: VI: ~6-7 min, BI: ~10-14 min.  
 Stakeholders: Regisseur, docenten, studenten, Brightspace engineers.  
-Uitleg: Brigthspace is de LMS vanuit de Hanze die studenten en docenten gebruiken om het onderwijs digitaal aan te bieden.  
+Uitleg: Brightspace is de LMS vanuit de Hanze die studenten en docenten gebruiken om het onderwijs digitaal aan te bieden.  
 
 TO DO: Stakeholder: Brightspace engineers. 
 
-#### NF-INT-02 - Gebruik het Brightspace intergratie mechansime
+#### NF-INT-02 - Gebruik het Brightspace-integratiemechanisme
 
-Requirements: De oplossing gebruikt een goedgekeurde Brightspace integratie mechanisme. Als toepasbaar kan de LTI 1.3 / LTI Advantage gebruikt worden om veilig de geauthenticeerde gebruiker en course context op te halen.  
+Requirements: De oplossing gebruikt een goedgekeurd Brightspace-integratiemechanisme. Indien toepasbaar wordt LTI 1.3/LTI Advantage gebruikt om de geauthenticeerde gebruiker en coursecontext veilig op te halen.  
 Bron: BI: ~10-14 min, ~19-20 min.  
 Stakeholders: Regisseur, docenten, studenten, Brightspace engineers, technisch manager.  
-Uitleg: LTI is het brightspace mechanisme om een externe applicatie te integreren binnen Brightspace.  
+Uitleg: LTI is het Brightspace-mechanisme om een externe applicatie binnen Brightspace te integreren.  
 
 
-### Authenticatie en Authorisatie
+### Authenticatie en autorisatie
 
 #### NF-AUT-01 — De Sign-Up Tool gebruikt SSO
 
-Requirements: De tool moet gebruik maken van de beschikbare SSO binnen de Hanze. Als de tool gebruikt wordt vanuit een geauthenticeerde Hanze omgeving, dient deze context hergebruikt te worden.  
+Requirements: De tool moet gebruikmaken van de beschikbare SSO binnen de Hanze. Als de tool vanuit een geauthenticeerde Hanzeomgeving wordt gebruikt, moet deze context worden hergebruikt.  
 Bron: PSI: ~15 min, BI: ~10-14 min.  
 Stakeholders: Regisseur, docenten, studenten, privacy & security, Brightspace engineers.  
-Uitleg: SSO is de normale toegangs route tot de Hanze systemen.  
+Uitleg: SSO is de gebruikelijke toegangsroute tot de systemen van de Hanze.  
 
 #### NF-AUT-02 — Ondersteuning van RBAC
 
-Requirements: De tool ondersteunt role-based acces control (RBAC) voor de gebruikers.  
+Requirements: De tool ondersteunt role-based access control (RBAC) voor gebruikers.  
 Bron: VI: ~4-6 min, PSI: ~4 min, ~10 min.  
 Stakeholders: Regisseur, docenten, studenten, privacy & security, functioneel manager.  
-Uitleg: Verschillende rolen gebruiken en zien verschillende functionaliteiten binnen de applicatie en hebben daarnaast toegang tot verschillende data.  
+Uitleg: Verschillende rollen gebruiken en zien verschillende functionaliteiten binnen de applicatie en hebben toegang tot verschillende gegevens.  
 
-#### NF-AUT-03 — Multi tenant
+#### NF-AUT-03 - Multitenancy
 
 Requirements:  
 Bron: VI: ~11-14 min.  
 Stakeholders: Regisseur, docenten, studenten, privacy & security, functioneel manager.  
 Uitleg:  
 
-To Do: 1 multi tenant requirment, waarschijnlijk hier. 
-to Do: dit is toch ook een requirement van BS&IT?
+TODO: Eén multitenancyrequirement, waarschijnlijk hier. Nagaan of dit ook een requirement van BS&IT is.
 
-### Betrouwbaarheid en data integriteit
+### Betrouwbaarheid en data-integriteit
 
-#### NF-BDI-01 — De tool moet overweg kunnen met simultaan gebruik
+#### NF-BDI-01 — De tool moet overweg kunnen met gelijktijdig gebruik
 
-Requirements: De Sign-Up Tool voorkomt dat leerlingen kunnen overboeken op een tijdslot of dat een leerling 2 keer kan registreren. Bij een falende actie moet niet leiden tot een gedeeltelijke, tegenstrijdige of mislijdende data registratie.  
+Requirements: De Sign-Up Tool voorkomt dat studenten een tijdslot overboeken of zich twee keer registreren. Een mislukte actie mag niet leiden tot een gedeeltelijke, tegenstrijdige of misleidende gegevensregistratie.  
 Bron: VI: ~0-3 min, ~10-11 min, ~15-16 min, HI: ~5-6 min.  
 Stakeholders: Regisseur, docenten, studenten.  
-Uitleg: De tool moet een single point of truth zijn tav de geregistreerde tijdslots.  
+Uitleg: De tool moet één betrouwbare bron zijn voor de geregistreerde tijdslots.  
 
-#### NF-BDI-02 — Ondersteunt monitoring en logging
+#### NF-BDI-02 — Monitoring en logging ondersteunen
 
-Requirements: De tool ondersteunt de logging en monitoring vereisten die van toepassing zijn op de Hanze systemen voordat het in productie wordt genomen.  
+Requirements: Voordat de tool in productie wordt genomen, moet deze voldoen aan de vereisten voor logging en monitoring die van toepassing zijn op Hanze-systemen.  
 Bron: PSI: ~10-11 min, TKI: ~4-6 min.  
 Stakeholders: privacy & security, technisch manager.  
-Uitleg: Monitoring en logging helpen met het ontdekken operationele problemen, onderzoeken van incidenten en ondersteunen technische management van de applicatie.  
+Uitleg: Monitoring en logging helpen operationele problemen te ontdekken, incidenten te onderzoeken en het technisch beheer van de applicatie te ondersteunen.  
 
-To Do: dit is nog erg algemeen, kan dit concreter?
+TODO: Deze requirement is nog erg algemeen. Kan deze concreter worden geformuleerd?
 
-#### NF-BDI-03 — Audit trail
+#### NF-BDI-03 — Audittrail
 
-Requirements: De tool logt registraties en administrative wijzigingen, waaronder acteur, actie en tijdstip, zodat de acties geaudit kunnen worden.  
+Requirements: De tool registreert aanmeldingen en administratieve wijzigingen, waaronder de actor, de actie en het tijdstip, zodat deze acties kunnen worden gecontroleerd.  
 Bron: BII: ~4-5 min, PSI: ~10-11 min.  
 Stakeholders: privacy & security, technisch manager.  
-Uitleg: Wijzigingen in registraties en events configuratie kunnen effect hebben op studenten en de planning. Door deze op te slaan is het mogelijk te reconstrueren wat er is gebeurt.  
+Uitleg: Wijzigingen in registraties en eventconfiguraties kunnen gevolgen hebben voor studenten en de planning. Door deze wijzigingen vast te leggen, kan worden gereconstrueerd wat er is gebeurd.  
 
-TO DO: NF-BDI-02 en NF-BDI-03 fact checken in de interviews en aanscherpen, nuanceren... mogelijk hetzelfde?
+TODO: NF-BDI-02 en NF-BDI-03 controleren aan de hand van de interviews en aanscherpen of nuanceren. Mogelijk overlappen ze.
 
-### Template:
+### Template
 
 #### NF-BDI-01 — XXX
 
@@ -540,25 +538,25 @@ Uitleg:
 
 TO DO: template weghalen. 
 
-## Priorisatie Requirements
+## Prioritering van requirements
 
-De vast gestelde requirements verschillen in het belang die ze hebben binnen het project. Alle requirement represtenteren een behoefte, beperking of een kwaliteits doel, echter hoeven ze niet allemaal op hetzelfde moment geimplementeerd te worden. Om een onderscheid te maken worden de requirements geprioriseerd, hierin wordt een onderscheid gemaakt tussen requirements die noodzakelijk zijn voor de intiele versie en requirements die uitgesteld kunnen worden zonder dat de oplossing onbruikbaar wordt. 
+De vastgestelde requirements verschillen in belang voor het project. Alle requirements vertegenwoordigen een behoefte, beperking of kwaliteitsdoel. Ze hoeven echter niet allemaal op hetzelfde moment te worden geïmplementeerd. Om onderscheid te maken, worden de requirements geprioriteerd. Daarbij wordt onderscheid gemaakt tussen requirements die noodzakelijk zijn voor de initiële versie en requirements die kunnen worden uitgesteld zonder dat de oplossing onbruikbaar wordt. 
 
 ### Methode
 
-De MoSCoW methode is geintroduceerd door Clegg en Barker in CASE Method Fast-Track: A RAD Approach [@clegg1994]. Hierin is er onderscheid in 4 catagorien: Must, Should have, Could have, Won't have.   
+De MoSCoW-methode is geïntroduceerd door Clegg en Barker in CASE Method Fast-Track: A RAD Approach [@clegg1994]. Hierbij wordt onderscheid gemaakt tussen vier categorieën: Must, Should have, Could have en Won't have.   
 
-In de Must have catagorie zitten de requirements die essentieel zijn voor het project. Zonder deze requirements kan de applicatie niet aan zijn doel voldoen. De Should have zijn requirements die belangrijk zijn en worden verwacht, maar niet nodig zijn voor een werkbare oplossing. Daarnaast zijn er nog requirements die wenselijk en praktisch zijn voor de applicatie, maar een beperkte impact hebben op de bruikbaarheid van de applicatie. Deze vormen de Could have. Als laatste catagorie zijn er nog de Won't have. Deze requirements worden expliciet niet vervult in deze release en kunnen overwogen worden voor een latere release. 
+De categorie Must bevat de requirements die essentieel zijn voor het project. Zonder deze requirements kan de applicatie haar doel niet bereiken. Should-requirements zijn belangrijk en worden verwacht, maar zijn niet noodzakelijk voor een werkbare oplossing. Daarnaast zijn er requirements die wenselijk en praktisch zijn, maar een beperkte invloed hebben op de bruikbaarheid van de applicatie. Deze vallen in de categorie Could. De laatste categorie is Won't. Deze requirements worden in deze release expliciet niet gerealiseerd en kunnen voor een latere release worden overwogen. 
 
-De MoSCoW methode is handig om een onderscheid te maken tussen de globale catagorien, maar biedt geen houvast voor een verder verdeling. Hiervoor krijgen requirements een score. Deze score is de factor tussen het belang en de noodzaak van een requirement. Het belang en de noodzaak worden zo goed mogelijk geschat in de catagorien op een schaal van 1 tot 5, zie tabel @tbl:criteria.
+De MoSCoW-methode is handig om onderscheid te maken tussen de hoofdcategorieën, maar biedt geen houvast voor een verdere verdeling. Daarom krijgen requirements een score. Deze score is het product van het belang en de noodzaak van een requirement. Beide worden zo goed mogelijk ingeschat op een schaal van 1 tot 5, zie tabel @tbl:criteria.
 
 | Score | Belang | Noodzaak |
 |---|---|---|
-| 1 | Weinig contributie aan het project | Niet vereist voor MVP |
-| 2 | Beperkte of local voordeel | Makkelijk uitstelbaar of simpele workaround |
-| 3 | Nuttige toevoeging aan workflow | Nalating geeft ongemak of extra handmatig werk |
-| 4 | Grote toevoeging aan workflow of stakeholder behoefte | Nalating geeft veel extra werk, workaround nog mogelijk |
-| 5 | Ondersteunt project doel | Bijna onmisbaar |
+| 1 | Weinig bijdrage aan het project | Niet vereist voor de MVP |
+| 2 | Beperkt voordeel | Gemakkelijk uitstelbaar of een eenvoudige workaround |
+| 3 | Nuttige toevoeging aan de workflow | Uitstel veroorzaakt ongemak of extra handmatig werk |
+| 4 | Grote toevoeging aan de workflow of aan een stakeholderbehoefte | Uitstel veroorzaakt veel extra werk; een workaround is nog mogelijk |
+| 5 | Ondersteunt het projectdoel | Bijna onmisbaar |
 
 : Criteria-tabel {#tbl:criteria}
 
@@ -572,15 +570,15 @@ Importance(r)\times Necessity(r), & \text{otherwise}
 \end{cases}
 $$  
 
-waarbij \(P\) de prioriteit, \(I\) het belang en \(N\) de noodzaak van requirement \(r\) voorstelt.
+waarbij $P$ de prioriteit, $I$ het belang en $N$ de noodzaak van requirement $r$ voorstellen.
 
-De prioriteits score wordt berekend over de niet Must catagorien. De Must catagorie moet altijd worden voldaan en hebben dus effectief een prioriteits score van oneindig. 
+De prioriteitsscore wordt berekend voor de categorieën buiten Must. Aan de Must-requirements moet altijd worden voldaan; daarom hebben ze effectief een prioriteitsscore van oneindig. 
 
-### MoSCoW 
+### MoSCoW
 
-Voor de Must-Have requirements is het oneindig symbool (∞) gebruikt. Elke Must-Have moet aan voldaan worden om tot een oplossing te komen en er is dus geen onderlinge verschil in belang van de requirement. 
+Voor de Must-have-requirements is het oneindigheidssymbool (∞) gebruikt. Aan elke Must-have moet worden voldaan om tot een oplossing te komen. Er is dus geen onderling verschil in het belang van deze requirements. 
 
-De andere requirements zijn primair ingedeeld op de hoofdcatagorien, met de prioriteit als verdere verdeling. Hoewel er is gepoogt om tot een zo objectief mogelijk lijst te komen, blijft de uiteindelijke score een subjectief proces. In de @tbl:moscowpriority wordt de relatie tussen de MoSCoW en de prioriteits-score weergegeven. 
+De andere requirements zijn primair ingedeeld in hoofdcategorieën, met de prioriteitsscore als verdere verdeling. Hoewel is geprobeerd een zo objectief mogelijke lijst op te stellen, blijft de uiteindelijke score subjectief. In tabel @tbl:moscowpriority wordt de relatie tussen de MoSCoW-categorieën en de prioriteitsscore weergegeven. 
 
 | MoSCoW-value | Priority-score |
 |---|---|
@@ -589,89 +587,89 @@ De andere requirements zijn primair ingedeeld op de hoofdcatagorien, met de prio
 | Could | 8-12 |
 | Won't | 1-6 |
 
-: MoSCow-Priority-tabel {#tbl:moscowpriority}
+: MoSCoW-prioriteitstabel {#tbl:moscowpriority}
 
-De classificatie van de requirements focussed eerst op het kern proces: het creeeren van evenementen en het registrereb hiervoor. Daarna waaieren we uit naar de processen voor docenten en we eindigen met requirements die meer in niet functionele aard liggen, zoals security en privacy, onderhoudbaarheid, etc. 
+De classificatie van de requirements richt zich eerst op het kernproces: het creëren van evenementen en het registreren daarvoor. Daarna verschuift de aandacht naar de processen voor docenten. Tot slot volgen de meer niet-functionele requirements, zoals security, privacy en onderhoudbaarheid. 
 
 | ID | Requirement | MoSCoW | Imp. | Nec. | Prio. |
 |---|---|---|---:|---:|---:|
-| FN-ETM-01 | Creer Sign-up events | Must | ∞ | ∞ | ∞ |
-| FN-ETM-02 | Vastlegen meta data | Must | ∞ | ∞ | ∞ |
-| FN-ETM-03 | Gereserveerd tijd opdelen in tijdslots | Must | ∞ | ∞ | ∞ |
+| FN-ETM-01 | Sign-upevents creëren | Must | ∞ | ∞ | ∞ |
+| FN-ETM-02 | Metadata vastleggen | Must | ∞ | ∞ | ∞ |
+| FN-ETM-03 | Gereserveerde tijd opdelen in tijdslots | Must | ∞ | ∞ | ∞ |
 | FN-ETM-04 | Capaciteit van tijdslots | Must | ∞ | ∞ | ∞ |
-| FN-ETM-09 | Tijdslot status laten zien | Must | ∞ | ∞ | ∞ |
-| FN-ETM-06 | Markeer pauze als niet registreerbaar | Should | 5 | 4 | 20 |
-| FN-ETM-07 | De registratie moet een open en sluit moment kennen | Should | 5 | 4 | 20 |
-| FN-ETM-08 | De registratie kent een annulerings deadline | Should | 4 | 4 | 16 |
-| FN-ETM-11 | Terugkeerende of herbruikbare events structuren | Could | 4 | 3 | 12 |
-| FN-ETM-12 | Rollende uitgave van tijdslots | Could | 4 | 3 | 12 |
-| FN-ETM-10 | Maak tijdslots van geimporteerde plannings data | Won't | 2 | 2 | 4 |
+| FN-ETM-09 | Tijdslotstatus tonen | Must | ∞ | ∞ | ∞ |
+| FN-ETM-06 | Pauzes markeren als niet registreerbaar | Should | 5 | 4 | 20 |
+| FN-ETM-07 | Registratie heeft een openings- en sluitingstijd | Should | 5 | 4 | 20 |
+| FN-ETM-08 | Registratie heeft een annuleringsdeadline | Should | 4 | 4 | 16 |
+| FN-ETM-11 | Terugkerende of herbruikbare eventstructuren | Could | 4 | 3 | 12 |
+| FN-ETM-12 | Rollende vrijgave van tijdslots | Could | 4 | 3 | 12 |
+| FN-ETM-10 | Tijdslots genereren uit geïmporteerde planningsgegevens | Won't | 2 | 2 | 4 |
 |  |  |  |  |  |  |
 | FN-SR-01 | Registreren voor een tijdslot | Must | ∞ | ∞ | ∞ |
 | FN-SR-05 | Eigen registratie bekijken | Must | ∞ | ∞ | ∞ |
 | FN-SR-06 | Beschikbaarheid is zichtbaar | Must | ∞ | ∞ | ∞ |
-| FN-SR-09 | Voorkom duplicate registratie | Must | ∞ | ∞ | ∞ |
-| FN-SR-07 | Sign-up events alleen zichtbaar mits relevant | Should | 5 | 4 | 20 |
-| FN-SR-02 | Deregistratie voor annulerings deadline | Should | 4 | 4 | 16 |
+| FN-SR-09 | Dubbele registraties voorkomen | Must | ∞ | ∞ | ∞ |
+| FN-SR-07 | Sign-upevents alleen zichtbaar wanneer relevant | Should | 5 | 4 | 20 |
+| FN-SR-02 | Deregistratie vóór de annuleringsdeadline | Should | 4 | 4 | 16 |
 | FN-SR-04 | Wijzigen van registratie | Should | 4 | 4 | 16 |
-| FN-SR-08 | Note of comment door studenten | Won't | 2 | 1 | 2 |
+| FN-SR-08 | Notitie of opmerking van studenten | Won't | 2 | 1 | 2 |
 |  |  |  |  |  |  |
-| FN-DRO-01 | Samenvatten deelnemers overzicht | Must | ∞ | ∞ | ∞ |
-| FN-DRO-02 | Groepsindeling overzicht op basis van tijdslot | Must | ∞ | ∞ | ∞ |
-| FN-DRO-04 | Setup van een event | Must | ∞ | ∞ | ∞ |
-| FN-DRO-05 | Overview van alle deelnemers van een event | Must | ∞ | ∞ | ∞ |
-| FN-DRO-07 | Handmatige registratie studenten | Should | 4 | 4 | 16 |
-| FN-DRO-09 | Bewerk en verwijder events | Should | 4 | 4 | 16 |
-| FN-DRO-10 | Manage event status | Could | 3 | 3 | 9 |
-| FN-DRO-03 | Event beschrijving | Could | 4 | 2 | 8 |
-| FN-DRO-08 | Bulk registratie studenten | Won't | 3 | 2 | 6 |
+| FN-DRO-01 | Samenvattend deelnemersoverzicht | Must | ∞ | ∞ | ∞ |
+| FN-DRO-02 | Groepsindelingsoverzicht per tijdslot | Must | ∞ | ∞ | ∞ |
+| FN-DRO-04 | Een event instellen | Must | ∞ | ∞ | ∞ |
+| FN-DRO-05 | Overzicht van alle deelnemers aan een event | Must | ∞ | ∞ | ∞ |
+| FN-DRO-07 | Studenten handmatig registreren | Should | 4 | 4 | 16 |
+| FN-DRO-09 | Events bewerken en verwijderen | Should | 4 | 4 | 16 |
+| FN-DRO-10 | Eventstatus beheren | Could | 3 | 3 | 9 |
+| FN-DRO-03 | Eventbeschrijving | Could | 4 | 2 | 8 |
+| FN-DRO-08 | Studenten in bulk registreren | Won't | 3 | 2 | 6 |
 |  |  |  |  |  |  |
-| FN-EXP-01 | Genereer deelnemers lijst | Must | ∞ | ∞ | ∞ |
-| FN-EXP-04 | Beperk data export tot het minimum | Must | ∞ | ∞ | ∞ |
-| FN-EXP-03 | Ondersteun export of printbare versie | Should | 4 | 4 | 16 |
-| FN-EXP-02 | Filter deelnemers list per event, datum of docent | Should | 4 | 3 | 12 |
+| FN-EXP-01 | Deelnemerslijst genereren | Must | ∞ | ∞ | ∞ |
+| FN-EXP-04 | Data-export beperken tot het minimum | Must | ∞ | ∞ | ∞ |
+| FN-EXP-03 | Export of afdrukbare versie ondersteunen | Should | 4 | 4 | 16 |
+| FN-EXP-02 | Deelnemerslijst filteren op event, datum of docent | Should | 4 | 3 | 12 |
 |  |  |  |  |  |  |
-| FN-CON-01 | Koppelen aan programma en course context | Must | ∞ | ∞ | ∞ |
-| FN-CON-03 | Role based toegang | Must | ∞ | ∞ | ∞ |
-| FN-CON-02 | Evenementen hebben een default setting | Should | 4 | 3 | 12 |
-| FN-CON-04 | Ondersteun generiek gebruik van de Tool | Won't | 4 | 1 | 4 |
-| FN-CON-05 | Scheiding tussen verschillende schools | Won't | 5 | 1 | 5 |
+| FN-CON-01 | Koppelen aan programma- en coursecontext | Must | ∞ | ∞ | ∞ |
+| FN-CON-03 | Rolgebaseerde toegang | Must | ∞ | ∞ | ∞ |
+| FN-CON-02 | Evenementen hebben standaardinstellingen | Should | 4 | 3 | 12 |
+| FN-CON-04 | Generiek gebruik van de tool ondersteunen | Won't | 4 | 1 | 4 |
+| FN-CON-05 | Verschillende schools scheiden | Won't | 5 | 1 | 5 |
 |  |  |  |  |  |  |
 | NF-PS-01 | Dataminimalisatie | Must | ∞ | ∞ | ∞ |
 | NF-PS-02 | Alleen eigen registratie zichtbaar | Must | ∞ | ∞ | ∞ |
-| NF-PS-03 | De tool registreert geen beoordelings data | Must | ∞ | ∞ | ∞ |
+| NF-PS-03 | Geen beoordelingsgegevens registreren | Must | ∞ | ∞ | ∞ |
 | NF-PS-07 | Security-by-design | Must | ∞ | ∞ | ∞ |
 | NF-PS-08 | Least privilege | Must | ∞ | ∞ | ∞ |
-| NF-PS-09 | Data retentie en verwijderings regels | Should | 4 | 4 | 16 |
-| NF-PS-04 | Documenteer data flows | Could | 4 | 3 | 12 |
-| NF-PS-05 | Privacy Quickscan | Could | 4 | 2 | 8 |
-| NF-PS-06 | Verwerkingsovereenkomst bij externe partij | Won't | 5 | 1 | 5 |
+| NF-PS-09 | Bewaar- en verwijderingsregels voor gegevens | Should | 4 | 4 | 16 |
+| NF-PS-04 | Gegevensstromen documenteren | Could | 4 | 3 | 12 |
+| NF-PS-05 | Privacyquickscan | Could | 4 | 2 | 8 |
+| NF-PS-06 | Verwerkingsovereenkomst met externe partij | Won't | 5 | 1 | 5 |
 |  |  |  |  |  |  |
-| NF-MA-01 | Onderhoudbaar en breed gedragen technology | Must | ∞ | ∞ | ∞ |
-| NF-MA-04 | Scheiding van presentatie, integratie, data | Must | ∞ | ∞ | ∞ |
-| NF-MA-06 | Documenteer technische keuzes | Should | 4 | 5 | 20 |
-| NF-MA-05 | Code review en QA | Should | 4 | 4 | 16 |
+| NF-MA-01 | Onderhoudbare en breed gedragen technologie | Must | ∞ | ∞ | ∞ |
+| NF-MA-04 | Scheiding van presentatie, integratie en data | Must | ∞ | ∞ | ∞ |
+| NF-MA-06 | Technische keuzes documenteren | Should | 4 | 5 | 20 |
+| NF-MA-05 | Codereviews en kwaliteitsborging | Should | 4 | 4 | 16 |
 | NF-MA-02 | Eigenaarschap en onderhoud | Could | 5 | 2 | 10 |
 |  |  |  |  |  |  |
 | NF-INT-01 | Sign-Up Tool toegankelijk vanuit Brightspace | Must | ∞ | ∞ | ∞ |
-| NF-INT-02 | Gebruik het Brightspace intergratie mechansime | Must | ∞ | ∞ | ∞ |
+| NF-INT-02 | Brightspace-integratiemechanisme gebruiken | Must | ∞ | ∞ | ∞ |
 |  |  |  |  |  |  |
 | NF-AUT-01 | De Sign-Up Tool gebruikt SSO | Must | ∞ | ∞ | ∞ |
 | NF-AUT-02 | Ondersteuning van RBAC | Must | ∞ | ∞ | ∞ |
-| NF-AUT-03 | Multi tenant | Won't | 5 | 1 | 5 |
+| NF-AUT-03 | Multitenancy | Won't | 5 | 1 | 5 |
 |  |  |  |  |  |  |
-| NF-BDI-01 | De tool moet overweg kunnen met simultaan gebruik | Must | ∞ | ∞ | ∞ |
-| NF-BDI-02 | Ondersteunt monitoring en logging | Should | 4 | 5 | 20 |
-| NF-BDI-03 | Audit trail | Should | 4 | 4 | 16 |
+| NF-BDI-01 | De tool moet overweg kunnen met gelijktijdig gebruik | Must | ∞ | ∞ | ∞ |
+| NF-BDI-02 | Monitoring en logging ondersteunen | Should | 4 | 5 | 20 |
+| NF-BDI-03 | Audittrail | Should | 4 | 4 | 16 |
 
 : Prioritering requirements {#tbl:requirement-priorities column-widths="24,90,14,7,7,7"}
 
 ## Conclusie
 
-De requirements laten zien dat de Sign-Up Tool niet alleen een vervanging is voor de Brightspace groep registratie. De kern is een gecontroleerde sign-up proces waar docenten registratie momenten kunnen configureren en studenten kunnen registreren zonder het blootstellen van personlijke data.
+De requirements laten zien dat de Sign-Up Tool niet alleen een vervanging is voor de registratie via Brightspace-groepen. De kern is een gecontroleerd sign-upproces waarin docenten registratiemomenten kunnen configureren en studenten zich kunnen registreren zonder persoonsgegevens van anderen bloot te stellen.
 
-De Functionele requirements geven de workflow van het proces, terwij de niet-functionele requirements vastleggen how de tool geimplementeerd kan worden binnen de Hanze omgeving. Specifiek zijn privacy, toegang, Brightspace integratie, onderhoudbaarheid en data integriteit deel van de oplossing ipv toevoegingen na de functionele implementatie. 
+De functionele requirements beschrijven de workflow van het proces, terwijl de niet-functionele requirements vastleggen hoe de tool binnen de Hanzeomgeving kan worden geïmplementeerd. Privacy, toegangsbeheer, Brightspace-integratie, onderhoudbaarheid en data-integriteit zijn daarbij onderdeel van de oplossing, niet slechts toevoegingen na de functionele implementatie. 
 
-De prioritiseren bepaald de scoop voor de eerste implementatie. De Must-haves geven een sterke basis voor wat moet, terwijl de Should en Could-Have geordert zijn voor als tijd en technische haalbaarheid het toestaan om hier aan te werken. De Won't have zullen deze ronde niet aan bod komen maar voor de toekomst worden gedocumenteerd. 
+De prioritering bepaalt de scope voor de eerste implementatie. De Must-haves vormen de basis van wat gerealiseerd moet worden. Aan de Should- en Could-haves kan worden gewerkt als de tijd en technische haalbaarheid dit toelaten. De Won't-haves worden in deze ronde niet gerealiseerd, maar wel gedocumenteerd voor de toekomst. 
 
-Deze requirements geven de criteria waartegen mogelijk oplossingen gehouden worden. In de volgende hoofdstuken evalureren we de mogelijke oplossingen. 
+Deze requirements vormen de criteria waaraan mogelijke oplossingen worden getoetst. In de volgende hoofdstukken evalueren we de mogelijke oplossingen.  
