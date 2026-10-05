@@ -61,6 +61,7 @@ document:
     - 33_transcriptie_security_privacy.md
     - 34_transcriptie_HIP.md
     - 35_transcriptie_brightspace.md
+    - 36_transcriptie_Academy_Attendance.md
   bibliography:
     enabled: true
     title: Literatuurlijst
