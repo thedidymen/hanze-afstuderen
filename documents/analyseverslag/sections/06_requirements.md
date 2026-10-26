@@ -160,10 +160,10 @@ Uitleg: Binnen de gestelde regels is het wijzigen van een tijdslot toegestaan.
 
 #### FN-SR-05 - Eigen registratie bekijken
 
-Requirements: Studenten kunnen de eigen registratie inzien zonder die van andere studenten te zien.  
+Requirements: Studenten kunnen de eigen registratie inzien.  
 Bron: VI: ~3 min, ~6 min, PSI: ~4 min.  
 Stakeholders: Regisseur, docenten, studenten, privacy en security.  
-Uitleg: Studenten hoeven geen gegevens van andere studenten te kunnen inzien.  
+Uitleg: Student dient inzage te hebben in de eigen registratie.  
 
 #### FN-SR-06 - Beschikbaarheid tonen
 
@@ -186,7 +186,7 @@ Bron: VI: ~4 min.
 Stakeholders: Regisseur, docenten, studenten.  
 Uitleg: Het huidige systeem staat geen opmerkingen toe; dit is als beperking aangekaart. De behoefte moet worden gevalideerd voordat deze functie onderdeel wordt van de MVP.  
 
-#### FN-SR-09 - Voorkom dubbele registraties
+#### FN-SR-09 - Eén registratie per student.
 
 Requirements: Studenten kunnen zich maar één keer registreren, tenzij dit anders is geconfigureerd.  
 Bron: VI: ~0-3 min, ~15 min.  
@@ -318,15 +318,6 @@ Uitleg: Het opzetten van een evenement is repetitief werk. Het instellen van sta
 
 TO DO: is het uitschrijven van instelbare settings niet handiger? Mist dat niet?
 
-#### FN-CON-03 - Rolgebaseerde toegang
-
-Requirements: Toegang tot de tool is gebaseerd op de gebruikersrol, zoals regisseur, docent, student of beheerder.  
-Bron: VI: ~4-6 min, PSI: ~4 min.  
-Stakeholders: Regisseur, docenten, studenten, beheerder.  
-Uitleg: Verschillende rollen hebben verschillende functionaliteiten en zichtbaarheid. Rolconfiguratie is nodig om gebruik en privacy te ondersteunen.  
-
-TODO: Deze requirement verder uitwerken en de bronnen controleren. 
-
 #### FN-CON-04 - Generiek gebruik van de tool ondersteunen
 
 Requirements: De tool moet generiek te gebruiken zijn.  
@@ -358,7 +349,7 @@ TODO: Nagaan waar Verpleegkunde deze requirement ook noemt.
 
 #### NF-PS-02 - Alleen eigen registratie zichtbaar
 
-Requirements: De tool laat alleen de eigen registratie zien. Studenten krijgen geen inzicht in de registraties van andere studenten.  
+Requirements: Student kan registratie/identiteit van andere studenten niet zien.  
 Bron: VI: ~2 min, ~6 min, PSI: ~4-8 min, HI: ~21 min.  
 Stakeholders: Docenten, studenten, privacy & security, functioneel manager.  
 Uitleg: Binnen de huidige tool kunnen studenten de registratiegegevens van andere studenten inzien. Dit is een privacyprobleem.  
@@ -504,7 +495,7 @@ TODO: Eén multitenancyrequirement, waarschijnlijk hier. Nagaan of dit ook een r
 
 #### NF-BDI-01 — De tool moet overweg kunnen met gelijktijdig gebruik
 
-Requirements: De Sign-Up Tool voorkomt dat studenten een tijdslot overboeken of zich twee keer registreren. Een mislukte actie mag niet leiden tot een gedeeltelijke, tegenstrijdige of misleidende gegevensregistratie.  
+Requirements: Twee gelijktijdige acties mogen capaciteit niet overschrijden en een mislukte transactie mag geen gedeeltelijke toestand achterlaten.  
 Bron: VI: ~0-3 min, ~10-11 min, ~15-16 min, HI: ~5-6 min.  
 Stakeholders: Regisseur, docenten, studenten.  
 Uitleg: De tool moet één betrouwbare bron zijn voor de geregistreerde tijdslots.  
@@ -630,7 +621,6 @@ De classificatie van de requirements richt zich eerst op het kernproces: het cre
 | FN-EXP-02 | Deelnemerslijst filteren op event, datum of docent | Should | 4 | 3 | 12 |
 |  |  |  |  |  |  |
 | FN-CON-01 | Koppelen aan programma- en coursecontext | Must | ∞ | ∞ | ∞ |
-| FN-CON-03 | Rolgebaseerde toegang | Must | ∞ | ∞ | ∞ |
 | FN-CON-02 | Evenementen hebben standaardinstellingen | Should | 4 | 3 | 12 |
 | FN-CON-04 | Generiek gebruik van de tool ondersteunen | Won't | 4 | 1 | 4 |
 | FN-CON-05 | Verschillende schools scheiden | Won't | 5 | 1 | 5 |

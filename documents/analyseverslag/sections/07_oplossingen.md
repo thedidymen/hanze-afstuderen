@@ -60,7 +60,7 @@ Om de vergelijking leesbaar te houden, zijn de must-requirements samengevoegd in
 - Tijdslots - Het creëren en configureren van Sign-Up-evenementen, metadata, tijdslots, capaciteit en slotstatus, en de mogelijkheid om een evenement op te zetten (FN-ETM-01, FN-ETM-02, FN-ETM-03, FN-ETM-04, FN-ETM-09, FN-DRO-04).  
 - Registratie - De zelfregistratie voor een evenement, het bekijken van de eigen registratie, het zien van de beschikbaarheid en het voorkomen van dubbele registraties (FN-SR-01, FN-SR-05, FN-SR-06, FN-SR-09).  
 - Docenten - Deelname- en tijdslotoverzicht en het genereren van een deelnamelijst (FN-DRO-01, FN-DRO-02, FN-DRO-05, FN-EXP-01).
-- Context - Het koppelen van een evenement aan de educatieve context, RBAC via Brightspace, Brightspace-integratie en SSO (FN-CON-01, FN-CON-03, NF-INT-01, NF-INT-02, NF-AUT-01, NF-AUT-02).  
+- Context - Het koppelen van een evenement aan de educatieve context, RBAC via Brightspace, Brightspace-integratie en SSO (FN-CON-01, NF-INT-01, NF-INT-02, NF-AUT-01, NF-AUT-02).  
 - Privacy & Security - Dataminimalisatie, inzicht in de eigen registratie, security-by-design, least-privilege-toegang en minimale data-exports (NF-PS-01, NF-PS-02, NF-PS-03, NF-PS-07, NF-PS-08, FN-EXP-04).  
 - Onderhoudbaarheid - Het gebruik van onderhoudbare en ondersteunde technologie en de scheiding van presentatie, integratie en data (NF-MA-01, NF-MA-04).  
 - Data - Simultaan gebruik zonder overplanning, dubbele registraties en partiële of inconsistente registraties (NF-BDI-01).  
