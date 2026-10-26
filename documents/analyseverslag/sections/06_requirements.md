@@ -309,11 +309,9 @@ Uitleg: De tool moet niet alleen de Verpleegkunde-specifieke workflow ondersteun
 #### NF-PS-01 - Dataminimalisatie
 
 Requirements: De tool moet alleen data verwerken en opvragen die noodzakelijk is voor het sign-up proces.  
-Bron: PSI: ~8 min, ~32-33 min.  
+Bron: VI: ~2-3 min, PSI: ~8 min, ~32-33 min.  
 Stakeholders: Docenten, studenten, privacy & security, functioneel manager.  
 Uitleg: Dataminimalisatie vermindert privacy- en securityrisico's.  
-
-TODO: Nagaan waar Verpleegkunde deze requirement ook noemt.
 
 #### NF-PS-02 - Alleen eigen registratie zichtbaar
 
@@ -342,8 +340,6 @@ Requirements: Het project moet een privacyquickscan uitvoeren.
 Bron: PSI: ~32-33 min.  
 Stakeholders: Privacy & security, BS&IT, Verpleegkunde.  
 Uitleg: Het project moet een privacyquickscan uitvoeren voordat de tool echte persoonsgegevens verwerkt.  
-
-TODO: Controleren of de stakeholderlijst op deze manier moet worden uitgebreid. 
 
 #### NF-PS-06 - Verwerkingsovereenkomst met externe partij
 
@@ -379,10 +375,8 @@ Uitleg: De tool verwerkt persoonsgegevens. Er zijn regels nodig om doelbinding t
 
 Requirements: De technische oplossing moet gebruikmaken van breed gedragen technologieën.  
 Bron: BII: ~6-8 min, TKI: ~7-9 min, HI: ~3-6 min.  
-Stakeholders: BS&IT, technisch manager, collabspace.  
+Stakeholders: BS&IT, technisch manager.  
 Uitleg: De kennis en vaardigheden die nodig zijn om de applicatie te onderhouden, moeten gebaseerd zijn op breed gedragen technologieën. Hierdoor moet de applicatie eenvoudig overdraagbaar zijn en mag het onderhoud geen specialistische kennis vereisen.  
-
-TODO: Stakeholders controleren.
 
 #### NF-MA-02 - Eigenaarschap en onderhoud
 
@@ -391,15 +385,12 @@ Bron: BII: ~2-5 min, HI: ~3-6 min.
 Stakeholders: BS&IT, HIP, technisch manager.  
 Uitleg: BS&IT en HIP benoemen continuïteit, eigenaarschap en onderhoud als kritieke punten tijdens de transitie van PoC naar productie.  
 
-
 #### NF-MA-04 - Scheiding van presentatie, integratie en data
 
 Requirements: De architectuur van de Sign-Up Tool scheidt de presentatie-, integratie- en datalaag.  
-Bron: BII: ~11 min, architectuurkaders.  
+Bron: BII: ~11 min, [@hanze2026applicatiekader, pp. 9-10].  
 Stakeholders: BS&IT, HIP, technisch manager.  
 Uitleg: De scheiding van lagen maakt de applicatie beter onderhoudbaar en veiliger. Daarnaast dwingt de scheiding tot expliciete keuzes ten aanzien van verwerking en opslag.  
-
-TODO: Architectuurkaders uitzoeken. 
 
 #### NF-MA-05 - Codereviews en kwaliteitsborging
 
@@ -431,15 +422,12 @@ Bron: VI: ~6-7 min, BI: ~10-14 min.
 Stakeholders: Regisseur, docenten, studenten, Brightspace engineers.  
 Uitleg: Brightspace is de LMS vanuit de Hanze die studenten en docenten gebruiken om het onderwijs digitaal aan te bieden.  
 
-TO DO: Stakeholder: Brightspace engineers. 
-
 #### NF-INT-02 - Gebruik het Brightspace-integratiemechanisme
 
 Requirements: De oplossing gebruikt een goedgekeurd Brightspace-integratiemechanisme. Indien toepasbaar wordt LTI 1.3/LTI Advantage gebruikt om de geauthenticeerde gebruiker en coursecontext veilig op te halen.  
 Bron: BI: ~10-14 min, ~19-20 min.  
 Stakeholders: Regisseur, docenten, studenten, Brightspace engineers, technisch manager.  
 Uitleg: LTI is het Brightspace-mechanisme om een externe applicatie binnen Brightspace te integreren.  
-
 
 ### Authenticatie en autorisatie
 
@@ -459,12 +447,10 @@ Uitleg: Verschillende rollen gebruiken en zien verschillende functionaliteiten b
 
 #### NF-AUT-03 - Multitenancy
 
-Requirements:  
-Bron: VI: ~11-14 min.  
+Requirements: De Sign-Up Tool moet meerdere opleidingen of schools binnen één applicatie kunnen ondersteunen, waarbij events, registraties en het beheer daarvan logisch gescheiden zijn per organisatorische eenheid. Gebruikers krijgen uitsluitend toegang tot gegevens binnen hun geautoriseerde organisatorische context.  
+Bron: VI: ~11-14 min, BII: ~17-19 min.  
 Stakeholders: Regisseur, docenten, studenten, privacy & security, functioneel manager.  
-Uitleg:  
-
-TODO: Eén multitenancyrequirement, waarschijnlijk hier. Nagaan of dit ook een requirement van BS&IT is.
+Uitleg: De Sign-Up Tool wordt in eerste instantie ontwikkeld voor Verpleegkunde, maar moet op termijn ook door andere opleidingen binnen de Hanze gebruikt kunnen worden. Multitenancy maakt het mogelijk dat verschillende opleidingen dezelfde applicatie gebruiken, terwijl hun gegevens en beheermogelijkheden logisch gescheiden blijven. Hierbij hoeft niet voor iedere opleiding een afzonderlijke applicatie te worden ontwikkeld.  
 
 ### Betrouwbaarheid en data-integriteit
 

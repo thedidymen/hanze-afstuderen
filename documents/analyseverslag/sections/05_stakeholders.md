@@ -8,7 +8,7 @@ De stakeholder analyse evalueert de stakeholders op basis van de invloed op het 
 
 De analyse is gebaseerd op de Mendelow's stakeholder matrix [@mendelow1981]. In deze analyse wordt gebruik gemaakt van de Invloed-Interesse matrix [@pmi2021]. Stakeholders met een hoge invloed en een hoge interesse worden continu betrokken bij het proces, terwijl stakeholders met een lage invloed gebruikt worden voor domeinkennis. 
 
-De Sign-Up Tool raakt verschillende organisatorische lagen. Naast de directe eindgebruikers binnen Verpleegkunde, raakt de tool ook business architectuur, platform integratie informatie management, privacy, security, etc. Als gevolg hier van kunnen beslissingen niet alleen gebaseerd zijn op de functionele vereisten van de eindgebruikers. De oplossing zal ook moeten voldoen aan Hanze-brede architectuur principes, technisch standarden en organisatorische verantwoordelijkheden. 
+De Sign-Up Tool raakt verschillende organisatorische lagen. Naast de directe eindgebruikers binnen Verpleegkunde, raakt de tool ook business architectuur, platform integratie informatie management, privacy, security, etc. Als gevolg hier van kunnen beslissingen niet alleen gebaseerd zijn op de functionele vereisten van de eindgebruikers. De oplossing zal ook moeten voldoen aan Hanze-brede architectuur principes, technisch standarden en organisatorische verantwoordelijkheden [@hanze2026applicatiekader, pp. 5-6]. 
 
 Het doel van deze analyse is drievoudig:  
 - identificatie van stakeholders  

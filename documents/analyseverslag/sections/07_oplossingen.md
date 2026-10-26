@@ -105,6 +105,7 @@ Ook deze tool [@registerblast] is specifiek ontwikkeld voor het hoger onderwijs 
 Een ander alternatief is om binnen de Hanze zelf een Sign-Up Tool te ontwikkelen. In tegenstelling tot een bestaand product kan deze oplossing volledig worden aangepast aan de eisen (uiteraard binnen de technische mogelijkheden). Het grootste voordeel is de controle over het project. Het datamodel, de gebruikerservaring, privacy en security, en de Brightspace-integratie kunnen allemaal specifiek worden vormgegeven, in plaats van het proces aan te passen aan de beperkingen van een bestaand product.  
 Daartegenover staan natuurlijk de aanvullende technische verantwoordelijkheden. De applicatie dient de LTI-authenticatieflow veilig te implementeren en de Brightspace-gebruikers, rollen en context aan het eigen model te koppelen. Ook moet er aandacht blijven voor privacy, security, dataminimalisatie en least-privilege access, en moet de applicatie worden onderhouden.  
 Een maatwerkoplossing kan direct rond de requirements worden ontworpen, maar bij de evaluatie moeten naast het ontwikkelwerk ook het onderhoud en de operationele kosten worden meegewogen. 
+Het Hanze-kader voor nieuwe applicaties en systemen geeft de voorkeur aan SaaS-oplossingen. Afwijkingen hiervan moeten per implementatietraject worden beoordeeld en gemotiveerd [@hanze2026applicatiekader, pp. 5-6].
 
 ## Conclusie
 
