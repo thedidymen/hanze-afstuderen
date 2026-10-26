@@ -3,10 +3,10 @@ project:
   template: ../../templates/hanze_thesis
 
 metadata:
-  title: temp title
-  subtitle: sub title
+  title: Sign-Up Tool voor de Hanze
+  subtitle: Verantwoordingsverslag
   author: Reijer van der Zande
-  date: "04 mei 2026"
+  date: "1 januari 2027"
   title_page:
     document_type: Verantwoordingsverslag
     institution: Hanzehogeschool Groningen
@@ -47,7 +47,11 @@ document:
       listed: false
   main_matter:
     - 03_inleiding.md
-    - 10_conclusie_en_aanbevelingen.md
+    - 04_projectaanpak.md
+    - 05_onderzoek.md
+    - 06_competenties.md
+    - 07_resultaat_en_conclusie.md
+    - 08_lessons_learned.md
   back_matter: []
   appendices:
     - 30_bijlage_a_interviewleidraad.md

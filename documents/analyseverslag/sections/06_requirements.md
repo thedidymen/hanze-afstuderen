@@ -388,7 +388,7 @@ Uitleg: BS&IT en HIP benoemen continuïteit, eigenaarschap en onderhoud als krit
 #### NF-MA-04 - Scheiding van presentatie, integratie en data
 
 Requirements: De architectuur van de Sign-Up Tool scheidt de presentatie-, integratie- en datalaag.  
-Bron: BII: ~11 min, [@hanze2026applicatiekader, pp. 9-10].  
+Bron: BII: ~11 min, architectuurkader §2.5 [@hanze2026applicatiekader, pp. 9-10].  
 Stakeholders: BS&IT, HIP, technisch manager.  
 Uitleg: De scheiding van lagen maakt de applicatie beter onderhoudbaar en veiliger. Daarnaast dwingt de scheiding tot expliciete keuzes ten aanzien van verwerking en opslag.  
 

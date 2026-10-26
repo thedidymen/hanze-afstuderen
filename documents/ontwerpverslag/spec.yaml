@@ -3,10 +3,10 @@ project:
   template: ../../templates/hanze_thesis
 
 metadata:
-  title: temp title
-  subtitle: sub title
+  title: Sign-Up Tool voor de Hanze
+  subtitle: Ontwerpverslag
   author: Reijer van der Zande
-  date: "04 mei 2026"
+  date: "1 januari 2027"
   title_page:
     document_type: Ontwerpverslag
     institution: Hanzehogeschool Groningen
@@ -47,6 +47,11 @@ document:
       listed: false
   main_matter:
     - 03_inleiding.md
+    - 04_ontwerpuitganspunten.md
+    - 05_functioneelontwerp.md
+    - 06_technische_architectuur.md
+    - 07_datamodel.md
+    - 08_gebruikersinterface.md
     - 10_conclusie_en_aanbevelingen.md
   back_matter: []
   appendices:

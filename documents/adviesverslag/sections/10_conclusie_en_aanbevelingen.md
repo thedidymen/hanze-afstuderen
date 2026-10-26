@@ -1,3 +1,7 @@
-# Conclusie en aanbevelingen
+# Advies en conclusie
 
-conclusie
+## Voorkeursoplossing
+
+## Onderbouwing advies
+
+## Voorwaarden en vervolgstappen

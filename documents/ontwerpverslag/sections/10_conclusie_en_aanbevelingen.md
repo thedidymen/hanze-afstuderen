@@ -1,3 +1,5 @@
-# Conclusie en aanbevelingen
+# Conclusie 
 
-conclusie
+## Belangrijkste ontwerpbeslissingen
+
+## Beperkingen en aandachtspunten voor realisatie

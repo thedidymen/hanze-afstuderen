@@ -1,0 +1,79 @@
+project:
+  slug: verslag
+  template: ../../templates/hanze_thesis
+
+metadata:
+  title: Sign-Up Tool voor de Hanze
+  subtitle: Realisatieverslag
+  author: Reijer van der Zande
+  date: "1 januari 2027"
+  title_page:
+    document_type: Verslag
+    institution: Hanzehogeschool Groningen
+    institute: Institute for Communication, Media & IT
+    programme: HBO-ICT
+    major: BITM
+    study_year: "2025-2026"
+    cohort: Deeltijd jaar 4
+    location: Groningen
+    author:
+      name: Reijer van der Zande
+      student_number: "167524"
+    supervisors:
+      company:
+        organization: Collabspace
+        name: Cor Blom
+    assessors:
+      first:
+        name: Jornt Holtman
+      second:
+        name: Rick Hogerhuis
+    branding:
+      logo_path: documents/verslag/assets/images/logo-hanze.png
+      cover_background_path: documents/verslag/assets/images/tech_2.jpg
+      cover_image_source: "Eigen afbeelding / bron invullen"
+    responsibility_statement: Dit verslag is opgesteld door de student. Inhoudelijke verantwoordelijkheid berust bij de auteur.
+    copyright:
+      notice: © 2026 Reijer van der Zande
+
+document:
+  input_root: sections
+  front_matter:
+    - file: 00_voorwoord.md
+    - file: 01_samenvatting.md
+    - generated: toc
+      title: Inhoudsopgave
+      numbered: false
+      listed: false
+  main_matter:
+    - 03_inleiding.md
+    - 10_conclusie_en_aanbevelingen.md
+  back_matter: []
+  appendices:
+    - 30_bijlage_a_interviewleidraad.md
+  bibliography:
+    enabled: true
+    title: Literatuurlijst
+    zone: back_matter
+
+citations:
+  bibliography: references.bib
+  csl: csl/apa.csl
+
+# diagrams:
+#   - id: registratieproces
+#     type: mermaid
+#     source: assets/diagrams/registratieproces.mmd
+#     output: assets/generated/registratieproces.png
+#     format: png
+
+output:
+  directory: output
+  basename: realisatieverslag
+  formats:
+    - pdf
+
+versioning:
+  strategy: semver
+  initial_version: 0.1.0
+  include_git_hash: true
