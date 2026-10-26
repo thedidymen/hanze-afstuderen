@@ -42,7 +42,7 @@ Easy Scheduler is primair geschikt voor een-op-eenafspraken in plaats van de gew
 Microsoft Bookings [@bookings] is onderdeel van het Microsoft 365-ecosysteem. Dit wordt momenteel gebruikt door de Hanze en is daarmee interessant, omdat het niet speciaal onboarded hoeft te worden. Er wordt dus ook geen nieuw extern platform geïntroduceerd. 
 Functioneel past de werking van Bookings bij de gewenste workflow. Het ondersteunt configureerbare services, beschikbaarheid en groepsafspraken met een maximumaantal deelnemers. De regisseurs en docenten beheren de services, afspraken en deelnemerinformatie, terwijl Bookings direct integreert met Outlook en Teams. 
 Enkele kerneisen kunnen echter niet worden geborgd. Microsoft ondersteunt LTI 1.3-integratie tussen Microsoft 365 en Brightspace, maar Bookings is niet een van deze applicaties. Hierdoor kan niet automatisch gebruik worden gemaakt van de Brightspace-cursuscontext en -rollen (NF-INT-02, FN-CON-01, NF-AUT-02).
-Ook lijken het tonen van de resterende capaciteit (FN-SR-06) en de beperking tot één registratie per student (FN-SR-09) binnen een evenement niet mogelijk. 
+Ook lijken het tonen van de resterende capaciteit (FN-ETM-09) en de beperking tot één registratie per student (FN-SR-09) binnen een evenement niet mogelijk. 
 Bookings is een handige tool omdat het al onderdeel is van de bestaande Microsoft-omgeving, maar sluit niet goed aan op de kerneisen. 
 
 ### ConexED
@@ -58,8 +58,8 @@ Selectie voor de shortlist is geen garantie dat de oplossing ook voldoet aan all
  
 Om de vergelijking leesbaar te houden, zijn de must-requirements samengevoegd in zeven groepen:  
 - Tijdslots - Het creëren en configureren van Sign-Up-evenementen, metadata, tijdslots, capaciteit en slotstatus, en de mogelijkheid om een evenement op te zetten (FN-ETM-01, FN-ETM-02, FN-ETM-03, FN-ETM-04, FN-ETM-09, FN-DRO-04).  
-- Registratie - De zelfregistratie voor een evenement, het bekijken van de eigen registratie, het zien van de beschikbaarheid en het voorkomen van dubbele registraties (FN-SR-01, FN-SR-05, FN-SR-06, FN-SR-09).  
-- Docenten - Deelname- en tijdslotoverzicht en het genereren van een deelnamelijst (FN-DRO-01, FN-DRO-02, FN-DRO-05, FN-EXP-01).
+- Registratie - De zelfregistratie voor een evenement, het bekijken van de eigen registratie, het zien van de beschikbaarheid en het voorkomen van dubbele registraties (FN-SR-01, FN-SR-05, FN-ETM-09, FN-SR-09).  
+- Docenten - Deelname- en tijdslotoverzicht en het genereren van een deelnamelijst (FN-DRO-02, FN-DRO-05, FN-EXP-01).
 - Context - Het koppelen van een evenement aan de educatieve context, RBAC via Brightspace, Brightspace-integratie en SSO (FN-CON-01, NF-INT-01, NF-INT-02, NF-AUT-01, NF-AUT-02).  
 - Privacy & Security - Dataminimalisatie, inzicht in de eigen registratie, security-by-design, least-privilege-toegang en minimale data-exports (NF-PS-01, NF-PS-02, NF-PS-03, NF-PS-07, NF-PS-08, FN-EXP-04).  
 - Onderhoudbaarheid - Het gebruik van onderhoudbare en ondersteunde technologie en de scheiding van presentatie, integratie en data (NF-MA-01, NF-MA-04).  

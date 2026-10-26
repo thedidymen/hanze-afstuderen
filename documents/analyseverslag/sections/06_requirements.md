@@ -109,8 +109,8 @@ Uitleg: Studenten mogen zich registreren tot de registratiedeadline, maar kunnen
 #### FN-ETM-09 - Tijdslotstatus tonen
 
 Requirements: De status van een tijdslot moet zichtbaar zijn (beschikbaar, gedeeltelijk beschikbaar, vol of niet beschikbaar).  
-Bron: VI: ~0, ~3 min, BI ~10-11 min.  
-Stakeholders: Regisseur, docenten, studenten.  
+Bron: VI: ~0, ~3 min, ~6 min, HI: ~21 min, BI ~10-11 min.  
+Stakeholders: Regisseur, docenten, studenten, privacy en security.  
 Uitleg: Studenten en docenten moeten kunnen zien of een tijdslot nog beschikbaar is en hoeveel plekken beschikbaar zijn.  
 
 #### FN-ETM-10 - Genereer tijdslots op basis van geïmporteerde planningsgegevens
@@ -144,16 +144,16 @@ Bron: VI: ~0 min.
 Stakeholders: Regisseur, docenten, studenten.  
 Uitleg: Zelfregistratie is het centrale doel van de Sign-Up Tool en vervangt de huidige registratie via Brightspace-groepen.  
 
-#### FN-SR-02 - Deregistratie vóór de annuleringsdeadline
+#### FN-SR-02 - Annuleren binnen de annuleringsregels
 
-Requirements: Studenten moeten zich kunnen deregistreren tot de ingestelde annuleringsdeadline (FN-ETM-08).  
+Requirements: Het systeem staat studenten toe hun registratie te annuleren tot de ingestelde annuleringsdeadline. Na het verstrijken van deze deadline is zelfstandig annuleren niet meer mogelijk (FN-ETM-08).  
 Bron: VI: ~0 min, ~15 min.  
 Stakeholders: Regisseur, docenten, studenten.  
 Uitleg: In het huidige proces kunnen studenten zich deregistreren als ze zich per ongeluk hebben ingeschreven. Een late annulering moet tellen als een gemiste kans.  
 
 #### FN-SR-04 - Registratie wijzigen
 
-Requirements: Studenten kunnen hun registratie annuleren en daarmee wijzigen binnen de annuleringsregels.  
+Requirements: Studenten kunnen hun bestaande registratie binnen de geldende annuleringsregels rechtstreeks wijzigen naar een ander beschikbaar tijdslot, zonder eerst hun registratie te hoeven annuleren.  
 Bron: VI: ~0 min, ~15 min.  
 Stakeholders: Regisseur, docenten, studenten.  
 Uitleg: Binnen de gestelde regels is het wijzigen van een tijdslot toegestaan.  
@@ -164,13 +164,6 @@ Requirements: Studenten kunnen de eigen registratie inzien.
 Bron: VI: ~3 min, ~6 min, PSI: ~4 min.  
 Stakeholders: Regisseur, docenten, studenten, privacy en security.  
 Uitleg: Student dient inzage te hebben in de eigen registratie.  
-
-#### FN-SR-06 - Beschikbaarheid tonen
-
-Requirements: Voor studenten moet het zichtbaar zijn hoeveel ruimte er is in een tijdslot, zonder te zien wie er in zitten.  
-Bron: VI: ~2-3 min,  ~6 min, HI: ~21 min, BI: ~10-11 min.  
-Stakeholders: Regisseur, docenten, studenten, privacy en security.  
-Uitleg: In de huidige situatie is zichtbaar wie zich voor welk tijdslot heeft geregistreerd. Studenten hoeven deze informatie niet te zien.  
 
 #### FN-SR-07 - Sign-upevents alleen zichtbaar wanneer relevant
 
@@ -196,13 +189,6 @@ Uitleg: Dubbele registraties ondermijnen het capaciteitsmanagement en de plannin
 ### Docent en regisseur Overzicht
 
 TODO: Uitzoeken hoe de structuur binnen Brightspace werkt: Module → course → studenten, Module → course → klas/docent → studenten, of een andere structuur. Op welk niveau werkt de Sign-Up Tool: course- of klasniveau?
-
-#### FN-DRO-01 - Samenvattend deelnemersoverzicht
-
-Requirements: De tool moet een overzicht geven van de geregistreerde studenten voor het event.  
-Bron: VI: ~1 min, ~3-4 min, ~6 min.  
-Stakeholders: Regisseur, docenten.  
-Uitleg: Docenten moeten in Brightspace elke groep openen om te zien wie zich heeft geregistreerd. Een samenvattend overzicht helpt bij de voorbereiding.  
 
 #### FN-DRO-02 - Groepsindelingsoverzicht per tijdslot
 
@@ -230,11 +216,9 @@ Uitleg: Er mag geen externe afhankelijkheid zijn voor het opzetten van events.
 #### FN-DRO-05 - Overzicht van alle deelnemers aan een event
 
 Requirements: Geautoriseerde docenten moeten alle deelnemers aan een event kunnen inzien als dat nodig is voor de uitvoering van het assessment.  
-Bron: VI: ~6 min, PSI: ~4 min.  
+Bron: VI: ~1 min, ~3-4 min, ~6 min, PSI: ~4 min.  
 Stakeholders: Regisseur, docenten, studenten, privacy & security.  
-Uitleg: Docenten kunnen een assessment voor collega's uitvoeren en hebben daarom een evenementoverzicht nodig, niet alleen een overzicht van hun eigen studenten.  
-
-TODO: Zie hierboven. Uitzoeken wat de functionele eis precies is. 
+Uitleg: Docenten kunnen een assessment voor collega's uitvoeren en hebben daarom een evenementoverzicht nodig, niet alleen een overzicht van hun eigen studenten.   
 
 #### FN-DRO-07 - Studenten handmatig registreren
 
@@ -274,17 +258,10 @@ TODO: Nagaan of deze eisen overlappen met de vorige groep.
 
 #### FN-EXP-01 - Deelnemerslijst genereren
 
-Requirements: Docenten en regisseurs mogen deelnemerlijsten genereren.  
-Bron: VI: ~1 min, ~3-4 min.  
+Requirements: Docenten en regisseurs mogen deelnemerlijsten genereren. Deelnemerlijsten kunnen gefilterd worden op event, datum, tijdslot, docent.
+Bron: VI: ~1 min, ~3-4 min, ~13-14 min.  
 Stakeholders: Regisseur, docenten.  
-Uitleg: Docenten mogen deelnemerslijsten maken ter voorbereiding op en uitvoering van een event.  
-
-#### FN-EXP-02 - Deelnemerslijst filteren op event, datum of docent
-
-Requirements: Deelnemerlijsten kunnen gefilterd worden op event, datum, docent (tijdslot?).  
-Bron: VI: ~3-4 min, ~13-14 min.  
-Stakeholders: Regisseur, docenten.  
-Uitleg: Docenten moeten kunnen zien wie wanneer komt en op welke dag (voor welk event), in plaats van één ongesorteerde lijst.  
+Uitleg: Docenten mogen deelnemerslijsten maken ter voorbereiding op en uitvoering van een event. Docenten moeten kunnen zien wie wanneer komt en op welke dag (voor welk event), in plaats van één ongesorteerde lijst.  
 
 #### FN-EXP-03 - Export of afdrukbare versie ondersteunen
 
@@ -324,15 +301,6 @@ Requirements: De tool moet generiek te gebruiken zijn.
 Bron: VI: ~2 min, PSI: ~8 min, ~32-33 min.  
 Stakeholders: Regisseur, docenten, studenten.  
 Uitleg: De tool moet niet alleen de Verpleegkunde-specifieke workflow ondersteunen. Het ontwerp is generiek en kan processen binnen de hele Hanze ondersteunen.  
-
-#### FN-CON-05 - Verschillende schools scheiden
-
-Requirements: De tool ondersteunt een logische scheiding tussen schools en courses.  
-Bron: VI: ~11 min.  
-Stakeholders: Regisseur, docenten, studenten.  
-Uitleg: Binnen de tool is er een duidelijke scheiding tussen schools en courses.  
-
-TODO: Nagaan waarin deze requirement verschilt van FN-CON-01.
 
 ## Niet-functionele requirements
 
@@ -500,34 +468,19 @@ Bron: VI: ~0-3 min, ~10-11 min, ~15-16 min, HI: ~5-6 min.
 Stakeholders: Regisseur, docenten, studenten.  
 Uitleg: De tool moet één betrouwbare bron zijn voor de geregistreerde tijdslots.  
 
-#### NF-BDI-02 — Monitoring en logging ondersteunen
+#### NF-BDI-02 — Technische monitoring en logging
 
-Requirements: Voordat de tool in productie wordt genomen, moet deze voldoen aan de vereisten voor logging en monitoring die van toepassing zijn op Hanze-systemen.  
-Bron: PSI: ~10-11 min, TKI: ~4-6 min.  
-Stakeholders: privacy & security, technisch manager.  
-Uitleg: Monitoring en logging helpen operationele problemen te ontdekken, incidenten te onderzoeken en het technisch beheer van de applicatie te ondersteunen.  
+Requirements: De oplossing moet technische monitoring en logging ondersteunen. De werking en beschikbaarheid van de applicatie kan gemonitord worden en technische fouten kunnen worden onderzocht.   
+Bron: TKI: ~4-6 min.  
+Stakeholders: technisch manager.  
+Uitleg: Monitoring en logging helpen operationele problemen te ontdekken, incidenten te onderzoeken en het technisch beheer van de applicatie te ondersteunen, hiermee storingen detecteren en onderzoeken. De oplossing moet aansluiten op de geldende beheer- en beveiligingsvereisten van de Hanze.  
 
-TODO: Deze requirement is nog erg algemeen. Kan deze concreter worden geformuleerd?
+#### NF-BDI-03 — Audittrail van gebruikershandelingen
 
-#### NF-BDI-03 — Audittrail
-
-Requirements: De tool registreert aanmeldingen en administratieve wijzigingen, waaronder de actor, de actie en het tijdstip, zodat deze acties kunnen worden gecontroleerd.  
+Requirements: De tool registreert aanmeldingen en administratieve wijzigingen, waaronder de actor, de actie en het tijdstip, zodat deze acties kunnen worden gecontroleerd. Hierbij moet minimaal worden vastgelegd welke handeling is uitgevoerd, door wie, op welk onderdeel en op welk tijdstip. 
 Bron: BII: ~4-5 min, PSI: ~10-11 min.  
 Stakeholders: privacy & security, technisch manager.  
 Uitleg: Wijzigingen in registraties en eventconfiguraties kunnen gevolgen hebben voor studenten en de planning. Door deze wijzigingen vast te leggen, kan worden gereconstrueerd wat er is gebeurd.  
-
-TODO: NF-BDI-02 en NF-BDI-03 controleren aan de hand van de interviews en aanscherpen of nuanceren. Mogelijk overlappen ze.
-
-### Template
-
-#### NF-BDI-01 — XXX
-
-Requirements:  
-Bron: VI: ~1 min, BII: ~1 min, PSI: ~1 min, TKI: ~1 min, HI: ~1 min, BI: ~1 min.  
-Stakeholders: Regisseur, docenten, studenten, privacy & security, functioneel manager.  
-Uitleg:  
-
-TO DO: template weghalen. 
 
 ## Prioritering van requirements
 
@@ -598,14 +551,12 @@ De classificatie van de requirements richt zich eerst op het kernproces: het cre
 |  |  |  |  |  |  |
 | FN-SR-01 | Registreren voor een tijdslot | Must | ∞ | ∞ | ∞ |
 | FN-SR-05 | Eigen registratie bekijken | Must | ∞ | ∞ | ∞ |
-| FN-SR-06 | Beschikbaarheid is zichtbaar | Must | ∞ | ∞ | ∞ |
 | FN-SR-09 | Dubbele registraties voorkomen | Must | ∞ | ∞ | ∞ |
 | FN-SR-07 | Sign-upevents alleen zichtbaar wanneer relevant | Should | 5 | 4 | 20 |
-| FN-SR-02 | Deregistratie vóór de annuleringsdeadline | Should | 4 | 4 | 16 |
+| FN-SR-02 | Annuleren binnen de annuleringsregels | Should | 4 | 4 | 16 |
 | FN-SR-04 | Wijzigen van registratie | Should | 4 | 4 | 16 |
 | FN-SR-08 | Notitie of opmerking van studenten | Won't | 2 | 1 | 2 |
 |  |  |  |  |  |  |
-| FN-DRO-01 | Samenvattend deelnemersoverzicht | Must | ∞ | ∞ | ∞ |
 | FN-DRO-02 | Groepsindelingsoverzicht per tijdslot | Must | ∞ | ∞ | ∞ |
 | FN-DRO-04 | Een event instellen | Must | ∞ | ∞ | ∞ |
 | FN-DRO-05 | Overzicht van alle deelnemers aan een event | Must | ∞ | ∞ | ∞ |
@@ -618,12 +569,10 @@ De classificatie van de requirements richt zich eerst op het kernproces: het cre
 | FN-EXP-01 | Deelnemerslijst genereren | Must | ∞ | ∞ | ∞ |
 | FN-EXP-04 | Data-export beperken tot het minimum | Must | ∞ | ∞ | ∞ |
 | FN-EXP-03 | Export of afdrukbare versie ondersteunen | Should | 4 | 4 | 16 |
-| FN-EXP-02 | Deelnemerslijst filteren op event, datum of docent | Should | 4 | 3 | 12 |
 |  |  |  |  |  |  |
 | FN-CON-01 | Koppelen aan programma- en coursecontext | Must | ∞ | ∞ | ∞ |
 | FN-CON-02 | Evenementen hebben standaardinstellingen | Should | 4 | 3 | 12 |
 | FN-CON-04 | Generiek gebruik van de tool ondersteunen | Won't | 4 | 1 | 4 |
-| FN-CON-05 | Verschillende schools scheiden | Won't | 5 | 1 | 5 |
 |  |  |  |  |  |  |
 | NF-PS-01 | Dataminimalisatie | Must | ∞ | ∞ | ∞ |
 | NF-PS-02 | Alleen eigen registratie zichtbaar | Must | ∞ | ∞ | ∞ |
@@ -649,8 +598,8 @@ De classificatie van de requirements richt zich eerst op het kernproces: het cre
 | NF-AUT-03 | Multitenancy | Won't | 5 | 1 | 5 |
 |  |  |  |  |  |  |
 | NF-BDI-01 | De tool moet overweg kunnen met gelijktijdig gebruik | Must | ∞ | ∞ | ∞ |
-| NF-BDI-02 | Monitoring en logging ondersteunen | Should | 4 | 5 | 20 |
-| NF-BDI-03 | Audittrail | Should | 4 | 4 | 16 |
+| NF-BDI-02 | Technische monitoring en logging | Should | 4 | 5 | 20 |
+| NF-BDI-03 | Audittrail van gebruikershandelingen | Should | 4 | 4 | 16 |
 
 : Prioritering requirements {#tbl:requirement-priorities column-widths="24,90,14,7,7,7"}
 
