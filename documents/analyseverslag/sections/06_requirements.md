@@ -215,7 +215,7 @@ Uitleg: Er mag geen externe afhankelijkheid zijn voor het opzetten van events.
 
 #### FN-DRO-05 - Overzicht van alle deelnemers aan een event
 
-Requirements: Geautoriseerde docenten moeten alle deelnemers aan een event kunnen inzien als dat nodig is voor de uitvoering van het assessment.  
+Requirements: Geautoriseerde docenten kunnen, wanneer zij betrokken zijn bij de uitvoering van een assessment, ook deelnemersgegevens inzien van studenten buiten hun eigen groep of course.  
 Bron: VI: ~1 min, ~3-4 min, ~6 min, PSI: ~4 min.  
 Stakeholders: Regisseur, docenten, studenten, privacy & security.  
 Uitleg: Docenten kunnen een assessment voor collega's uitvoeren en hebben daarom een evenementoverzicht nodig, niet alleen een overzicht van hun eigen studenten.   
