@@ -415,6 +415,13 @@ Bron: BII: ~6-8 min.
 Stakeholders: BS&IT, HIP, technisch manager.  
 Uitleg: Technische keuzes moeten worden onderbouwd.  
 
+#### NF-MA-07 - Interne ontwikkelbaarheid en doorontwikkeling
+
+Requirements: De oplossing moet bij voorkeur door de Hanze zelfstandig kunnen worden aangepast en doorontwikkeld, zonder voor iedere functionele wijziging afhankelijk te zijn van de oorspronkelijke leverancier.
+Bron: BII: ~2 min, ~4 min, ~31-33 min, ~38-40 min.
+Stakeholders: BS&IT, technisch manager, functioneel manager.
+Uitleg: De Hanze onderzoekt de mogelijkheden om interne softwareontwikkelcapaciteit op te bouwen en centraal te organiseren. Zelfstandige doorontwikkeling biedt meer controle over de functionaliteit en vermindert leveranciersafhankelijkheid. Interne ontwikkeling is daarbij een voorkeur, geen verplichting. Bestaande oplossingen blijven een optie wanneer deze voldoende aansluiten op de behoeften van de Hanze.
+
 ### Integratie
 
 #### NF-INT-01 - Sign-Up Tool toegankelijk vanuit Brightspace
@@ -586,6 +593,7 @@ De classificatie van de requirements richt zich eerst op het kernproces: het cre
 |  |  |  |  |  |  |
 | NF-MA-01 | Onderhoudbare en breed gedragen technologie | Must | ∞ | ∞ | ∞ |
 | NF-MA-04 | Scheiding van presentatie, integratie en data | Must | ∞ | ∞ | ∞ |
+| NF-MA-07 | Interne ontwikkelbaarheid en doorontwikkeling | Should | 5 | 4 | 20 |
 | NF-MA-06 | Technische keuzes documenteren | Should | 4 | 5 | 20 |
 | NF-MA-05 | Codereviews en kwaliteitsborging | Should | 4 | 4 | 16 |
 | NF-MA-02 | Eigenaarschap en onderhoud | Could | 5 | 2 | 10 |
