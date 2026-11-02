@@ -26,25 +26,12 @@ Het complete overzicht van requirements, de bronnen en de prioritering is vastge
 
 ### Functionele doelstellingen
 
-Het primaire functionele doel is om de bestaande Brightspace Group-tool-workaround te vervangen door een specifiek registratieproces. De huidige situatie is beschreven in het analyseverslag.
+Het functionele ontwerp richt zich op het vervangen van de huidige Brightspace Group-tool-workaround. Het doel is een registratieproces waarin studenten zelfstandig kunnen inschrijven en docenten en regisseurs evenementen en registraties kunnen beheren. De huidige situatie is beschreven in het analyseverslag. De exacte functionaliteiten, gebruikersscenario's en uitzonderingen worden verder uitgewerkt in hoofdstuk 5.
 
-Docenten en regisseurs mogen evenementen aanmaken en stellen de beschikbaarheidsperiodes vast voor één of meerdere dagen. Deze periodes worden opgedeeld in tijdslots met een configureerbare duur en capaciteit.
-
-Het planningsproces ondersteunt pauzes en optionele lunchpauzes. De minimale groepsgrootte is niet verplicht, maar de maximale groepsgrootte is een strikte eis voor studenten.
-
-Studenten registreren zich individueel en kunnen normaal gesproken maar één tijdslot per event reserveren. De openings- en sluitingstijd van de registratie en de annuleringsdeadline zijn onafhankelijk in te stellen. Studenten mogen hun tijdslot wijzigen zolang de registratie openstaat, ook na de annuleringsdeadline. Na de annuleringsdeadline kan er niet meer geannuleerd worden.
-
-Docenten en regisseurs kunnen inschrijvingen van deelnemers beheren en indien nodig handmatig de capaciteit van een tijdslot overschrijden. Dit vraagt om een expliciete bevestiging.
-
-Deze beslissingen adresseren FN-ETM-01–09, FN-SR-01–09 en FN-DRO-02–07. De exacte workflows en uitzonderingen worden beschreven in het functioneel ontwerp.
 
 ### Niet-functionele doelstellingen
 
-De applicatie beschermt persoonlijke informatie door dataminimalisatie, role-based access control (RBAC) en course-gebaseerde autorisatie. Studenten mogen geen toegang hebben tot de identiteit of registraties van andere studenten (NF-PS-01, NF-PS-02, NF-PS-08).
-
-De tool waarborgt de data-integriteit wanneer meerdere gebruikers tegelijkertijd registreren. Registratiewijzigingen worden atomair verwerkt om inconsistente data en onbedoelde overboeking van een tijdslot te voorkomen (NF-BDI-01).
-
-De tool is uitbreidbaar en onderhoudbaar. De componenten hebben ieder een eigen en duidelijke verantwoordelijkheid, waardoor het mogelijk is om deze onafhankelijk te testen en te vervangen (NF-MA-01, NF-MA-04).
+De belangrijkste niet-functionele ontwerpdoelen zijn privacy, beveiliging, betrouwbaarheid en onderhoudbaarheid. Deze doelen zijn bepalend voor de technische keuzes en vormen de basis voor de ontwerpprincipes die verderop in dit hoofdstuk worden beschreven.
 
 ## Technische en organisatorische randvoorwaarden
 
@@ -52,9 +39,7 @@ De tool is uitbreidbaar en onderhoudbaar. De componenten hebben ieder een eigen 
 
 Brightspace is het Learning Management Systeem (LMS) van de Hanze. De Sign-Up Tool moet daarom toegankelijk zijn vanuit de relevante Brightspace-course (NF-INT-01).
 
-LTI 1.3 is geselecteerd als integratiemechanisme. Deze standaard ondersteunt beveiligde communicatie van gebruikersidentiteit, rollen en coursecontext tussen het LMS en een externe tool [@1edtechLtiImplementation]. Brightspace ondersteunt LTI 1.3-registratie en deployment, inclusief de configuratie van informatie die wordt gedeeld met externe applicaties [@d2lLtiAdvantage].
-
-De voorkeursweergave is een geïntegreerde interface binnen Brightspace.
+LTI 1.3 is geselecteerd als integratiemechanisme. Deze standaard ondersteunt beveiligde communicatie van gebruikersidentiteit, rollen en coursecontext tussen het LMS en een externe tool [@1edtechLtiImplementation]. De voorkeursweergave is een geïntegreerde interface binnen Brightspace. De technische inrichting van deze integratie wordt beschreven in hoofdstuk 6.
 
 ### Technische architectuur
 
@@ -62,7 +47,7 @@ De Sign-Up Tool gebruikt Django, PostgreSQL en server-rendered HTML-templates. D
 
 Daarnaast wordt gebruikgemaakt van de Brightspace UI Web Components, om te zorgen voor een consistente en herkenbare gebruikersinterface [@brightspaceUiCore].
 
-De tool maakt gebruik van een gelaagde architectuur, met een scheiding tussen presentatie, applicatie en data. Deze scheiding sluit aan bij de architectuurkaders van de Hanze [@hanze2026applicatiekader, pp. 9-10].
+De tool maakt gebruik van een gelaagde architectuur, met een scheiding tussen presentatie, applicatie en data. Deze scheiding sluit aan bij de architectuurkaders van de Hanze [@hanze2026applicatiekader, pp. 9-10]. De verdere onderbouwing van de technische keuzes wordt beschreven in hoofdstuk 6.
 
 De Brightspace-integratie is geïsoleerd van de kernlogica. Dit maakt ontwikkeling en testen met een gesimuleerde LTI-context mogelijk, mocht er geen Brightspace-testomgeving beschikbaar zijn.
 

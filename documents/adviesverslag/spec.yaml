@@ -59,7 +59,7 @@ document:
     zone: back_matter
 
 citations:
-  bibliography: references.bib
+  bibliography: ../references.bib
   csl: csl/apa.csl
 
 # diagrams:

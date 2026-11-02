@@ -47,7 +47,7 @@ document:
       listed: false
   main_matter:
     - 03_inleiding.md
-    - 04_ontwerpuitganspunten.md
+    - 04_ontwerpuitgangspunten.md
     - 05_functioneelontwerp.md
     - 06_technische_architectuur.md
     - 07_datamodel.md
@@ -62,7 +62,7 @@ document:
     zone: back_matter
 
 citations:
-  bibliography: references.bib
+  bibliography: ../references.bib
   csl: csl/apa.csl
 
 # diagrams:
