@@ -1,13 +1,12 @@
 # Ontwerpuitgangspunten
 
-Dit hoofdstuk legt de uitgangspunten en randvoorwaarden vast voor de Sign-Up Tool. Het ontwerp is gebaseerd op de bevindingen en de requirements uit het analyseverslag. Het doel van dit hoodstuk is deze bevindingen de vertalen naar een samenhangende basis voor het functioneel ontwerp, technische architectuur en proof of concept (POC).
+Dit hoofdstuk legt de uitgangspunten en randvoorwaarden vast voor de Sign-Up Tool. Het ontwerp is gebaseerd op de bevindingen en de requirements uit het analyseverslag. Het doel van dit hoofdstuk is deze bevindingen te vertalen naar een samenhangende basis voor het functioneel ontwerp, de technische architectuur en de proof of concept (POC).
 
 ## Relevante Requirements
 
-De requirements uit de analyse fase geven de basis voor het ontwerp. De MoSCoW prioritizering geven het onderscheid tussen essentiele functionaliteit en functionaliteit dat later geimplmenteerd kan worden [@clegg1994]. Het ontwerp addressseert de Must-requirments, daarnaast implementeer het ook de Should-requirement die de registratieworkflow ondersteuenen. 
+De requirements uit de analysefase vormen de basis voor het ontwerp. De MoSCoW-prioritering maakt onderscheid tussen essentiële functionaliteit en functionaliteit die later geïmplementeerd kan worden [@clegg1994]. Het ontwerp adresseert de Must-requirements en neemt daarnaast de Should-requirements mee die de registratieworkflow ondersteunen.
 
 De requirements die het meest relevant zijn voor het ontwerp staan in @tbl:ontwerp-requirements.
-
 
 | Categorie | Requirements | Ontwerpconsequenties |
 |---|---|---|
@@ -21,76 +20,76 @@ De requirements die het meest relevant zijn voor het ontwerp staan in @tbl:ontwe
 
 : Overzicht van relevante requirements {#tbl:ontwerp-requirements}
 
-Het complete overzicht van requirements, de bronnen en prioritisering is vastgelegd in het analyseverslag. Dit verslag legt vast hoe deze requirements toegepast worden, zonder alles te herhalen uit het anaylyse verslag. 
+Het complete overzicht van requirements, de bronnen en de prioritering is vastgelegd in het analyseverslag. Dit verslag legt vast hoe deze requirements worden toegepast, zonder alles uit het analyseverslag te herhalen.
 
 ## Functionele en niet-functionele ontwerpdoelen
 
 ### Functionele doelstellingen
 
-Het primary functionele doel is om de bestaand Brightspace Group-tool workaround te vervangen met een toegewijd registratie proces. De huidige situatie is beschreven in het analyseverslag. 
+Het primaire functionele doel is om de bestaande Brightspace Group-tool-workaround te vervangen door een specifiek registratieproces. De huidige situatie is beschreven in het analyseverslag.
 
-Docenten en regisseurs mogen evenementen aanmaken en stellen de beschikbaarheid periode vast over 1 of meer dagen. Deze periodes zijn opgedeeld in registratie vakkken met een configureerbare duur en capaciteit. 
+Docenten en regisseurs mogen evenementen aanmaken en stellen de beschikbaarheidsperiodes vast voor één of meerdere dagen. Deze periodes worden opgedeeld in tijdslots met een configureerbare duur en capaciteit.
 
-Het plannings proces ondersteunt pauzes en mogelijk lunchpaze. De minimum groepsgrote is niet verplicht, maar de maximum grote is een strikte eis voor studenten. 
+Het planningsproces ondersteunt pauzes en optionele lunchpauzes. De minimale groepsgrootte is niet verplicht, maar de maximale groepsgrootte is een strikte eis voor studenten.
 
-Studenten registreren individueel en kunnen normaal maar 1 tijdslot claimen per event. Registratie opening, sluiting en annuleringsdeadline zijn onafhankelijk in te stellen. Studenten mogen hun tijdslot wijzigen zolang de registratie open staat, ook na de annuleringsdeadline. Na de annuleringsdealine kan er niet meer geannuleerd worden. 
+Studenten registreren zich individueel en kunnen normaal gesproken maar één tijdslot per event reserveren. De openings- en sluitingstijd van de registratie en de annuleringsdeadline zijn onafhankelijk in te stellen. Studenten mogen hun tijdslot wijzigen zolang de registratie openstaat, ook na de annuleringsdeadline. Na de annuleringsdeadline kan er niet meer geannuleerd worden.
 
-Docenten en regisseurs kunnen inschrijvingen van deelnemers beheren en handmatig de capaciteit van een tijdslot overschrijven, indien nodig. Dit vraagt om een expliciete bevestiging.
+Docenten en regisseurs kunnen inschrijvingen van deelnemers beheren en indien nodig handmatig de capaciteit van een tijdslot overschrijden. Dit vraagt om een expliciete bevestiging.
 
-Deze beslissingen addresseren FN-ETM-01–09, FN-SR-01–09 en FN-DRO-02–07. De exacte workflows en uitzonderingen worden beschreven in het functioneel ontwerp
+Deze beslissingen adresseren FN-ETM-01–09, FN-SR-01–09 en FN-DRO-02–07. De exacte workflows en uitzonderingen worden beschreven in het functioneel ontwerp.
 
-### Niet functionele doelstellingen
+### Niet-functionele doelstellingen
 
-De applicatie beschermt personlijke informatie door dataminimalisatie, role-based acces control (RBAC) en course-gebaseerde authorisatie. Studenten moeten geen toegang hebben tot de indentiteiten of registraties van andere studenten (NF-PS-01, NF-PS-02, NF-PS-08). 
+De applicatie beschermt persoonlijke informatie door dataminimalisatie, role-based access control (RBAC) en course-gebaseerde autorisatie. Studenten mogen geen toegang hebben tot de identiteit of registraties van andere studenten (NF-PS-01, NF-PS-02, NF-PS-08).
 
-De tool waarborgt de data integriteit zodra meerder gebruikers tegelijkertijd registreren. Registratieveranderingen worden atomair verwerkt, ter voorkoming van inconsistente data en overboeken van een tijdslot (NF-BDI-01).
+De tool waarborgt de data-integriteit wanneer meerdere gebruikers tegelijkertijd registreren. Registratiewijzigingen worden atomair verwerkt om inconsistente data en onbedoelde overboeking van een tijdslot te voorkomen (NF-BDI-01).
 
-De tool is uitbreidbaar en onderhoudbaar. De componenten hebben ieder een eigen en duidelijke verantwoording, waardoor het mogelijk wordt om deze te vervangen en onafhankelijk te testen (NF-MA-01, NF-MA-04). 
+De tool is uitbreidbaar en onderhoudbaar. De componenten hebben ieder een eigen en duidelijke verantwoordelijkheid, waardoor het mogelijk is om deze onafhankelijk te testen en te vervangen (NF-MA-01, NF-MA-04).
 
 ## Technische en organisatorische randvoorwaarden
 
-### Brightspace integratie
+### Brightspace-integratie
 
-Brightspace is het Learning Management Systeem (LMS) van de Hanze. De Sign-Up Tool moet daarvoor dus toegankelijk zijn vanuit de relevante Brightspace course (NF-INT-01). 
+Brightspace is het Learning Management Systeem (LMS) van de Hanze. De Sign-Up Tool moet daarom toegankelijk zijn vanuit de relevante Brightspace-course (NF-INT-01).
 
-LTI 1.3 is geselecteerd als integratie mechanisme. Deze standaard ondersteunt beveiligde communicatie van gebruikerindentiteit, rollen en course context tussen het LMS en een externe tool [@1edtechLtiImplementation]. Brightspace ondersteunt LTI 1.3 registratie en deployment, inclusief configuratie van de informatie die wordt gedeeld met externe applicaties [@d2lLtiAdvantage]. 
+LTI 1.3 is geselecteerd als integratiemechanisme. Deze standaard ondersteunt beveiligde communicatie van gebruikersidentiteit, rollen en coursecontext tussen het LMS en een externe tool [@1edtechLtiImplementation]. Brightspace ondersteunt LTI 1.3-registratie en deployment, inclusief de configuratie van informatie die wordt gedeeld met externe applicaties [@d2lLtiAdvantage].
 
-De geprefereerde presentatie is een geintegreerde interface in Brightspace. 
+De voorkeursweergave is een geïntegreerde interface binnen Brightspace.
 
 ### Technische architectuur
 
-De Sign-Up Tool gebruikt Django, PostgreSQL en server-rendered HTML templates. Django geeft de functionaleit voor requests, templates, data modelen en database transacties [@djangoDocumentation].
+De Sign-Up Tool gebruikt Django, PostgreSQL en server-rendered HTML-templates. Django biedt functionaliteit voor het afhandelen van requests, templates, datamodellen en databasetransacties [@djangoDocumentation].
 
-Daarnaast wordt er gebruikgemaakt van de Brightspace UI Web Components, om te zorgen voor een consistente en bekende gebruikersinterface [@brightspaceUiCore].
+Daarnaast wordt gebruikgemaakt van de Brightspace UI Web Components, om te zorgen voor een consistente en herkenbare gebruikersinterface [@brightspaceUiCore].
 
-De tool maakt gebruik van een gelaagde architectuur, hierin is een scheiding van presentatie, applicatie en data. Deze scheiding sluit aan bij de architectuurkaders van de Hanze [@hanze2026applicatiekader, pp. 9-10].
+De tool maakt gebruik van een gelaagde architectuur, met een scheiding tussen presentatie, applicatie en data. Deze scheiding sluit aan bij de architectuurkaders van de Hanze [@hanze2026applicatiekader, pp. 9-10].
 
-De Brightspace integratie is geisoleerd van de core logica. Dit laat ontwikkeling en testen met een gesimuleerde LTI context toe, mocht er geen Brightspace test omgeving zijn. 
+De Brightspace-integratie is geïsoleerd van de kernlogica. Dit maakt ontwikkeling en testen met een gesimuleerde LTI-context mogelijk, mocht er geen Brightspace-testomgeving beschikbaar zijn.
 
 ## Ontwerpprincipes
 
 De volgende principes vormen de basis voor het ontwerp:
 
-1. Seggregatie van verantwoordelijkheden
+1. **Scheiding van verantwoordelijkheden**
 
-Presentatie, logica en data hebben eigen verantwoordelijkeheiden, in lijn met de architectuurkaders van de Hanze [@hanze2026applicatiekader, pp. 9-10].
+   Presentatie, logica en data hebben ieder eigen verantwoordelijkheden, in lijn met de architectuurkaders van de Hanze [@hanze2026applicatiekader, pp. 9-10].
 
-2. Course-based toegang
+2. **Course-based toegang**
 
-Evenementen behoren tot een specifieke Brightspace-context. Studenten, docenten en regisseurs hebben alleen toegang to de functionalitei en informatie die relevant is voor hun toegestane context (FN-CON-01, NF-AUT-02).
+   Evenementen behoren tot een specifieke Brightspace-context. Studenten, docenten en regisseurs hebben alleen toegang tot de functionaliteit en informatie die relevant is voor hun toegestane context (FN-CON-01, NF-AUT-02).
 
-3. Privacy en security by design
+3. **Privacy en security by design**
 
-Alleen data nodig voor registratie en evenement management is verwerkt. Authorisatie is afgedwongen door de tool. Assesment restultaten zijn geen onderdeel van de tool (NF-PS-01, NF-PS-03, NF-PS-07).
+   Alleen data die nodig is voor registratie en evenementbeheer wordt verwerkt. Autorisatie wordt afgedwongen door de tool. Assessmentresultaten zijn geen onderdeel van de tool (NF-PS-01, NF-PS-03, NF-PS-07).
 
-4. Data integriteit
+4. **Data-integriteit**
 
-Registraties preserveren data consistentie. De applicatie voorkomt dubbele registraties en capaciteit overschreidingen. Intentionele overschrijdingen door de docent worden apart gelogd en vereisen bevestiging (NF-BDI-01).
+   Registraties moeten de dataconsistentie waarborgen. De applicatie voorkomt dubbele registraties en onbedoelde capaciteitsoverschrijdingen. Bewuste overschrijdingen door de docent worden apart gelogd en vereisen bevestiging (NF-BDI-01).
 
-5. Configureerbaar registratie proces
+5. **Configureerbaar registratieproces**
 
-Evenement planning ondersteunt meerdere beschikbaarheid periodes, tijdslotduur, capaciteit en pauzes. The ontwerp vermijdt afhankelijkheden die verpleegkunde specifiek zijn, echter blijft een bredere Hanze inzet buiten scope. 
+   Evenementplanning ondersteunt meerdere beschikbaarheidsperiodes, tijdslotduur, capaciteit en pauzes. Het ontwerp vermijdt afhankelijkheden die specifiek zijn voor Verpleegkunde, maar een bredere inzet binnen de Hanze blijft buiten de scope.
 
-6. Iterative ontwikkeling en validatie
+6. **Iteratieve ontwikkeling en validatie**
 
-De implementatie begint met een core registratie flow. Additionele functionaliteit is geselecteerd op de requirments prioriteit, beschikbare tijd en technische haalbaarheid. Features die niet geimplmenteerd of gevalideerd kunnen worden, worden gedocumenteerd als beperking. 
+   De implementatie begint met de kernregistratieflow. Aanvullende functionaliteit wordt geselecteerd op basis van de prioriteit van de requirements, de beschikbare tijd en de technische haalbaarheid. Functionaliteit die niet geïmplementeerd of gevalideerd kan worden, wordt gedocumenteerd als beperking.
